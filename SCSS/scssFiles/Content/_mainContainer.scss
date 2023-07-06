@@ -1,0 +1,29 @@
+/*
+Table of Contents
+    Main container
+*/
+
+
+// Main container
+.mainContainer 
+{
+    @import "../Sections/about";
+    @import "../Sections/blog";
+    @import "../Sections/contact";
+    @import "../Sections/footer";
+    @import "../Sections/gallery";
+    @import "../Sections/header";
+    @import "../Sections/menus";
+    @import "../Sections/subscribe";
+
+    
+    background:url("../../../Images/mainContainer/backgroundStyler.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:none;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover;
+    width:100%;
+}

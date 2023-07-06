@@ -1,0 +1,721 @@
+/*
+Table of contents
+    Footer
+        Content
+            Bottom
+                Text Container
+                    H3
+            Middle
+                Social Container
+                    Social Area
+                        Icon
+                            A
+                                Img
+                Text One
+                    H3
+                Text Two
+                    H4
+            Top
+                Image Container
+                    Img
+    Media Queries
+        Max Width - 300px
+        Min Width 301px and Max Width 400px
+        Other Sizes
+*/
+
+
+footer 
+{
+    margin:300px 0 0 0;
+    .content 
+    {
+        width:35%;
+        // Oxygen Themes Text
+        .bottom 
+        {
+            margin:97px 0 100px 0;
+            .textContainer
+            {
+                h3 
+                {
+                    color:$white;
+                    font-family:patuaOneRegular;
+                    font-size:30px;
+                }
+            }
+        }
+        // Text and Social Icons
+        .middle 
+        {
+            margin:45px 0 0 0;
+            .socialContainer
+            {
+                margin:29px 0 0 0;
+                .socialArea 
+                {
+                    .icon 
+                    {
+                        cursor:pointer;
+                        margin:24px;
+                        img 
+                        {
+                            height:auto;
+                            width:75px;
+                        }
+                    }
+                }
+            }
+            .textOne 
+            {
+                h3 
+                {
+                    color:$white;
+                    font-family:patuaOneRegular;
+                    font-size:30px;
+                }
+            }
+            .textTwo 
+            {
+                margin:29px 0 0 0;
+                h4 
+                {
+                    color:$white;
+                    font-family:workSansRegular;
+                    font-size:25px;
+                    text-align:center;
+                }
+            }
+        }
+        // Logo
+        .top 
+        {
+            .imageContainer
+            {
+                img 
+                {
+                    cursor:pointer;
+                    height:auto;
+                    width:200px;
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive Design
+@media(max-width:300px)
+{
+    footer 
+    {
+        margin:96px 0 0 0;
+        .content 
+        {
+            width:95%;
+            .bottom 
+            {
+                margin:32px 0 33px 0;
+                .textContainer
+                {
+                    h3 
+                    {
+                        font-size:15px;
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:15px 0 0 0;
+                .socialContainer
+                {
+                    margin:10px 0 0 0;
+                    .socialArea 
+                    {
+                        .icon 
+                        {
+                            margin:9px;
+                            img 
+                            {
+                                height:auto;
+                                width:25px;
+                            }
+                        }
+                    }
+                }
+                .textOne 
+                {
+                    h3 
+                    {
+                        font-size:15px;
+                    }
+                }
+                .textTwo 
+                {
+                    margin:10px 0 0 0;
+                    h4 
+                    {
+                        font-size:15px;
+                    }
+                }
+            }
+            .top 
+            {
+                .imageContainer
+                {
+                    img 
+                    {
+                        height:auto;
+                        width:64px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:301px) and (max-width:400px)
+{
+    footer 
+    {
+        margin:127px 0 0 0;
+        .content 
+        {
+            width:95%;
+            .bottom 
+            {
+                margin:42px 0 43px 0;
+                .textContainer
+                {
+                    h3 
+                    {
+                        font-size:15px;
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:20px 0 0 0;
+                .socialContainer
+                {
+                    margin:13px 0 0 0;
+                    .socialArea 
+                    {
+                        .icon 
+                        {
+                            margin:11px;
+                            img 
+                            {
+                                height:auto;
+                                width:33px;
+                            }
+                        }
+                    }
+                }
+                .textOne 
+                {
+                    h3 
+                    {
+                        font-size:15px;
+                    }
+                }
+                .textTwo 
+                {
+                    margin:13px 0 0 0;
+                    h4 
+                    {
+                        font-size:15px;
+                    }
+                }
+            }
+            .top 
+            {
+                .imageContainer
+                { 
+                    img 
+                    {
+                        height:auto;
+                        width:85px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:401px) and (max-width:525px)
+{
+    footer 
+    {
+        margin:169px 0 0 0;
+        .content 
+        {
+            width:95%;
+            .bottom 
+            {
+                margin:55px 0 57px 0;
+                .textContainer
+                {
+                    h3 
+                    {
+                        font-size:18px;
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:26px 0 0 0;
+                .socialContainer
+                {
+                    margin:17px 0 0 0;
+                    .socialArea 
+                    {
+                        .icon 
+                        {
+                            margin:14px;
+                            img 
+                            {
+                                height:auto;
+                                width:43px;
+                            }
+                        }
+                    }
+                }
+                .textOne 
+                {
+                    h3 
+                    {
+                        font-size:18px;
+                    }
+                }
+                .textTwo 
+                {
+                    margin:17px 0 0 0;
+                    h4 
+                    {
+                        font-size:15px;
+                    }
+                }
+            }
+            .top 
+            {
+                .imageContainer
+                {
+                    img 
+                    {
+                        height:auto;
+                        width:113px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:526px) and (max-width:650px)
+{
+    footer 
+    {
+        margin:225px 0 0 0;
+        .content 
+        {
+            width:95%;
+            .bottom 
+            {
+                margin:73px 0 75px 0;
+                .textContainer
+                {
+                    h3 
+                    {
+                        font-size:23px;
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:34px 0 0 0;
+                .socialContainer
+                {
+                    margin:22px 0 0 0;
+                    .socialArea 
+                    {
+                        .icon 
+                        {
+                            margin:18px;
+                            img 
+                            {
+                                height:auto;
+                                width:57px;
+                            }
+                        }
+                    }
+                }
+                .textOne 
+                {
+                    h3 
+                    {
+                        font-size:23px;
+                    }
+                }
+                .textTwo 
+                {
+                    margin:22px 0 0 0;
+                    h4 
+                    {
+                        font-size:19px;
+                    }
+                }
+            }
+            .top 
+            {
+                .imageContainer
+                {
+                    img 
+                    {
+                        height:auto;
+                        width:150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:651px) and (max-width:767px)
+{
+    footer 
+    {
+        .content 
+        {
+            width:90%;
+        }
+    }
+}
+
+
+@media(min-width:768px) and (max-width:1199px)
+{
+    footer 
+    {
+        .content 
+        {
+            width:70%;
+        }
+    }
+}
+
+
+@media(min-width:1200px) and (max-width:1399px)
+{
+    footer 
+    {
+        .content 
+        {
+            width:50%;
+        }
+    }
+}
+
+
+@media(min-width:1400px) and (max-width:1850px)
+{
+    footer 
+    {
+        .content 
+        {
+            width:40%;
+        }
+    }
+}
+
+
+@media(min-width:1921px) and (max-width:2400px)
+{
+    footer 
+    {
+        margin:375px 0 0 0;
+        .content 
+        {
+            // Oxygen Themes Text
+            .bottom 
+            {
+                margin:121px 0 125px 0;
+                .textContainer
+                {
+                    h3 
+                    {
+                        font-size:37px;
+                    }
+                }
+            }
+            // Text and Social Icons
+            .middle 
+            {
+                margin:56px 0 0 0;
+                .socialContainer
+                {
+                    margin:36px 0 0 0;
+                    .socialArea 
+                    {
+                        .icon 
+                        {
+                            margin:30px;
+                            img 
+                            {
+                                height:auto;
+                                width:93px;
+                            }
+                        }
+                    }
+                }
+                .textOne 
+                {
+                    h3 
+                    {
+                        font-size:37px;
+                    }
+                }
+                .textTwo 
+                {
+                    margin:36px 0 0 0;
+                    h4 
+                    {
+                        font-size:31px;
+                    }
+                }
+            }
+            // Logo
+            .top 
+            {
+                .imageContainer
+                {
+                    img 
+                    {
+                        height:auto;
+                        width:250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:2401px) and (max-width:3000px)
+{
+    footer 
+    {
+        margin:469px 0 0 0;
+        .content 
+        {
+            // Oxygen Themes Text
+            .bottom 
+            {
+                margin:151px 0 156px 0;
+                .textContainer
+                {
+                    h3 
+                    {
+                        font-size:46px;
+                    }
+                }
+            }
+            // Text and Social Icons
+            .middle 
+            {
+                margin:70px 0 0 0;
+                .socialContainer
+                {
+                    margin:45px 0 0 0;
+                    .socialArea 
+                    {
+                        .icon 
+                        {
+                            margin:37px;
+                            img 
+                            {
+                                height:auto;
+                                width:116px;
+                            }
+                        }
+                    }
+                }
+                .textOne 
+                {
+                    h3 
+                    {
+                        font-size:46px;
+                    }
+                }
+                .textTwo 
+                {
+                    margin:45px 0 0 0;
+                    h4 
+                    {
+                        font-size:38px;
+                    }
+                }
+            }
+            // Logo
+            .top 
+            {
+                .imageContainer
+                {
+                    img 
+                    {
+                        height:auto;
+                        width:312px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:3001px) and (max-width:3750px)
+{
+    footer 
+    {
+        margin:586px 0 0 0;
+        .content 
+        {
+            // Oxygen Themes Text
+            .bottom 
+            {
+                margin:188px 0 195px 0;
+                .textContainer
+                {
+                    h3 
+                    {
+                        font-size:57px;
+                    }
+                }
+            }
+            // Text and Social Icons
+            .middle 
+            {
+                margin:87px 0 0 0;
+                .socialContainer
+                {
+                    margin:56px 0 0 0;
+                    .socialArea 
+                    {
+                        .icon 
+                        {
+                            margin:46px;
+                            img 
+                            {
+                                height:auto;
+                                width:145px;
+                            }
+                        }
+                    }
+                }
+                .textOne 
+                {
+                    h3 
+                    {
+                        font-size:57px;
+                    }
+                }
+                .textTwo 
+                {
+                    margin:56px 0 0 0;
+                    h4 
+                    {
+                        font-size:47px;
+                    }
+                }
+            }
+            // Logo
+            .top 
+            {
+                .imageContainer
+                {
+                    img 
+                    {
+                        height:auto;
+                        width:390px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:3751px)
+{
+    footer 
+    {
+        margin:733px 0 0 0;
+        .content 
+        {
+            // Oxygen Themes Text
+            .bottom 
+            {
+                margin:235px 0 243px 0;
+                .textContainer
+                {
+                    h3 
+                    {
+                        font-size:71px;
+                    }
+                }
+            }
+            // Text and Social Icons
+            .middle 
+            {
+                margin:108px 0 0 0;
+                .socialContainer
+                {
+                    margin:70px 0 0 0;
+                    .socialArea 
+                    {
+                        .icon 
+                        {
+                            margin:57px;
+                            img 
+                            {
+                                height:auto;
+                                width:181px;
+                            }
+                        }
+                    }
+                }
+                .textOne 
+                {
+                    h3 
+                    {
+                        font-size:71px;
+                    }
+                }
+                .textTwo 
+                {
+                    margin:70px 0 0 0;
+                    h4 
+                    {
+                        font-size:58px;
+                    }
+                }
+            }
+            // Logo
+            .top 
+            {
+                .imageContainer
+                { 
+                    img 
+                    {
+                        height:auto;
+                        width:488px;
+                    }
+                }
+            }
+        }
+    }
+}

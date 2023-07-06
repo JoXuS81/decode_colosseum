@@ -1,0 +1,350 @@
+/*
+Table of contents
+    Loader
+        Loader Content
+            Spinner Text
+                Keyframes Pizza Four Animation
+                Keyframes Pizza One Animation
+                Keyframes Pizza Three Animation
+                Keyframes Pizza Two Animation
+                Keyframes Spin
+                Spinner
+                    Pizza Part
+                    Pizza Part Four
+                    Pizza Part One
+                    Pizza Part Three
+                    Pizza Part Two
+                Text
+                    H4
+    Media Queries
+        Max Width - 1921px and Max Width - 2400px
+        Min Width 2401px and Max Width 3000px
+        Other Sizes
+*/
+
+
+.loader 
+{
+    height:100vh;
+    width:100%;
+    .loaderContent 
+    {
+        background:url("../../../Images/mainContainer/backgroundStyler.png");
+        background-position:fixed;
+        background-repeat:no-repeat;
+        background-size:cover;
+        height:100%;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        -webkit-background-size:cover;
+        width:100%;
+        .spinnerText 
+        {
+            @keyframes pizzaFourAnim 
+            {
+                0% 
+                {
+                transform: translate(-20%, 20%) rotateZ(-90deg);
+                opacity: 0;
+                }
+                30% 
+                {
+                transform: translate(-20%, 20%) rotateZ(-90deg);
+                opacity: 0;
+                }
+                40% 
+                {
+                transform: translate(0%, 0%) rotateZ(-90deg);
+                opacity: 1;
+                }
+                80% 
+                {
+                transform: translate(0%, 0%) rotateZ(-90deg);
+                opacity: 1;
+                }
+                90% 
+                {
+                transform: translate(-20%, 20%) rotateZ(-90deg);
+                opacity: 0;
+                }
+                100% 
+                {
+                transform: translate(-20%, 20%) rotateZ(-90deg);
+                opacity: 0;
+                }
+            }
+            @keyframes pizzaOneAnim 
+            {
+                0% 
+                {
+                transform: translate(-20%, -20%);
+                opacity: 0;
+                }
+                10% 
+                {
+                transform: translate(0%, 0%);
+                opacity: 1;
+                }
+                50% 
+                {
+                transform: translate(0%, 0%);
+                opacity: 1;
+                }
+                60% 
+                {
+                transform: translate(-20%, -20%);
+                opacity: 0;
+                }
+                100% 
+                {
+                transform: translate(-20%, -20%);
+                opacity: 0;
+                }
+            }
+            @keyframes pizzaThreeAnim 
+            {
+                0% 
+                {
+                transform: translate(20%, 20%) rotateZ(180deg);
+                opacity: 0;
+                }
+                20% 
+                {
+                transform: translate(20%, 20%) rotateZ(180deg);
+                opacity: 0;
+                }
+                30% 
+                {
+                transform: translate(0%, 0%) rotateZ(180deg);
+                opacity: 1;
+                }
+                70% 
+                {
+                transform: translate(0%, 0%) rotateZ(180deg);
+                opacity: 1;
+                }
+                80% 
+                {
+                transform: translate(20%, 20%) rotateZ(180deg);
+                opacity: 0;
+                }
+                100% 
+                {
+                transform: translate(20%, 20%) rotateZ(180deg);
+                opacity: 0;
+                }
+            }
+            @keyframes pizzaTwoAnim 
+            {
+                0% 
+                {
+                transform: translate(20%, -20%) rotateZ(90deg);
+                opacity: 0;
+                }
+                10% 
+                {
+                transform: translate(20%, -20%) rotateZ(90deg);
+                opacity: 0;
+                }
+                20% 
+                {
+                transform: translate(0%, 0%) rotateZ(90deg);
+                opacity: 1;
+                }
+                60% 
+                {
+                transform: translate(0%, 0%) rotateZ(90deg);
+                opacity: 1;
+                }
+                70% 
+                {
+                transform: translate(20%, -20%) rotateZ(90deg);
+                opacity: 0;
+                }
+                100% 
+                {
+                transform: translate(20%, -20%) rotateZ(90deg);
+                opacity: 0;
+                }
+            }
+            @keyframes spin 
+            {
+                0% 
+                {
+                transform:rotateZ(0deg);
+                }
+                100% 
+                {
+                transform:rotateZ(360deg);
+                }
+            }
+            .spinner 
+            {
+                animation:spin 4s linear infinite;
+                display:flex;
+                flex-wrap:wrap;
+                height:160px;
+                width:160px;
+                .pizzaPart 
+                {
+                    height:80px;
+                    width:80px;
+                }
+                .pizzaPartFour
+                {
+                    animation:pizzaFourAnim 2s ease-in-out infinite;
+                }
+                .pizzaPartOne
+                {
+                    animation:pizzaOneAnim 2s ease-in-out infinite;
+                }
+                .pizzaPartThree
+                {
+                    animation:pizzaThreeAnim 2s ease-in-out infinite;
+                }
+                .pizzaPartTwo
+                {
+                    animation:pizzaTwoAnim 2s ease-in-out infinite;
+                }
+            }
+            .text 
+            {
+                margin:15px 0 0 0;
+                h4 
+                {
+                    color:$white;
+                    font-family:playballRegular;
+                    font-size:30px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    .loader 
+    {
+        .loaderContent 
+        {
+            .spinnerText 
+            {
+                .spinner 
+                {
+                    height:200px;
+                    width:200px;
+                    .pizzaPart 
+                    {
+                        height:100px;
+                        width:100px;
+                    }
+                }
+                .text 
+                {
+                    margin:18px 0 0 0;
+                    h4 
+                    {
+                        font-size:37px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    .loader 
+    {
+        .loaderContent 
+        {
+            .spinnerText 
+            {
+                .spinner 
+                {
+                    height:250px;
+                    width:250px;
+                    .pizzaPart 
+                    {
+                        height:125px;
+                        width:125px;
+                    }
+                }
+                .text 
+                {
+                    margin:22px 0 0 0;
+                    h4 
+                    {
+                        font-size:46px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    .loader 
+    {
+        .loaderContent 
+        {
+            .spinnerText 
+            {
+                .spinner 
+                {
+                    height:312px;
+                    width:312px;
+                    .pizzaPart 
+                    {
+                        height:156px;
+                        width:156px;
+                    }
+                }
+                .text 
+                {
+                    margin:27px 0 0 0;
+                    h4 
+                    {
+                        font-size:57px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px)
+{
+    .loader 
+    {
+        .loaderContent 
+        {
+            .spinnerText 
+            {
+                .spinner 
+                {
+                    height:390px;
+                    width:390px;
+                    .pizzaPart 
+                    {
+                        height:195px;
+                        width:195px;
+                    }
+                }
+                .text 
+                {
+                    margin:33px 0 0 0;
+                    h4 
+                    {
+                        font-size:71px;
+                    }
+                }
+            }
+        }
+    }
+}

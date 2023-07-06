@@ -1,0 +1,2540 @@
+<!DOCTYPE html>
+
+    <!-- Website/template language -->
+    <html lang = "en">  
+
+        <!-- Head -->
+        <head>
+            <!-- Language coding - UTF-8 -->
+            <meta charset = "utf-8">
+            <!-- Description, important for SEO -->
+            <meta name = "description" content = "FoodeX is a high quality HTML web template, which is tailored for restaurants and food delivery companies.">
+            <!-- Keywords -->
+            <meta name = "keywords" content = "Blog, Bootstrap, Delivery, Food, Modern, Responsive, Restaurants, Taste">
+            <!-- Suiting for different device sizes -->
+            <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0">
+            <!-- For quality view on Internet Explorer/Edge -->
+            <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+            <!-- Connections with external files -->
+            <link rel = "icon" type = "image/png" href = "Images/titleBar/Foodex.png">
+            <link rel = "stylesheet" type = "text/css" href = "SCSS/Bootstrap/bootstrap.css">
+            <link rel = "stylesheet" type = "text/css" href = "SCSS/Bootstrap/bootstrap.min.css">
+            <link rel = "stylesheet" type = "text/css" href = "SCSS/Bootstrap/bootstrap-grid.css">
+            <link rel = "stylesheet" type = "text/css" href = "SCSS/Bootstrap/bootstrap-grid.min.css">
+            <link rel = "stylesheet" type = "text/css" href = "SCSS/Bootstrap/bootstrap-reboot.css">
+            <link rel = "stylesheet" type = "text/css" href = "SCSS/Bootstrap/bootstrap-reboot.min.css">
+            <link rel = "stylesheet" type = "text/css" href = "SCSS/scssFiles/Style/styleManager.css">
+            <link rel = "stylesheet" type = "text/css" href = "SCSS/fontAwesome/css/all.css">
+            <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+            <link href = 'https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel = 'stylesheet'>
+            <link href = "https://unpkg.com/aos@2.3.1/dist/aos.css" rel = "stylesheet">
+            <!-- Title -->
+            <title>
+                Bring History to Life
+            </title>
+            <!-- 
+            Credits 
+                Animations
+                Code snippets
+                    Bootstrap, Reorder Columns
+                        https://dev.to/codeply/re-order-grid-columns-in-bootstrap-5-135k
+                    Calculate Top Position in jQuery
+                        https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_css_position
+                    Chocolate Menu
+                        https://www.youtube.com/watch?v=FbSTevd8ioU 
+                    Code Corrections
+                        Visual Studio Code
+                    Commenting in PhP
+                        https://blog.hubspot.com/website/php-comments
+                    Contact Form
+                        https://html.form.guide/contact-form/php-email-contact-form/
+                        https://www.youtube.com/watch?v=9zfZhsV4NF0
+                        https://stackoverflow.com/questions/18379238/send-email-with-php-from-html-form-on-submit-with-the-same-script
+                        Funk Forty Niner
+                    Contact Form, Disable Browser Validation
+                        https://stackoverflow.com/questions/3090369/disable-validation-of-html-form-elements
+                        Jakob S
+                    Create Div's Inline
+                        https://stackoverflow.com/questions/6072573/inline-div-elements
+                        Spudley
+                    Detect Click Outside of Div
+                        https://stackoverflow.com/questions/36695438/detect-click-outside-div-using-javascript
+                        James Bubb
+                    Forms, Placeholder Color
+                        https://stackoverflow.com/questions/9451902/changing-an-inputs-html5-placeholder-color-with-css-does-not-work-on-chrome
+                        el-teedee
+                    Icon Change When User Reach Position
+                        https://errorsandanswers.com/trigger-event-when-user-scroll-to-specific-element-with-jquery/
+                    InnerHTML
+                        https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_innerhtml_p
+                    Input - HTML
+                        https://www.w3schools.com/tags/tag_input.asp
+                    jQuery, AND Operator
+                        https://www.w3schools.com/js/js_comparisons.asp
+                    jQuery, Cycle Through Elements
+                        https://jsfiddle.net/harshapache/89norsk6/
+                    jQuery, Hover
+                        https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_event_hover
+                    jQuery, Mouse Enter
+                        https://www.w3schools.com/jquery/event_mouseenter.asp
+                    jQuery, next()
+                        Internet source
+                    JS, Arrays
+                        https://www.w3schools.com/js/js_arrays.asp
+                    JS, Numbers
+                        https://www.w3schools.com/js/tryit.asp?filename=tryjs_number_tostring
+                    Mover, Header, Cart Icon
+                        https://lordicon.com/
+                        Basket Trolley
+                    Mover, Header, Taste Animation
+                        https://animate.style/
+                    Pointer in CSS
+                        https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor
+                    Symbols
+                        MS Word
+                    Textarea
+                        https://www.w3schools.com/tags/tag_textarea.asp
+                    Use Float
+                        https://stackoverflow.com/questions/44620571/place-objects-in-inline-display
+                        Obsidian Age
+                    Use Inline-Flex
+                        https://stackoverflow.com/questions/49872513/displayinline-block-and-displayflex-at-the-same-time
+                        Jeroen W
+                Colors
+                    Change Child Color, on Parent Hover
+                        https://stackoverflow.com/questions/7217244/style-child-element-when-hover-on-parent
+                        jtbandes
+                    Hex to Rgba
+                        https://rgbacolorpicker.com/hex-to-rgba
+                CSS, SCSS validation
+                Description
+                Other sources
+                    About, Why To Choose Us, Food Images
+                        https://www.freepik.com/free-vector/restaurant-banners-design-template_11380437.htm
+                        freepik
+                    Blog, Icons
+                        Google Fonts
+                    Blog, Large Img 1
+                        https://unsplash.com/photos/Ciqxn7FE4vE (Nick Karvounis)
+                    Blog, Large Img 2
+                        https://unsplash.com/photos/LDnmyOaA-ew (Umesh Soni)
+                    Blog, Large Img 3
+                        https://unsplash.com/photos/1YozRGM1rDk (Anastasia Zhenina)
+                    Blog, Large Img 4
+                        https://unsplash.com/photos/ecUVGNZA1TM (Mae Mu)
+                    Blog, Opened New Restaurant, Man Img
+                        https://unsplash.com/photos/KIPqvvTOC1s (Jonas Kakaroto)
+                    Blog, Our Cupcakes Recipe, Man Img
+                        https://unsplash.com/photos/6erzQwfnCuo
+                        Aejaz Memon
+                    Blog, Pancakes for Breakfast, Woman Img
+                        https://unsplash.com/photos/thsLtslnjos
+                        Marco Testi
+                    Blog, Taste Our Cakes, Woman Img
+                        https://unsplash.com/photos/8a95EVm0ovQ (freestocks)
+                    Default Browser
+                        Mozilla Firefox
+                    Draw, About, Img 1
+                        https://www.freepik.com/free-vector/illustration-chocolate-syrup-poured-ice-cream-scoop-cone-isolated_11053438.htm?query=food&collectionId=622&&position=15&from_view=collections
+                        macrovector
+                    Draw, About, Img 2
+                        https://www.freepik.com/free-vector/vector-whole-chocolate-puff-cake-with-icing-whipped-cream-nuts-fruits-mint-white-lace-napkin-isolated_11060367.htm?query=food&collectionId=2603&&position=0&from_view=collections
+                        macrovector
+                    Draw, Chocolate Cup
+                        https://www.freepik.com/free-vector/realistic-monster-shake-wallpaper_9320239.htm?query=Chocolate%20Cup&collectionId=2102971&page=2&position=36&from_view=collections
+                        pikisuperstar
+                    Draw, Gallery, Black Cake
+                        https://www.freepik.com/free-vector/delicious-cakes-set_13187639.htm#query=Cake&position=1&from_view=search&track=sph
+                        macrovector
+                    Draw, Gallery, Cupcake
+                        https://www.freepik.com/free-vector/bright-realistic-cupcakes-with-various-fillings-assortment-set-isolated-white-background-vector-illustration_4358931.htm#query=Cupcake&position=0&from_view=search&track=sph
+                        macrovector
+                    Draw, Gallery, Drink 2
+                        https://www.freepik.com/free-vector/realistic-monster-shake-background_9009773.htm?query=Chocolate%20Cup&collectionId=2102971&page=2&position=38&from_view=collections
+                        pikisuperstar
+                    Draw, Gallery, Drink 3
+                        https://www.freepik.com/free-vector/realistic-monster-shake-background_9009774.htm?query=Chocolate%20Cup&collectionId=2102971&page=2&position=39&from_view=collections
+                        pikisuperstar
+                    Draw, Gallery, Hamburger 1
+                        https://www.freepik.com/free-vector/realistic-burger-chalkboard-background_10578268.htm#query=Hamburger&position=1&from_view=search&track=sph
+                        coolvector
+                    Draw, Gallery, Hamburger 2
+                        https://www.freepik.com/free-vector/delicious-realistic-burger-chalkboard-background_10578267.htm#query=Hamburger&position=17&from_view=search&track=sph
+                        coolvector
+                    Draw, Gallery, Hamburger 3
+                        https://www.freepik.com/free-vector/realistic-cheeseburger-chalkboard-background_10578269.htm#query=Hamburger&position=46&from_view=search&track=sph
+                        coolvector
+                    Draw, Gallery, Yellow Cake
+                        https://www.freepik.com/free-vector/cakes-sweets-set_3797315.htm#query=Cake&position=24&from_view=search&track=sph
+                        macrovector
+                    Editor, Indentation
+                        https://stackoverflow.com/questions/29972396/how-can-i-customize-the-tab-to-space-conversion-factor
+                        Alex Dima
+                    English, Help
+                        Google Translate
+                    Font Awesome Pack
+                        https://fontawesome.com/download
+                    Gallery, Layout Info
+                        Agatha WordPress Theme
+                    HTML Validation
+                        https://validator.w3.org/#validate_by_upload
+                    Icons, Change Color
+                        https://stackoverflow.com/questions/25770590/change-color-when-hover-a-font-awesome-icon
+                        Juan
+                        https://thewpx.com/change-font-awesome-color/
+                    Icons, Equal Size
+                        https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+                    Icons, Source
+                        Font Awesome
+                    Install Boxicons
+                        https://boxicons.com/usage
+                    JavaScript Console
+                        Mozilla
+                    JavaScript, Redeclaration Error
+                        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Redeclared_parameter
+                    jQuery, Change Color on Click
+                        https://www.w3schools.com/jquery/jquery_css.asp
+                    Loader
+                        https://codepen.io/ruppysuppy/pen/YzpBLBM
+                        https://www.freepik.com/free-vector/top-view-italian-pizza-sticker-white-background_18055085.htm#page=6&query=Pizza&position=8&from_view=search&track=sph
+                        brgfx
+                    Mathematical Operations
+                        Windows Calculator
+                    Menus, Cake, Img
+                        https://www.freepik.com/free-vector/realistic-sweet-baking-products-template-with-muffin-pie-croissant-macaroon-donuts-cupcake-pretzel-             illustration_12986829.htm#query=Desserts&position=32&from_view=search&track=sph
+                        macrovector
+                    Menus, Cheesy Pizza, Img
+                        https://pixabay.com/vectors/pizza-food-cut-bakery-products-6948995/
+                        Diskette96
+                    Menus, Chicken
+                        https://www.freepik.com/free-vector/fast-food-illustration_7439092.htm#page=2&query=pommes%20frites%20and%20chicken&position=2&from_view=search&track=ais
+                        macrovector
+                    Menus, Chicken 2
+                        https://www.freepik.com/free-vector/set-fast-food-vector-banners_1215669.htm#query=Chicken%20and%20Fries&position=49&from_view=search&track=sph
+                        vectorpocket
+                    Menus, Cocktail, Img
+                        https://www.freepik.com/free-vector/realistic-cocktail-collection_9009751.htm#page=8&query=Drinks&position=31&from_view=search&track=sph
+                        pikisuperstar
+                    Menus, Juice, Img
+                        https://www.freepik.com/free-vector/realistic-fast-food-concept-with-soda-french-fries-burger-monochrome-square-circle-diamonds-illustration_12938482.htm#query=Burgers&position=22&from_view=search&track=sph#position=22&query=Burgers
+                        macrovector
+                    Menus, Pizza, Img
+                        https://www.freepik.com/free-vector/fast-food-meal-set-white-background_26161088.htm#page=9&query=Pizza&position=0&from_view=search&track=sph
+                        brgfx
+                    Press, Header, Button
+                        https://getcssscan.com/css-buttons-examples
+                        Button 51
+                    Script Tag Problem
+                        https://rocketvalidator.com/html-validation/stray-start-tag-script
+                    SCSS Validation
+                        https://jigsaw.w3.org/css-validator/
+                    Subscribe, Envelope
+                        https://www.freepik.com/free-vector/modern-subscription-pop-up-with-flat-design_2669921.htm#page=11&query=Mail&position=44 
+                        freepik
+                    Template Start and Some Parts
+                        Previous Work
+                    Typo, Blog, Cake
+                        https://www.freepik.com/free-vector/pastry-set-cartoon-style-food-cake-sweet-bakery-tasty-snack-with-cream-vector-illustration_10602843.htm#query=Cake&position=49&from_view=search&track=sph
+                        macrovector
+                    Typo, Blog, Cupcake
+                        https://www.freepik.com/free-vector/vector-set-different-muffins-with-pink-brown-icing-cherries-close-up-isolated-white-background_11060356.htm#query=Cupcakes&position=25&from_view=search&track=sph
+                        macrovector
+                    Typo, Blog Inside, Author, Alissa
+                        https://www.freepik.com/free-vector/pop-art-young-woman-cartoon_5020609.htm#page=4&query=Woman&position=3&from_view=search&track=sph
+                        jemastock
+                    Typo, Blog Inside, Author, Dilan
+                        https://www.freepik.com/free-vector/sommelier-party-website-with-man-holding-wineglass_20366531.htm#page=2&query=Man&position=49&from_view=search&track=sph
+                        upklyak
+                    Typo, Blog Inside, Author, Mark
+                        https://www.freepik.com/free-vector/man-with-mustache_7181929.htm#page=5&query=Man&position=13&from_view=search&track=sph
+                        brgfx
+                    Typo, Blog, Pancakes
+                        https://www.freepik.com/free-vector/maple-pancakes-isolated-set_4385540.htm#query=Pancakes&position=1&from_view=search&track=sph
+                        macrovector
+                    Typo, Blog, Restaurant, Img
+                        https://www.freepik.com/free-vector/restaurant-background_3967199.htm#query=Restaurant&position=26&from_view=search&track=sph
+                        freepik
+            -->
+            <!-- 
+            Table of Contents 
+                Body
+                    Loader
+                        Loader Content
+                            Spinner and Text
+                                Spinner
+                                    Pizza Part
+                                    Pizza Part
+                                    Pizza Part
+                                    Pizza Part
+                                Text
+                                    H4
+                    Main Container
+                        Header
+                            Header content
+                                Top
+                                    Top Area 
+                                        Logo
+                                            Link
+                                                Img
+                                        Navbar
+                                            Option
+                                                Icon Container
+                                                    Icon
+                                            Option
+                                                Icon Container
+                                                    Icon
+                                            Option
+                                                Icon Container
+                                                    Icon
+                                            Option
+                                                Icon Container
+                                                    Icon
+                                            Option
+                                                Icon Container
+                                                    Icon
+                                            Option
+                                                Icon Container
+                                                    Icon
+                                            Menu Chocolate
+                                                Open
+                                                Close
+                                        Cart
+                                            Img Container
+                                                Img
+                                            Cart Number
+                                                Ellipse
+                                                    H6
+                                Middle
+                                    Info
+                                        H3
+                                        Bottom Text Container
+                                            H1
+                                Bottom
+                                    Hamburger Button
+                                        Img
+                                        Button Area
+                                            Button Inside
+                                                H6
+                                Mobile Menu
+                                    Mobile Container
+                                        Ul
+                                            Li
+                                                A
+                                            Li
+                                                A
+                                            Li
+                                                A
+                                            Li
+                                                A
+                                            Li
+                                                A
+                                            Li
+                                                A
+                        About
+                            Content
+                                Top
+                                    Sub Container
+                                        Food Images
+                                            Img
+                                            Img
+                                        About Us
+                                            Shape
+                                                Info
+                                                    Text About
+                                                        H1
+                                                    Text Success
+                                                        H1
+                                                    Line Area
+                                                        Line
+                                                    Text
+                                                        H4
+                                Middle
+                                    Heading
+                                        H1
+                                    Line Area
+                                        Line
+                                    Products
+                                        Product
+                                            Image Container
+                                                Hot Dog
+                                            Text Container
+                                                H2
+                                            Text Container - Bottom
+                                                H3
+                                        Product
+                                            Image Container
+                                                Fries
+                                            Text Container
+                                                H2
+                                            Text Container - Bottom
+                                                H3
+                                        Product
+                                            Image Container
+                                                Drinks
+                                            Text Container
+                                                H2
+                                            Text Container - Bottom
+                                                H3
+                                Bottom
+                                    Info 
+                                        Block
+                                            Icon Text Container
+                                                Icon Text
+                                                    Icon Area
+                                                        Icon Container
+                                                            Icon
+                                                    Text Container
+                                                        H2
+                                                    Text Container Bottom
+                                                        H2
+                                        Block
+                                            Icon Text Container
+                                                Icon Text
+                                                    Icon Area
+                                                        Icon Container
+                                                            Icon
+                                                    Text Container
+                                                        H2
+                                                    Text Container Bottom
+                                                        H2
+                                        Block
+                                            Icon Text Container
+                                                Icon Text
+                                                    Icon Area
+                                                        Icon Container
+                                                            Icon
+                                                    Text Container
+                                                        H2
+                                                    Text Container Bottom
+                                                        H2
+                                                        Second Text
+                        Menus
+                            Content
+                                Top
+                                    Heading
+                                        H2
+                                Middle
+                                    Blocks
+                                        Block
+                                            Div
+                                                Img and Text
+                                                    Img Area
+                                                        Img
+                                                    Text Area
+                                                        H4
+                                            Triangle
+                                        Block
+                                            Div
+                                                Img and Text
+                                                    Img Area
+                                                        Img
+                                                    Text Area
+                                                        H4
+                                            Triangle
+                                        Block
+                                            Div
+                                                Img and Text
+                                                    Img Area
+                                                        Img
+                                                    Text Area
+                                                        H4
+                                            Triangle
+                                        Block
+                                            Div
+                                                Img and Text
+                                                    Img Area
+                                                        Img
+                                                    Text Area
+                                                        H4
+                                            Triangle
+                                        Block
+                                            Div
+                                                Img and Text
+                                                    Img Area
+                                                        Img
+                                                    Text Area
+                                                        H4
+                                            Triangle
+                                    Blocks
+                                        Block
+                                            Div
+                                                Img and Text
+                                                    Img Area
+                                                        Img
+                                                    Text Area
+                                                        H4
+                                            Triangle
+                                        Block
+                                            Div
+                                                Img and Text
+                                                    Img Area
+                                                        Img
+                                                    Text Area
+                                                        H4
+                                            Triangle
+                                        Block
+                                            Div
+                                                Img and Text
+                                                    Img Area
+                                                        Img
+                                                    Text Area
+                                                        H4
+                                            Triangle
+                                        Block
+                                            Div
+                                                Img and Text
+                                                    Img Area
+                                                        Img
+                                                    Text Area
+                                                        H4
+                                            Triangle
+                                        Block
+                                            Div
+                                                Img and Text
+                                                    Img Area
+                                                        Img
+                                                    Text Area
+                                                        H4
+                                            Triangle
+                        Gallery
+                            Content
+                                Top
+                                    Heading
+                                        Text
+                                Bottom
+                                    Bottom Content
+                                        Products
+                                            All
+                                                Content Area
+                                                    Img Place
+                                                        Img
+                                                        Hover Area
+                                                            Borders
+                                                                Inner Content
+                                                                    Heading
+                                                                        H2
+                                                                    Text
+                                                                        H5
+                                                                    Button Area
+                                                                        Button
+                                                                            Plus Area
+                                                                                Horizontal
+                                                                                Vertical
+                                            All
+                                                Content Area
+                                                    Img Place
+                                                        Img
+                                                        Hover Area
+                                                            Borders
+                                                                Inner Content
+                                                                    Heading
+                                                                        H2
+                                                                    Text
+                                                                        H5
+                                                                    Button Area
+                                                                        Button
+                                                                            Plus Area
+                                                                                Horizontal
+                                                                                Vertical
+                                            All
+                                                Content Area
+                                                    Img Place
+                                                        Img
+                                                        Hover Area
+                                                            Borders
+                                                                Inner Content
+                                                                    Heading
+                                                                        H2
+                                                                    Text
+                                                                        H5
+                                                                    Button Area
+                                                                        Button
+                                                                            Plus Area
+                                                                                Horizontal
+                                                                                Vertical
+                                            All
+                                                Content Area
+                                                    Img Place
+                                                        Img
+                                                        Hover Area
+                                                            Borders
+                                                                Inner Content
+                                                                    Heading
+                                                                        H2
+                                                                    Text
+                                                                        H5
+                                                                    Button Area
+                                                                        Button
+                                                                            Plus Area
+                                                                                Horizontal
+                                                                                Vertical
+                                            All
+                                                Content Area
+                                                    Img Place
+                                                        Img
+                                                        Hover Area
+                                                            Borders
+                                                                Inner Content
+                                                                    Heading
+                                                                        H2
+                                                                    Text
+                                                                        H5
+                                                                    Button Area
+                                                                        Button
+                                                                            Plus Area
+                                                                                Horizontal
+                                                                                Vertical
+                                            All
+                                                Content Area
+                                                    Img Place
+                                                        Img
+                                                        Hover Area
+                                                            Borders
+                                                                Inner Content
+                                                                    Heading
+                                                                        H2
+                                                                    Text
+                                                                        H5
+                                                                    Button Area
+                                                                        Button
+                                                                            Plus Area
+                                                                                Horizontal
+                                                                                Vertical
+                                            All
+                                                Content Area
+                                                    Img Place
+                                                        Img
+                                                        Hover Area
+                                                            Borders
+                                                                Inner Content
+                                                                    Heading
+                                                                        H2
+                                                                    Text
+                                                                        H5
+                                                                    Button Area
+                                                                        Button
+                                                                            Plus Area
+                                                                                Horizontal
+                                                                                Vertical
+                                            All
+                                                Content Area
+                                                    Img Place
+                                                        Img
+                                                        Hover Area
+                                                            Borders
+                                                                Inner Content
+                                                                    Heading
+                                                                        H2
+                                                                    Text
+                                                                        H5
+                                                                    Button Area
+                                                                        Button
+                                                                            Plus Area
+                                                                                Horizontal
+                                                                                Vertical
+                                            All
+                                                Content Area
+                                                    Img Place
+                                                        Img
+                                                        Hover Area
+                                                            Borders
+                                                                Inner Content
+                                                                    Heading
+                                                                        H2
+                                                                    Text
+                                                                        H5
+                                                                    Button Area
+                                                                        Button
+                                                                            Plus Area
+                                                                                Horizontal
+                                                                                Vertical
+                        Blog
+                            Content
+                                Top
+                                    Heading
+                                        H2
+                                Bottom
+                                    Block
+                                        Content Area
+                                            Img Container
+                                                Img
+                                            Comments and Calendar Container
+                                                Comments
+                                                    Icon Container
+                                                        Img
+                                                    Text Container
+                                                        H5
+                                                Line
+                                                Calendar
+                                                    Icon Container
+                                                        Img
+                                                    Text Container
+                                                        H5
+                                            Info
+                                                Small Heading
+                                                    H2
+                                                Text
+                                                    H4
+                                            Button Area
+                                                Button Inside
+                                                    H6
+                                    Block
+                                        Content Area
+                                            Img Container
+                                                Img
+                                            Comments and Calendar Container
+                                                Comments
+                                                    Icon Container
+                                                        Img
+                                                    Text Container
+                                                        H5
+                                                Line
+                                                Calendar
+                                                    Icon Container
+                                                        Img
+                                                    Text Container
+                                                        H5
+                                            Info
+                                                Small Heading
+                                                    H2
+                                                Text
+                                                    H4
+                                            Button Area
+                                                Button Inside
+                                                    H6
+                                    Block
+                                        Content Area
+                                            Img Container
+                                                Img
+                                            Comments and Calendar Container
+                                                Comments
+                                                    Icon Container
+                                                        Img
+                                                    Text Container
+                                                        H5
+                                                Line
+                                                Calendar
+                                                    Icon Container
+                                                        Img
+                                                    Text Container
+                                                        H5
+                                            Info
+                                                Small Heading
+                                                    H2
+                                                Text
+                                                    H4
+                                            Button Area
+                                                Button Inside
+                                                    H6
+                                    Block
+                                        Content Area
+                                            Img Container
+                                                Img
+                                            Comments and Calendar Container
+                                                Comments
+                                                    Icon Container
+                                                        Img
+                                                    Text Container
+                                                        H5
+                                                Line
+                                                Calendar
+                                                    Icon Container
+                                                        Img
+                                                    Text Container
+                                                        H5
+                                            Info
+                                                Small Heading
+                                                    H2
+                                                Text
+                                                    H4
+                                            Button Area
+                                                Button Inside
+                                                    H6
+                        Contact
+                            Content
+                                Top
+                                    Heading
+                                        H2
+                                Middle
+                                    Block
+                                        Block Content
+                                            Block Container
+                                                Img Container
+                                                    Img Area
+                                                        Img
+                                                Top Text
+                                                    First Text
+                                                Bottom Text
+                                                    Bottom Text First
+                                    Block
+                                        Block Content
+                                            Block Container
+                                                Img Container
+                                                    Img Area
+                                                        Img
+                                                Top Text
+                                                    Second Text
+                                                Bottom Text
+                                                    Bottom Text Second
+                                    Block
+                                        Block Content
+                                            Block Container
+                                                Img Container
+                                                    Img Area
+                                                        Img
+                                                Top Text
+                                                    Third Text
+                                                Bottom Text
+                                                    Bottom Text Third
+                                Bottom
+                                    Contact Form
+                                        Block
+                                            Field
+                                        Block
+                                            Field
+                                        Block
+                                            Field
+                                        Block
+                                            Field
+                                        Block
+                                            Field
+                                    Button Container
+                                        Button Area
+                                            Submit Button
+                        Subscribe
+                            Content
+                                Top
+                                    Top Content
+                                        Img Container
+                                            Img Area
+                                                Img
+                                        Heading
+                                            H2
+                                        Text Container
+                                            H4
+                                Bottom
+                                    Form
+                                        Field
+                                        Submit Button
+                                            Submit Subscribe
+                        Footer
+                            Content
+                                Top
+                                    Image Container
+                                        Img
+                                Middle
+                                    Text One
+                                        H3
+                                    Text Two
+                                        H4
+                                    Social Container
+                                        Social Area
+                                            Icon
+                                                A
+                                                    Img
+                                            Icon
+                                                A
+                                                    Img
+                                            Icon
+                                                A
+                                                    Img
+                                            Icon
+                                                A
+                                                    Img
+                                Bottom
+                                    Text Container
+                                        H3
+                    JavaScript Connections
+            -->
+        </head>
+
+        
+        <!-- Body -->
+        <body class = "bodyArea" onload = "formArea.reset();">
+
+
+            <!-- Loader -->
+            <div class = "loader m-0 p-0">
+                <!-- Content - Loader -->
+                <div class = "align-items-center d-flex justify-content-center loaderContent m-0 p-0">
+                    <!-- Spinner and Text -->
+                    <div class = "m-0 p-0 spinnerText">
+                        <!-- Spinner -->
+                        <!-- Loading Text -->
+                        <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 text">
+                            <h4 class = "d-inline-block m-0 p-0">
+                                Loading...
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Main container -->
+            <div class = "mainContainer">
+
+                <!-- Header -->
+                <header class = "align-items-center d-flex justify-content-center" id = "header">
+                    <!-- Header content -->
+                    <div class = "content">
+                        <!-- Top -->
+                        <div class = "d-flex justify-content-center m-0 p-0 top" id = "stickyMenu">
+                            <!-- Top Area -->
+                            <div class = "m-0 p-0 row topArea">
+                                <!-- Logo -->
+                                <div class = "col-xxl-4 d-flex justify-content-center justify-content-xxl-start logo m-0 order-2 order-xxl-1 pl-0 pr-0">
+                                    <!-- Link -->
+                                    <a href = "#header">
+                                        <!-- Img -->
+                                        <img class = "img-fluid" src = "Images/Header/Logo.png" alt = "Logo">
+                                    </a>
+                                </div>
+                                <!-- Navbar -->
+                                <div class = "col-xxl-4 d-flex justify-content-xxl-center m-0 navbar order-1 order-xxl-2 p-0">
+                                    <!-- Link -->
+                                    <a class = "m-0 navbarOptionHome option p-0" href = "#header">
+                                        <div class = "d-flex iconContainer justify-content-center m-0 p-0">
+                                            <i class = "fa-solid fa-house icon iconHome" id = "home">
+                                            </i>
+                                        </div>
+                                        <h5>
+                                            HOME
+                                        </h5>
+                                    </a>
+                                    <!-- Link -->
+                                    <a class = "mb-0 mr-0 mt-0 navbarOptionAbout option p-0" href = "#aboutAnchor">
+                                        <div class = "d-flex iconContainer justify-content-center m-0 p-0">
+                                            <i class = "fa-solid fa-circle-info icon iconAbout">
+                                            </i>
+                                        </div>
+                                        <h5>
+                                            MISSION
+                                        </h5>
+                                    </a>
+                                    <!-- Link -->
+                                    <a class = "mb-0 mr-0 mt-0 navbarOptionMenus option p-0" href = "#menusAnchor">
+                                        <div class = "d-flex iconContainer justify-content-center m-0 p-0">
+                                            <i class = "fa-solid fa-book-open icon iconMenus">
+                                            </i>
+                                        </div>
+                                        <h5>
+                                            OBJECTIVES
+                                        </h5>
+                                    </a>
+                                    <!-- Link -->
+                                    <a class = "mb-0 mr-0 mt-0 navbarOptionGallery option p-0" href = "#galleryAnchor">
+                                        <div class = "d-flex iconContainer justify-content-center m-0 p-0">
+                                            <i class = "fa-solid fa-images icon iconGallery">
+                                            </i>
+                                        </div>
+                                        <h5>
+                                            VISITS
+                                        </h5>
+                                    </a>
+                                    <!-- Link -->
+                                    <a class = "mb-0 mr-0 mt-0 navbarOptionBlog option p-0" href = "#blogAnchor">
+                                        <div class = "d-flex iconContainer justify-content-center m-0 p-0">
+                                            <i class = "fa-solid fa-file-lines icon iconBlog">
+                                            </i>
+                                        </div>
+                                        <h5>
+                                            METHODS
+                                        </h5>
+                                    </a>
+                                    <!-- Link -->
+                                    <a class = "mb-0 mr-0 mt-0 navbarOptionContact option p-0" href = "#contactAnchor">
+                                        <div class = "d-flex iconContainer justify-content-center m-0 p-0">
+                                            <i class = "fa-solid fa-phone icon iconContact">
+                                            </i>
+                                        </div>
+                                        <h5>
+                                            CONTACT
+                                        </h5>
+                                    </a>
+                                    <!-- Chocolate Menu -->
+                                    <div class = "menuChocolate">
+                                        <i class = "bx bxs-grid open">
+                                        </i>
+                                        <i class = "bx bx-x close">
+                                        </i>
+                                    </div>
+                                </div>
+                                <!-- Cart -->
+                                <div class = "align-items-center cart col-xxl-4 d-flex justify-content-end m-0 order-3 order-xxl-3 p-0">
+                                    <div class = "cartArea">
+                                        <a class = "imgContainer" href = "PDF/Research Blueprint.pdf">
+                                            <lord-icon class = "cartIcon" colors = "primary:#ffffff,secondary:#848484" src = "https://cdn.lordicon.com/nocovwne.json" trigger="hover">
+                                            </lord-icon>
+                                        </a>
+                                        <div class = "cartNumber">
+                                            <div class = "align-items-center d-flex ellipse justify-content-center m-0 p-0">
+                                                <h6 class = "cartNum m-0 p-0">
+                                                    1
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Middle Area - Text -->
+                        <div class = "m-0 middle p-0">
+                            <div class = "info">
+                                <h3>
+                                    THE NEW APPROACH TO
+                                </h3>
+                                <div class = "bottomTextContainer d-flex justify-content-center m-0 p-0">
+                                    <h1 class = "animate__animated animate__backInLeft d-inline-block m-0 p-0">
+                                        Archaeology
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button - Learn More -->
+                        <div class = "bottom d-flex justify-content-center m-0 p-0">
+                            <div class = "hamburgerButton m-0 p-0">
+                                <img class = "img-fluid" src = "Images/Header/Hamburger.png" alt = "Hamburger">
+                                <div class = "buttonArea m-0 p-0" onclick = "window.location = '#';">
+                                    <div class = "align-items-center buttonInside d-flex justify-content-center m-0 p-0" onclick = "window.location = 'PDF/Theme Proposal.pdf';">
+                                        <h6 class = "m-0 p-0">
+                                            LEARN MORE
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu for Mobile Devices -->
+                    <div class = "d-block d-xxl-none m-0 mobileMenu p-0">
+                        <div class = "align-items-center d-flex justify-content-center m-0 mobileContainer p-0">
+                            <ul class = "m-0 p-0">
+                                <li class = "mobileLink p-0">
+                                    <a class = "m-0 p-0" href = "#homeAnchor">
+                                        HOME
+                                    </a>
+                                </li>
+                                <li class = "mobileLink p-0">
+                                    <a class = "m-0 p-0" href = "#aboutAnchor">
+                                        MISSION
+                                    </a>
+                                </li>
+                                <li class = "mobileLink p-0">
+                                    <a class = "m-0 p-0" href = "#menusAnchor">
+                                        OBJECTIVES
+                                    </a>
+                                </li>
+                                <li class = "mobileLink p-0">
+                                    <a class = "m-0 p-0" href = "#galleryAnchor">
+                                        VISITS
+                                    </a>
+                                </li>
+                                <li class = "mobileLink p-0">
+                                    <a class = "m-0 p-0" href = "#blogAnchor">
+                                        METHOD
+                                    </a>
+                                </li>
+                                <li class = "mobileLink p-0">
+                                    <a class = "m-0 p-0" href = "#contactAnchor">
+                                        CONTACT
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+
+
+                <!-- About -->
+                <section class = "about m-0 pb-0 pl-0 pr-0" data-aos = "fade-up" data-aos-duration = "3500" id = "aboutAnchor">
+                    <div class = "content m-0 p-0">
+                        <!-- Top -->
+                        <div class = "d-flex justify-content-center m-0 p-0 top">
+                            <div class = "m-0 p-0 row subContainer">
+                                <!-- About Us - Images -->
+                                <div class = "col-12 col-xxl-6 d-flex foodImages justify-content-center justify-content-xxl-start mb-0 ml-0 mr-0 m-xxl-0 order-2 order-xxl-1 p-0">
+                                    <img class = "img-fluid" src = "Images/About/iceCreams.png" alt = "Ice Creams">
+                                    <img class = "img-fluid" src = "Images/About/Cake.png" alt = "Cake">
+                                </div>
+                                <!-- Black Shape and Text -->
+                                <div class = "aboutUs col-12 col-xxl-6 d-flex justify-content-center justify-content-xxl-end m-0 order-1 order-xxl-2 p-0">
+                                    <div class = "align-items-center d-flex justify-content-center m-0 p-0 shape">
+                                        <div class = "info m-0 p-0">
+                                            <div class = "d-flex justify-content-center textAbout">
+                                                <h2 class = "m-0 p-0">
+                                                    Vision
+                                                </h2>
+                                            </div>
+                                            <div class = "d-flex justify-content-center textSuccess">
+                                                <h2 class = "m-0 p-0">
+                                                    MISSION
+                                                </h2>
+                                            </div>
+                                            <div class = "d-flex justify-content-center lineArea">
+                                                <div class = "line">
+                                                </div>
+                                            </div>
+                                            <div class = "d-flex justify-content-center text">
+                                                <h4>
+                                                    To create an educational/exploration tool, which is all about historical and archaeological development of the Roman Colosseum. It will be a unique exploration ecosystem.
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Why to Choose Us -->
+                        <div class = "mb-0 middle ml-0 mr-0 p-0">
+                            <div class = "d-flex heading justify-content-center m-0 p-0">
+                                <h2 class = "m-0 p-0">
+                                    Interdisciplinary Approach
+                                </h2>
+                            </div>
+                            <div class = "d-flex justify-content-center lineArea">
+                                <div class = "line">
+                                </div>
+                            </div>
+                            <div class = "mb-0 ml-0 mr-0 p-0 products row">
+                                <!-- First Product -->
+                                <div class = "col-xxl-4 m-0 p-0 product">
+                                    <div class = "d-flex imgContainer justify-content-center m-0 p-0">
+                                        <img class = "hotDog img-fluid" src = "Images/About/hotDog.png" alt = "Hot Dog">
+                                    </div>
+                                    <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textContainer">
+                                        <h2 class = "d-inline-block m-0 p-0">
+                                            EDUCATIONAL TOOL
+                                        </h2>
+                                    </div>
+                                    <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textContainerBottom">
+                                        <h3 class = "d-inline-block m-0 p-0 text-center">
+                                            To learn about development of Colosseum, but also about Roman amphitheatres.
+                                        </h3>
+                                    </div>
+                                </div>
+                                <!-- Second Product -->
+                                <div class = "col-xxl-4 m-xxl-0 p-0 product">
+                                    <div class = "d-flex imgContainer justify-content-center m-0 p-0">
+                                        <img class = "fries img-fluid" src = "Images/About/Fries.png" alt = "Fries">
+                                    </div>
+                                    <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textContainer">
+                                        <h2 class = "d-inline-block m-0 p-0">
+                                            EXPLORATION TOOL
+                                        </h2>
+                                    </div>
+                                    <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textContainerBottom">
+                                        <h3 class = "d-inline-block m-0 p-0 text-center">
+                                            To find about history, archaeology, and objects in Colosseum area. To walk through tunnels and galleries.
+                                        </h3>
+                                    </div>
+                                </div>
+                                <!-- Third Product -->
+                                <div class = "col-xxl-4 m-xxl-0 p-0 product">
+                                    <div class = "d-flex imgContainer justify-content-center m-0 p-0">
+                                        <img class = "drinks img-fluid" src = "Images/About/Drinks.png" alt = "Drinks">
+                                    </div>
+                                    <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textContainer">
+                                        <h2 class = "d-inline-block m-0 p-0">
+                                            HISTORY & ARCHAEOLOGY
+                                        </h2>
+                                    </div>
+                                    <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textContainerBottom">
+                                        <h3 class = "d-inline-block m-0 p-0 text-center">
+                                            Background in archaeology and history of Roman Colosseum.
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "bottom mb-0 ml-0 mr-0 p-0">
+                            <div class = "info m-0 p-0 row">
+                                <!-- Info Track 1 -->
+                                <div class = "block col-xxl-4 d-flex justify-content-center justify-content-xxl-start ml-0 mr-0 p-0">
+                                    <div class = "align-items-center d-flex iconTextContainer justify-content-center leftIconTextContainer m-0 p-0">
+                                        <div class = "iconText m-0 p-0">
+                                            <div class = "d-flex iconArea justify-content-center">
+                                                <div class = "iconContainer m-0 p-0">
+                                                    <i class = "fa-solid fa-user-group icon">
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textContainer">
+                                                <h2 class = "m-0 p-0">
+                                                    5+
+                                                </h2>
+                                            </div>
+                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textContainerBottom">
+                                                <h2 class = "m-0 p-0">
+                                                    HUMANS
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Info Track 2 -->
+                                <div class = "block col-xxl-4 d-flex justify-content-center ml-0 mr-0 middleBlock p-0">
+                                    <div class = "align-items-center d-flex iconTextContainer justify-content-center ml-0 mr-0 middleIconTextContainer p-0">
+                                        <div class = "iconText m-0 p-0">
+                                            <div class = "d-flex iconArea justify-content-center">
+                                                <div class = "d-flex iconContainer justify-content-center m-0 p-0">
+                                                    <i class="fa-solid fa-landmark icon">
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textContainer">
+                                                <h2 class = "m-0 p-0">
+                                                    10+
+                                                </h2>
+                                            </div>
+                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textContainerBottom">
+                                                <h2 class = "m-0 p-0">
+                                                    OBJECTS
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Info Track 3 -->
+                                <div class = "block col-xxl-4 d-flex justify-content-center justify-content-xxl-end ml-0 mr-0 p-0">
+                                    <div class = "align-items-center d-flex iconTextContainer justify-content-center m-0 p-0 rightIconTextContainer">
+                                        <div class = "iconText m-0 p-0">
+                                            <div class = "d-flex iconArea justify-content-center">
+                                                <div class = "d-flex iconContainer justify-content-center m-0 p-0">
+                                                    <i class = "fa-solid fa-clock-rotate-left icon">
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textContainer">
+                                                <h2 class = "m-0 p-0">
+                                                    50+
+                                                </h2>
+                                            </div>
+                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textContainerBottom">
+                                                <h2 class = "firstText m-0 p-0">
+                                                    TIME SPAN
+                                                </h2>
+                                                <h2 class = "m-0 p-0 secondText">
+                                                    TIME SPAN
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Menus -->
+                <section class = "m-0 menus pb-0 pl-0 pr-0" data-aos = "fade-up" data-aos-duration = "3500" id = "menusAnchor">
+                    <div class = "content m-0 p-0">
+                        <div class = "top">
+                            <!-- Heading -->
+                            <div class = "d-flex heading justify-content-center justify-content-xxl-start">
+                                <h2>
+                                    Objectives
+                                </h2>
+                            </div>
+                        </div>
+                        <div class = "mb-0 middle ml-0 mr-0 p-0">
+                            <div class = "blocks m-0 p-0 row">
+                                <!-- Option - Fast Food -->
+                                <div class = "block blockOne col-xxl m-0 p-0">
+                                    <div class = "align-items-center d-flex h-100 justify-content-center">
+                                        <div class = "imgText m-0 p-0">
+                                            <div class = "d-flex justify-content-center imgArea">
+                                                <img class = "blockOneImg img-fluid" src = "Images/Menus/fastFood.png" alt = "Fast Food">
+                                            </div>
+                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textArea">
+                                                <h4 class = "d-inline-block m-0 p-0 text-center">
+                                                    HISTORY
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "m-0 p-0 triangle triangleOne">
+                                    </div>
+                                </div>
+                                <!-- Option - Drinks -->
+                                <div class = "block blockTwo col-xxl mb-0 mt-0 p-0">
+                                    <div class = "align-items-center d-flex h-100 justify-content-center">
+                                        <div class = "imgText m-0 p-0">
+                                            <div class = "d-flex justify-content-center imgArea">
+                                                <img class = "img-fluid" src = "Images/Menus/Drinks.png" alt = "Drinks">
+                                            </div>
+                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textArea">
+                                                <h4 class = "d-inline-block m-0 p-0 text-center">
+                                                    ARCHAEOLOGY
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "m-0 p-0 triangle triangleTwo">
+                                    </div>
+                                </div>
+                                <!-- Option - Desserts -->
+                                <div class = "block blockThree col-xxl mb-0 ml-0 mt-0 p-0">
+                                    <div class = "align-items-center d-flex h-100 justify-content-center">
+                                        <div class = "imgText m-0 p-0">
+                                            <div class = "d-flex justify-content-center imgArea">
+                                                <img class = "img-fluid" src = "Images/Menus/Desserts.png" alt = "Desserts">
+                                            </div>
+                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textArea">
+                                                <h4 class = "d-inline-block m-0 p-0 text-center">
+                                                    UI/UX
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "m-0 p-0 triangle triangleThree">
+                                    </div>
+                                </div>
+                                <!-- Option - Pizza -->
+                                <div class = "block blockFour col-xxl mb-0 ml-0 mt-0 p-0">
+                                    <div class = "align-items-center d-flex h-100 justify-content-center">
+                                        <div class = "imgText m-0 p-0">
+                                            <div class = "d-flex justify-content-center imgArea">
+                                                <img class = "img-fluid" src = "Images/Menus/Pizzas.png" alt = "Pizzas">
+                                            </div>
+                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textArea">
+                                                <h4 class = "d-inline-block m-0 p-0 text-center">
+                                                    STRUCTURES
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "m-0 p-0 triangle triangleFour">
+                                    </div>
+                                </div>
+                                <!-- Option - Chicken -->
+                                <div class = "block blockFive col-xxl m-0 p-0">
+                                    <div class = "align-items-center d-flex h-100 justify-content-center">
+                                        <div class = "imgText m-0 p-0">
+                                            <div class = "d-flex justify-content-center imgArea">
+                                                <img class = "img-fluid" src = "Images/Menus/Chicken.png" alt = "Chicken">
+                                            </div>
+                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textArea">
+                                                <h4 class = "d-inline-block m-0 p-0 text-center">
+                                                    COMPARATIVE
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "m-0 p-0 triangle triangleFive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "bottom d-flex justify-content-center mb-0 ml-0 mr-0 p-0">
+                            <div class = "bottomContainer bottomContainerOne h-100 m-0 p-0 row">
+                                <!-- Product - Big Burger -->
+                                <div class = "col-xxl-6 m-0 h-100 offer offerOne p-0">
+                                    <div class = "contentOffer h-100 m-0 p-0">
+                                        <div class = "d-flex img justify-content-center justify-content-xxl-start mb-0 mr-0 mt-0 pb-0 pl-0 pr-0">
+                                            <img class = "img-fluid imgOne m-0 p-0" src = "Images/Menus/Hamburger.png" alt = "Hamburger">
+                                        </div>
+                                        <div class = "d-flex heading justify-content-center justify-content-xxl-start mb-0 mr-0 p-0">
+                                            <h2 class = "m-0 p-0">
+                                                Pompeii Amphitheatre
+                                            </h2>
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start mb-0 mr-0 p-0 text">
+                                            <h3 class = "m-0 p-0">
+                                                Short Introduction.
+                                            </h3>
+                                        </div>
+                                        <div class = "d-flex justify-content-center ml-0 mr-0 p-0 priceCart w-100">
+                                            <div class = "content h-100 m-0 p-0 row">
+                                                <div class = "col-6 h-100 left m-0 p-0">
+                                                    <div class = "align-items-center d-flex h-100 justify-content-center m-0 p-0 price">
+                                                        <h2 class = "d-inline-block m-0 p-0">
+                                                            BCE
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class = "col-6 h-100 m-0 p-0 right">
+                                                    <div class = "addCart h-100 m-0 p-0">
+                                                        <div class = "align-items-center d-flex h-100 mb-0 ml-0 mt-0 p-0 plusContainer" onclick = "window.location = 'http://pompeiisites.org/en/archaeological-site/amphitheater/';">
+                                                            <div class = "align-items-center d-flex m-0 p-0 plus">
+                                                                <div class = "horizontal m-0 p-0">
+                                                                </div>
+                                                                <div class = "m-0 p-0 vertical">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class = "align-items-center cartContainer d-inline-flex h-100 justify-content-end m-0 p-0">
+                                                            <h2 class = "m-0 p-0">
+                                                                Pompeii A.
+                                                            </h2>
+                                                            <h2 class = "m-0 p-0 smallDevices">
+                                                                Pomp. A.
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product - Crispy Fries -->
+                                <div class = "col-xxl-6 mb-0 ml-0 mr-0 h-100 offer p-0">
+                                    <div class = "contentOffer h-100 m-0 p-0">
+                                        <div class = "d-flex img justify-content-center justify-content-xxl-start img mb-0 mr-0 mt-0 pb-0 pl-0 pr-0">
+                                            <img class = "img-fluid imgTwo m-0 p-0" src = "Images/Menus/Fries.png" alt = "Fries">
+                                        </div>
+                                        <div class = "d-flex heading justify-content-center justify-content-xxl-start mb-0 mr-0 p-0">
+                                            <h2 class = "m-0 p-0">
+                                                Roman Colosseum
+                                            </h2>
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start mb-0 mr-0 p-0 text">
+                                            <h3 class = "m-0 p-0">
+                                                History of Colosseum.
+                                            </h3>
+                                        </div>
+                                        <div class = "d-flex justify-content-center ml-0 mr-0 p-0 priceCart w-100">
+                                            <div class = "content h-100 m-0 p-0 row">
+                                                <div class = "col-6 h-100 left m-0 p-0">
+                                                    <div class = "align-items-center d-flex h-100 justify-content-center m-0 p-0 price">
+                                                        <h2 class = "d-inline-block m-0 p-0">
+                                                            AD
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class = "col-6 h-100 m-0 p-0 right">
+                                                    <div class = "addCart h-100 m-0 p-0">
+                                                        <div class = "align-items-center d-flex h-100 mb-0 ml-0 mt-0 p-0 plusContainer" onclick = "window.location = 'https://www.britannica.com/topic/Colosseum';">
+                                                            <div class = "align-items-center d-flex m-0 p-0 plus">
+                                                                <div class = "horizontal m-0 p-0">
+                                                                </div>
+                                                                <div class = "m-0 p-0 vertical">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class = "align-items-center cartContainer d-flex h-100 justify-content-end m-0 p-0">
+                                                            <h2 class = "m-0 p-0">
+                                                                Colosseum
+                                                            </h2>
+                                                            <h2 class = "m-0 p-0 smallDevices">
+                                                                Col.
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product - Fresh Juice -->
+                            <div class = "bottomContainer bottomContainerTwo h-100 m-0 p-0 row">
+                                <div class = "col-xxl-6 m-0 h-100 offer offerOne p-0">
+                                    <div class = "contentOffer h-100 m-0 p-0">
+                                        <div class = "d-flex img justify-content-center justify-content-xxl-start mb-0 mr-0 mt-0 pb-0 pl-0 pr-0">
+                                            <img class = "img-fluid imgThree m-0 p-0" src = "Images/Menus/Juice.png" alt = "Juice">
+                                        </div>
+                                        <div class = "d-flex heading justify-content-center justify-content-xxl-start mb-0 mr-0 p-0">
+                                            <h2 class = "m-0 p-0">
+                                                Early Period
+                                            </h2>
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start mb-0 mr-0 p-0 text">
+                                            <h3 class = "m-0 p-0">
+                                                Medieval Period.
+                                            </h3>
+                                        </div>
+                                        <div class = "d-flex justify-content-center ml-0 mr-0 p-0 priceCart w-100">
+                                            <div class = "content h-100 m-0 p-0 row">
+                                                <div class = "col-6 h-100 left m-0 p-0">
+                                                    <div class = "align-items-center d-flex h-100 justify-content-center m-0 p-0 price">
+                                                        <h2 class = "d-inline-block m-0 p-0">
+                                                            AD
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class = "col-6 h-100 m-0 p-0 right">
+                                                    <div class = "addCart h-100 m-0 p-0">
+                                                        <div class = "align-items-center d-flex h-100 mb-0 ml-0 mt-0 p-0 plusContainer" onclick = "window.location = 'https://www.wiu.edu/cas/history/wihr/pdfs/VanDrewWIHRSp09.pdf';">
+                                                            <div class = "align-items-center d-flex m-0 p-0 plus">
+                                                                <div class = "horizontal m-0 p-0">
+                                                                </div>
+                                                                <div class = "m-0 p-0 vertical">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class = "align-items-center cartContainer d-inline-flex h-100 justify-content-end m-0 p-0">
+                                                            <h2 class = "m-0 p-0">
+                                                                Medieval
+                                                            </h2>
+                                                            <h2 class = "m-0 p-0 smallDevices">
+                                                                Med.
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product - Cold Cocktail -->
+                                <div class = "col-xxl-6 mb-0 ml-0 mr-0 h-100 offer p-0">
+                                    <div class = "contentOffer h-100 m-0 p-0">
+                                        <div class = "d-flex img justify-content-center justify-content-xxl-start img mb-0 mr-0 mt-0 pb-0 pl-0 pr-0">
+                                            <img class = "img-fluid imgFour m-0 p-0" src = "Images/Menus/Cocktail.png" alt = "Cocktail">
+                                        </div>
+                                        <div class = "d-flex heading justify-content-center justify-content-xxl-start mb-0 mr-0 p-0">
+                                            <h2 class = "m-0 p-0">
+                                                Later Research
+                                            </h2>
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start mb-0 mr-0 p-0 text">
+                                            <h3 class = "m-0 p-0">
+                                                Research in XIX century and modern era.
+                                            </h3>
+                                        </div>
+                                        <div class = "d-flex justify-content-center ml-0 mr-0 p-0 priceCart w-100">
+                                            <div class = "content h-100 m-0 p-0 row">
+                                                <div class = "col-6 h-100 left m-0 p-0">
+                                                    <div class = "align-items-center d-flex h-100 justify-content-center m-0 p-0 price">
+                                                        <h2 class = "d-inline-block m-0 p-0">
+                                                            AD
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class = "col-6 h-100 m-0 p-0 right">
+                                                    <div class = "addCart h-100 m-0 p-0">
+                                                        <div class = "align-items-center d-flex h-100 mb-0 ml-0 mt-0 p-0 plusContainer" onclick = "window.location = 'https://www.tourist-in-rom.com/en/colosseum-history-events/';">
+                                                            <div class = "align-items-center d-flex m-0 p-0 plus">
+                                                                <div class = "horizontal m-0 p-0">
+                                                                </div>
+                                                                <div class = "m-0 p-0 vertical">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class = "align-items-center cartContainer d-flex h-100 justify-content-end m-0 p-0">
+                                                            <h2 class = "m-0 p-0">
+                                                                1800+
+                                                            </h2>
+                                                            <h2 class = "m-0 p-0 smallDevices">
+                                                                1800+
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product - Choco Cake -->
+                            <div class = "bottomContainer bottomContainerThree h-100 m-0 p-0 row">
+                                <div class = "col-xxl-6 m-0 h-100 offer offerOne p-0">
+                                    <div class = "contentOffer h-100 m-0 p-0">
+                                        <div class = "d-flex img justify-content-center justify-content-xxl-start mb-0 mr-0 mt-0 pb-0 pl-0 pr-0">
+                                            <img class = "img-fluid imgFive m-0 p-0" src = "Images/Menus/Cake.png" alt = "Cake">
+                                        </div>
+                                        <div class = "d-flex heading justify-content-center justify-content-xxl-start mb-0 mr-0 p-0">
+                                            <h2 class = "m-0 p-0">
+                                                Database
+                                            </h2>
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start mb-0 mr-0 p-0 text">
+                                            <h3 class = "m-0 p-0">
+                                                Information for important moments, objects, etc.
+                                            </h3>
+                                        </div>
+                                        <div class = "d-flex justify-content-center ml-0 mr-0 p-0 priceCart w-100">
+                                            <div class = "content h-100 m-0 p-0 row">
+                                                <div class = "col-6 h-100 left m-0 p-0">
+                                                    <div class = "align-items-center d-flex h-100 justify-content-center m-0 p-0 price">
+                                                        <h2 class = "d-inline-block m-0 p-0">
+                                                            UI/UX
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class = "col-6 h-100 m-0 p-0 right">
+                                                    <div class = "addCart h-100 m-0 p-0">
+                                                        <div class = "align-items-center d-flex h-100 mb-0 ml-0 mt-0 p-0 plusContainer" onclick = "window.location = 'https://blog.unity.com/games/ultimate-guide-to-creating-ui-interfaces';">
+                                                            <div class = "align-items-center d-flex m-0 p-0 plus">
+                                                                <div class = "horizontal m-0 p-0">
+                                                                </div>
+                                                                <div class = "m-0 p-0 vertical">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class = "align-items-center cartContainer d-inline-flex h-100 justify-content-end m-0 p-0">
+                                                            <h2 class = "m-0 p-0">
+                                                                Learn More
+                                                            </h2>
+                                                            <h2 class = "m-0 p-0 smallDevices">
+                                                                See More
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product - Tasty Cupcake -->
+                                <div class = "col-xxl-6 mb-0 ml-0 mr-0 h-100 offer p-0">
+                                    <div class = "contentOffer h-100 m-0 p-0">
+                                        <div class = "d-flex img justify-content-center justify-content-xxl-start img mb-0 mr-0 mt-0 pb-0 pl-0 pr-0">
+                                            <img class = "img-fluid imgSix m-0 p-0" src = "Images/Menus/Cupcake.png" alt = "Cupcake">
+                                        </div>
+                                        <div class = "d-flex heading justify-content-center justify-content-xxl-start mb-0 mr-0 p-0">
+                                            <h2 class = "m-0 p-0">
+                                                Timeline
+                                            </h2>
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start mb-0 mr-0 p-0 text">
+                                            <h3 class = "m-0 p-0">
+                                                Early Roman Amphitheatre 
+                                            </h3>
+                                        </div>
+                                        <div class = "d-flex justify-content-center ml-0 mr-0 p-0 priceCart w-100">
+                                            <div class = "content h-100 m-0 p-0 row">
+                                                <div class = "col-6 h-100 left m-0 p-0">
+                                                    <div class = "align-items-center d-flex h-100 justify-content-center m-0 p-0 price">
+                                                        <h2 class = "d-inline-block m-0 p-0">
+                                                            UI/UX
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class = "col-6 h-100 m-0 p-0 right">
+                                                    <div class = "addCart h-100 m-0 p-0">
+                                                        <div class = "align-items-center d-flex h-100 mb-0 ml-0 mt-0 p-0 plusContainer" onclick = "window.location = 'https://blog.unity.com/games/ultimate-guide-to-creating-ui-interfaces';">
+                                                            <div class = "align-items-center d-flex m-0 p-0 plus">
+                                                                <div class = "horizontal m-0 p-0">
+                                                                </div>
+                                                                <div class = "m-0 p-0 vertical">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class = "align-items-center cartContainer d-flex h-100 justify-content-end m-0 p-0">
+                                                            <h2 class = "m-0 p-0">
+                                                                Learn More
+                                                            </h2>
+                                                            <h2 class = "m-0 p-0 smallDevices">
+                                                                See More
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "bottomContainer bottomContainerFour h-100 m-0 p-0 row">
+                                <!-- Product - Classic Pizza -->
+                                <div class = "col-xxl-6 m-0 h-100 offer offerOne p-0">
+                                    <div class = "contentOffer h-100 m-0 p-0">
+                                        <div class = "d-flex img justify-content-center justify-content-xxl-start mb-0 mr-0 mt-0 pb-0 pl-0 pr-0">
+                                            <img class = "img-fluid imgSeven m-0 p-0" src = "Images/Menus/classicPizza.png" alt = "Classic Pizza">
+                                        </div>
+                                        <div class = "d-flex heading justify-content-center justify-content-xxl-start mb-0 mr-0 p-0">
+                                            <h2 class = "m-0 p-0">
+                                                Archaeology/History
+                                            </h2>
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start mb-0 mr-0 p-0 text">
+                                            <h3 class = "m-0 p-0">
+                                                Archaeological and historical background - Roman Colosseum.
+                                            </h3>
+                                        </div>
+                                        <div class = "d-flex justify-content-center ml-0 mr-0 p-0 priceCart w-100">
+                                            <div class = "content h-100 m-0 p-0 row">
+                                                <div class = "col-6 h-100 left m-0 p-0">
+                                                    <div class = "align-items-center d-flex h-100 justify-content-center m-0 p-0 price">
+                                                        <h2 class = "d-inline-block m-0 p-0">
+                                                            COL
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class = "col-6 h-100 m-0 p-0 right">
+                                                    <div class = "addCart h-100 m-0 p-0">
+                                                        <div class = "align-items-center d-flex h-100 mb-0 ml-0 mt-0 p-0 plusContainer" onclick = "window.location = 'https://www.history.com/topics/ancient-rome/colosseum';">
+                                                            <div class = "align-items-center d-flex m-0 p-0 plus">
+                                                                <div class = "horizontal m-0 p-0">
+                                                                </div>
+                                                                <div class = "m-0 p-0 vertical">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class = "align-items-center cartContainer d-inline-flex h-100 justify-content-end m-0 p-0">
+                                                            <h2 class = "m-0 p-0">
+                                                                Learn More
+                                                            </h2>
+                                                            <h2 class = "m-0 p-0 smallDevices">
+                                                                See More
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product - Cheesy Pizza -->
+                                <div class = "col-xxl-6 mb-0 ml-0 mr-0 h-100 offer p-0">
+                                    <div class = "contentOffer h-100 m-0 p-0">
+                                        <div class = "d-flex img justify-content-center justify-content-xxl-start img mb-0 mr-0 mt-0 pb-0 pl-0 pr-0">
+                                            <img class = "img-fluid imgEight m-0 p-0" src = "Images/Menus/cheesyPizza.png" alt = "Cheesy Pizza">
+                                        </div>
+                                        <div class = "d-flex heading justify-content-center justify-content-xxl-start mb-0 mr-0 p-0">
+                                            <h2 class = "m-0 p-0">
+                                                From Ludus Magnus to the Arena
+                                            </h2>
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start mb-0 mr-0 p-0 text">
+                                            <h3 class = "m-0 p-0">
+                                                From creativity and knowledge to the objects.
+                                            </h3>
+                                        </div>
+                                        <div class = "d-flex justify-content-center ml-0 mr-0 p-0 priceCart w-100">
+                                            <div class = "content h-100 m-0 p-0 row">
+                                                <div class = "col-6 h-100 left m-0 p-0">
+                                                    <div class = "align-items-center d-flex h-100 justify-content-center m-0 p-0 price">
+                                                        <h2 class = "d-inline-block m-0 p-0">
+                                                            COL
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class = "col-6 h-100 m-0 p-0 right">
+                                                    <div class = "addCart h-100 m-0 p-0">
+                                                        <div class = "align-items-center d-flex h-100 mb-0 ml-0 mt-0 p-0 plusContainer" onclick = "window.location = 'https://education.nationalgeographic.org/resource/colosseum/';">
+                                                            <div class = "align-items-center d-flex m-0 p-0 plus">
+                                                                <div class = "horizontal m-0 p-0">
+                                                                </div>
+                                                                <div class = "m-0 p-0 vertical">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class = "align-items-center cartContainer d-flex h-100 justify-content-end m-0 p-0">
+                                                            <h2 class = "m-0 p-0">
+                                                                Learn More
+                                                            </h2>
+                                                            <h2 class = "m-0 p-0 smallDevices">
+                                                                See More
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product - Classic Pack -->
+                            <div class = "bottomContainer bottomContainerFive h-100 m-0 p-0 row">
+                                <div class = "col-xxl-6 m-0 h-100 offer offerOne p-0">
+                                    <div class = "contentOffer h-100 m-0 p-0">
+                                        <div class = "d-flex img justify-content-center justify-content-xxl-start mb-0 mr-0 mt-0 pb-0 pl-0 pr-0">
+                                            <img class = "img-fluid imgNine m-0 p-0" src = "Images/Menus/classicPack.png" alt = "Classic Pack">
+                                        </div>
+                                        <div class = "d-flex heading justify-content-center justify-content-xxl-start mb-0 mr-0 p-0">
+                                            <h2 class = "m-0 p-0">
+                                                Giza Necropolis
+                                            </h2>
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start mb-0 mr-0 p-0 text">
+                                            <h3 class = "m-0 p-0">
+                                                Research about Giza Necropolis and apps.
+                                            </h3>
+                                        </div>
+                                        <div class = "d-flex justify-content-center ml-0 mr-0 p-0 priceCart w-100">
+                                            <div class = "content h-100 m-0 p-0 row">
+                                                <div class = "col-6 h-100 left m-0 p-0">
+                                                    <div class = "align-items-center d-flex h-100 justify-content-center m-0 p-0 price">
+                                                        <h2 class = "d-inline-block m-0 p-0">
+                                                            GN
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class = "col-6 h-100 m-0 p-0 right">
+                                                    <div class = "addCart h-100 m-0 p-0">
+                                                        <div class = "align-items-center d-flex h-100 mb-0 ml-0 mt-0 p-0 plusContainer" onclick = "window.location = 'https://whc.unesco.org/en/list/86/';">
+                                                            <div class = "align-items-center d-flex m-0 p-0 plus">
+                                                                <div class = "horizontal m-0 p-0">
+                                                                </div>
+                                                                <div class = "m-0 p-0 vertical">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class = "align-items-center cartContainer d-inline-flex h-100 justify-content-end m-0 p-0">
+                                                            <h2 class = "m-0 p-0">
+                                                                Learn More
+                                                            </h2>
+                                                            <h2 class = "m-0 p-0 smallDevices">
+                                                                See More
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product - Extra Pack -->
+                                <div class = "col-xxl-6 mb-0 ml-0 mr-0 h-100 offer p-0">
+                                    <div class = "contentOffer h-100 m-0 p-0">
+                                        <div class = "d-flex img justify-content-center justify-content-xxl-start img mb-0 mr-0 mt-0 pb-0 pl-0 pr-0">
+                                            <img class = "img-fluid imgTen m-0 p-0" src = "Images/Menus/extraPack.png" alt = "Extra Pack">
+                                        </div>
+                                        <div class = "d-flex heading justify-content-center justify-content-xxl-start mb-0 mr-0 p-0">
+                                            <h2 class = "m-0 p-0">
+                                                Giza3D
+                                            </h2>
+                                        </div>
+                                        <div class = "d-flex justify-content-center justify-content-xxl-start mb-0 mr-0 p-0 text">
+                                            <h3 class = "m-0 p-0">
+                                                To find out more about Giza3D project.
+                                            </h3>
+                                        </div>
+                                        <div class = "d-flex justify-content-center ml-0 mr-0 p-0 priceCart w-100">
+                                            <div class = "content h-100 m-0 p-0 row">
+                                                <div class = "col-6 h-100 left m-0 p-0">
+                                                    <div class = "align-items-center d-flex h-100 justify-content-center m-0 p-0 price">
+                                                        <h2 class = "d-inline-block m-0 p-0">
+                                                            3D
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class = "col-6 h-100 m-0 p-0 right">
+                                                    <div class = "addCart h-100 m-0 p-0">
+                                                        <div class = "align-items-center d-flex h-100 mb-0 ml-0 mt-0 p-0 plusContainer" onclick = "window.location = 'http://giza.fas.harvard.edu/giza3d/';">
+                                                            <div class = "align-items-center d-flex m-0 p-0 plus">
+                                                                <div class = "horizontal m-0 p-0">
+                                                                </div>
+                                                                <div class = "m-0 p-0 vertical">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class = "align-items-center cartContainer d-flex h-100 justify-content-end m-0 p-0">
+                                                            <h2 class = "m-0 p-0">
+                                                                Learn More
+                                                            </h2>
+                                                            <h2 class = "m-0 p-0 smallDevices">
+                                                                See More
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Gallery -->
+                <section class = "gallery mb-0 ml-0 mr-0 pb-0 pl-0 pr-0" data-aos = "fade-up" data-aos-duration = "3500" id = "galleryAnchor">
+                    <div class = "content m-0 p-0">
+                        <div class = "m-0 p-0 top">
+                            <!-- Heading -->
+                            <div class = "d-flex heading justify-content-center m-0 p-0">
+                                <h2 class = "m-0 p-0 text">
+                                    Visits
+                                </h2>
+                            </div>
+                        </div>
+                        <div class = "bottom mb-0 ml-0 mr-0 p-0">
+                            <div class = "bottomContent d-flex justify-content-center m-0 p-0">
+                                <div class = "m-0 p-0 products row">
+                                    <!-- Juicy Burger -->
+                                    <div class = "all burgerOne burgers col-12 col-md-6 col-xxl-4 m-0 p-0">
+                                        <div class = "contentArea m-0 p-0">
+                                            <div class = "imgPlace imgPlaceOne m-0 p-0" id = "clickImgOne">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Gallery/burgerOne.png" alt = "Burger One">
+                                                <div class = "align-items-center d-flex hoverArea hoverAreaOne justify-content-center m-0 p-0">
+                                                    <div class = "align-items-center borders d-flex justify-content-center m-0 p-0">
+                                                        <div class = "innerContent m-0 p-0">
+                                                            <div class = "d-flex heading justify-content-center m-0 p-0">
+                                                                <h2 class = "m-0 p-0">
+                                                                    Institute, Roman Culture
+                                                                </h2>
+                                                            </div>
+                                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 text">
+                                                                <h5 class = "m-0 p-0 text-center">
+                                                                    “The American Institute for Roman Culture works to preserve Rome’s cultural legacy".
+                                                                </h5>
+                                                            </div>
+                                                            <div class = "align-items-center buttonArea d-flex justify-content-center m-0 p-0">
+                                                                <div class = "align-items-center button d-flex justify-content-center m-0 p-0">
+                                                                    <div class = "align-items-center d-flex justify-content-center m-0 p-0 plusArea" onclick = "window.location = 'https://romanculture.org/about/';">
+                                                                        <div class = "horizontal m-0 p-0">
+                                                                        </div>
+                                                                        <div class = "m-0 p-0 vertical">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Cheesy Burger -->
+                                    <div class = "all burgers burgerTwo col-12 col-md-6 col-xxl-4 m-0 p-0">
+                                        <div class = "contentArea m-0 p-0">
+                                            <div class = "imgPlace imgPlaceTwo m-0 p-0" id = "clickImgTwo">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Gallery/burgerTwo.png" alt = "Burger Two">
+                                                <div class = "align-items-center d-flex hoverArea hoverAreaTwo justify-content-center m-0 p-0">
+                                                    <div class = "align-items-center borders d-flex justify-content-center m-0 p-0">
+                                                        <div class = "innerContent m-0 p-0">
+                                                            <div class = "d-flex heading justify-content-center m-0 p-0">
+                                                                <h2 class = "m-0 p-0">
+                                                                    Institute, Roman Culture
+                                                                </h2>
+                                                            </div>
+                                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 text">
+                                                                <h5 class = "m-0 p-0 text-center">
+                                                                    To engage and inspire everyone with Rome’s cultural heritage.
+                                                                </h5>
+                                                            </div>
+                                                            <div class = "align-items-center buttonArea d-flex justify-content-center m-0 p-0">
+                                                                <div class = "align-items-center button d-flex justify-content-center m-0 p-0">
+                                                                    <div class = "align-items-center d-flex justify-content-center m-0 p-0 plusArea" onclick = "window.location = 'https://romanculture.org/about/';">
+                                                                        <div class = "horizontal m-0 p-0">
+                                                                        </div>
+                                                                        <div class = "m-0 p-0 vertical">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Salad Burger -->
+                                    <div class = "all burgers burgerThree col-12 col-md-6 col-xxl-4 m-0 p-0">
+                                        <div class = "contentArea m-0 p-0">
+                                            <div class = "imgPlace imgPlaceThree m-0 p-0" id = "clickImgThree">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Gallery/burgerThree.png" alt = "Burger Three">
+                                                <div class = "align-items-center d-flex hoverArea hoverAreaThree justify-content-center m-0 p-0">
+                                                    <div class = "align-items-center borders d-flex justify-content-center m-0 p-0">
+                                                        <div class = "innerContent m-0 p-0">
+                                                            <div class = "d-flex heading justify-content-center m-0 p-0">
+                                                                <h2 class = "m-0 p-0">
+                                                                    Colosseum
+                                                                </h2>
+                                                            </div>
+                                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 text">
+                                                                <h5 class = "m-0 p-0 text-center">
+                                                                    Visit to Colosseum will be crucial for historical/archaeological, and digital approach.
+                                                                </h5>
+                                                            </div>
+                                                            <div class = "align-items-center buttonArea d-flex justify-content-center m-0 p-0">
+                                                                <div class = "align-items-center button d-flex justify-content-center m-0 p-0">
+                                                                    <div class = "align-items-center d-flex justify-content-center m-0 p-0 plusArea" onclick = "window.location = 'https://www.britannica.com/topic/Colosseum';">
+                                                                        <div class = "horizontal m-0 p-0">
+                                                                        </div>
+                                                                        <div class = "m-0 p-0 vertical">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Chocolate Cup -->
+                                    <div class = "all col-12 col-md-6 col-xxl-4 drinkOne drinks m-0 p-0">
+                                        <div class = "contentArea m-0 p-0">
+                                            <div class = "imgPlace imgPlaceFour m-0 p-0" id = "clickImgFour">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Gallery/drinkOne.png" alt = "Drink One">
+                                                <div class = "align-items-center d-flex hoverArea hoverAreaFour justify-content-center m-0 p-0">
+                                                    <div class = "align-items-center borders d-flex justify-content-center m-0 p-0">
+                                                        <div class = "innerContent m-0 p-0">
+                                                            <div class = "d-flex heading justify-content-center m-0 p-0">
+                                                                <h2 class = "m-0 p-0">
+                                                                    Colosseum
+                                                                </h2>
+                                                            </div>
+                                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 text">
+                                                                <h5 class = "m-0 p-0 text-center">
+                                                                    Very important part of this visit need to be visit to the „Colosseum Museum“..
+                                                                </h5>
+                                                            </div>
+                                                            <div class = "align-items-center buttonArea d-flex justify-content-center m-0 p-0">
+                                                                <div class = "align-items-center button d-flex justify-content-center m-0 p-0">
+                                                                    <div class = "align-items-center d-flex justify-content-center m-0 p-0 plusArea" onclick = "window.location = 'https://colosseo.it/en/area/museums/the-museum-of-the-colosseum/';">
+                                                                        <div class = "horizontal m-0 p-0">
+                                                                        </div>
+                                                                        <div class = "m-0 p-0 vertical">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Cocoa Juice -->
+                                    <div class = "all col-12 col-md-6 col-xxl-4 drinks drinkTwo m-0 p-0">
+                                        <div class = "contentArea m-0 p-0">
+                                            <div class = "imgPlace imgPlaceFive m-0 p-0" id = "clickImgFive">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Gallery/drinkTwo.png" alt = "Drink Two">
+                                                <div class = "align-items-center d-flex hoverArea hoverAreaFive justify-content-center m-0 p-0">
+                                                    <div class = "align-items-center borders d-flex justify-content-center m-0 p-0">
+                                                        <div class = "innerContent m-0 p-0">
+                                                            <div class = "d-flex heading justify-content-center m-0 p-0">
+                                                                <h2 class = "m-0 p-0">
+                                                                    Austrian DH Centre
+                                                                </h2>
+                                                            </div>
+                                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 text">
+                                                                <h5 class = "m-0 p-0 text-center">
+                                                                    Basic research in the humanities in long-term projects.
+                                                                </h5>
+                                                            </div>
+                                                            <div class = "align-items-center buttonArea d-flex justify-content-center m-0 p-0">
+                                                                <div class = "align-items-center button d-flex justify-content-center m-0 p-0">
+                                                                    <div class = "align-items-center d-flex justify-content-center m-0 p-0 plusArea" onclick = "window.location = 'https://www.oeaw.ac.at/acdh/';">
+                                                                        <div class = "horizontal m-0 p-0">
+                                                                        </div>
+                                                                        <div class = "m-0 p-0 vertical">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Coconut Smoothie -->
+                                    <div class = "all col-12 col-md-6 col-xxl-4 drinks drinkThree m-0 p-0">
+                                        <div class = "contentArea m-0 p-0">
+                                            <div class = "imgPlace imgPlaceSix m-0 p-0" id = "clickImgSix">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Gallery/drinkThree.png" alt = "Drink Three">
+                                                <div class = "align-items-center d-flex hoverArea hoverAreaSix justify-content-center m-0 p-0">
+                                                    <div class = "align-items-center borders d-flex justify-content-center m-0 p-0">
+                                                        <div class = "innerContent m-0 p-0">
+                                                            <div class = "d-flex heading justify-content-center m-0 p-0">
+                                                                <h2 class = "m-0 p-0">
+                                                                    Austrian DH Centre
+                                                                </h2>
+                                                            </div>
+                                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 text">
+                                                                <h5 class = "m-0 p-0 text-center">
+                                                                    Research and visualisation of the digital humanities.
+                                                                </h5>
+                                                            </div>
+                                                            <div class = "align-items-center buttonArea d-flex justify-content-center m-0 p-0">
+                                                                <div class = "align-items-center button d-flex justify-content-center m-0 p-0">
+                                                                    <div class = "align-items-center d-flex justify-content-center m-0 p-0 plusArea" onclick = "window.location = 'https://www.oeaw.ac.at/acdh/';">
+                                                                        <div class = "horizontal m-0 p-0">
+                                                                        </div>
+                                                                        <div class = "m-0 p-0 vertical">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Cherry Cupcake -->
+                                    <div class = "all col-12 col-md-6 col-xxl-4 dessertOne desserts m-0 p-0">
+                                        <div class = "contentArea m-0 p-0">
+                                            <div class = "imgPlace imgPlaceSeven m-0 p-0" id = "clickImgSeven">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Gallery/dessertOne.png" alt = "Dessert One">
+                                                <div class = "align-items-center d-flex hoverArea hoverAreaSeven justify-content-center m-0 p-0">
+                                                    <div class = "align-items-center borders d-flex justify-content-center m-0 p-0">
+                                                        <div class = "innerContent m-0 p-0">
+                                                            <div class = "d-flex heading justify-content-center m-0 p-0">
+                                                                <h2 class = "m-0 p-0">
+                                                                    Institute, Vienna
+                                                                </h2>
+                                                            </div>
+                                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 text">
+                                                                <h5 class = "m-0 p-0 text-center">
+                                                                    Austria's largest research institution in the field of archaeology.
+                                                                </h5>
+                                                            </div>
+                                                            <div class = "align-items-center buttonArea d-flex justify-content-center m-0 p-0">
+                                                                <div class = "align-items-center button d-flex justify-content-center m-0 p-0">
+                                                                    <div class = "align-items-center d-flex justify-content-center m-0 p-0 plusArea" onclick = "window.location = 'https://www.oeaw.ac.at/en/oeai';">
+                                                                        <div class = "horizontal m-0 p-0">
+                                                                        </div>
+                                                                        <div class = "m-0 p-0 vertical">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Black Cake -->
+                                    <div class = "all col-12 col-md-6 col-xxl-4 desserts dessertTwo m-0 p-0">
+                                        <div class = "contentArea m-0 p-0">
+                                            <div class = "imgPlace imgPlaceEight m-0 p-0" id = "clickImgEight">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Gallery/dessertTwo.png" alt = "Dessert Two">
+                                                <div class = "align-items-center d-flex hoverArea hoverAreaEight justify-content-center m-0 p-0">
+                                                    <div class = "align-items-center borders d-flex justify-content-center m-0 p-0">
+                                                        <div class = "innerContent m-0 p-0">
+                                                            <div class = "d-flex heading justify-content-center m-0 p-0">
+                                                                <h2 class = "m-0 p-0">
+                                                                    Institute, Vienna
+                                                                </h2>
+                                                            </div>
+                                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 text">
+                                                                <h5 class = "m-0 p-0 text-center">
+                                                                    Study of human history from the Quaternary period to modern times.
+                                                                </h5>
+                                                            </div>
+                                                            <div class = "align-items-center buttonArea d-flex justify-content-center m-0 p-0">
+                                                                <div class = "align-items-center button d-flex justify-content-center m-0 p-0">
+                                                                    <div class = "align-items-center d-flex justify-content-center m-0 p-0 plusArea" onclick = "window.location = 'https://www.oeaw.ac.at/en/oeai';">
+                                                                        <div class = "horizontal m-0 p-0">
+                                                                        </div>
+                                                                        <div class = "m-0 p-0 vertical">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Yellow Cake -->
+                                    <div class = "all col-12 col-md-6 col-xxl-4 desserts dessertThree m-0 p-0">
+                                        <div class = "contentArea m-0 p-0">
+                                            <div class = "imgPlace imgPlaceNine m-0 p-0" id = "clickImgNine">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Gallery/dessertThree.png" alt = "Dessert Three">
+                                                <div class = "align-items-center d-flex hoverArea hoverAreaNine justify-content-center m-0 p-0">
+                                                    <div class = "align-items-center borders d-flex justify-content-center m-0 p-0">
+                                                        <div class = "innerContent m-0 p-0">
+                                                            <div class = "d-flex heading justify-content-center m-0 p-0">
+                                                                <h2 class = "m-0 p-0">
+                                                                    Ubisoft Offices, Belgrade
+                                                                </h2>
+                                                            </div>
+                                                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 text">
+                                                                <h5 class = "m-0 p-0 text-center">
+                                                                    At Ubisoft are dedicated to enriching the lives of their players by developing high-quality games.
+                                                                </h5>
+                                                            </div>
+                                                            <div class = "align-items-center buttonArea d-flex justify-content-center m-0 p-0">
+                                                                <div class = "align-items-center button d-flex justify-content-center m-0 p-0">
+                                                                    <div class = "align-items-center d-flex justify-content-center m-0 p-0 plusArea" onclick = "window.location = 'https://www.ubisoft.com/en-us/company/careers/locations/belgrade';">
+                                                                        <div class = "horizontal m-0 p-0">
+                                                                        </div>
+                                                                        <div class = "m-0 p-0 vertical">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Blog -->
+                <section class = "blog d-flex justify-content-center mb-0 ml-0 mr-0 pb-0 pl-0 pr-0" data-aos = "fade-up" data-aos-duration = "3500" id = "blogAnchor">
+                    <div class = "content m-0 p-0">
+                        <div class = "d-flex justify-content-center m-0 p-0 top">
+                            <!-- Heading -->
+                            <div class = "heading m-0 p-0">
+                                <h2 class = "m-0 p-0">
+                                    Methods
+                                </h2>
+                            </div>
+                        </div>
+                        <div class = "bottom mb-0 ml-0 mr-0 p-0 row">
+                            <!-- Opened New Restaurant -->
+                            <div class = "block col-12 col-xl-6 m-0 p-0">
+                                <div class = "contentArea m-0 p-0 topLeft">
+                                    <div class = "imgContainer m-0 p-0">
+                                        <img class = "img-fluid m-0 p-0" src = "Images/Blog/Restaurant.png" alt = "Restaurant">
+                                    </div>
+                                    <div class = "align-items-center commentsCalendarContainer d-flex mb-0 ml-0 mr-0 p-0">
+                                        <div class = "align-items-center comments d-flex m-0 p-0">
+                                            <div class = "align-items-center d-flex iconContainer m-0 p-0">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Blog/Comments.png" alt = "Img">
+                                            </div>
+                                            <div class = "mb-0 mr-0 mt-0 p-0 textContainer">
+                                                <h5 class = "m-0 p-0">
+                                                    Method (01)
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class = "d-inline-block line mb-0 mt-0 p-0">
+                                        </div>
+                                        <div class = "align-items-center calendar d-flex m-0 p-0">
+                                            <div class = "align-items-center d-flex iconContainer m-0 p-0">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Blog/Calendar.png" alt = "Calendar">
+                                            </div>
+                                            <div class = "mb-0 mr-0 mt-0 p-0 textContainer">
+                                                <h5 class = "m-0 p-0">
+                                                    July, 2023
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "info mb-0 ml-0 mr-0 p-0">
+                                        <div class = "m-0 p-0 smallHeading">
+                                            <h2 class = "m-0 p-0">
+                                                ARCHAEOLOGY/HISTORY.
+                                            </h2>
+                                        </div>
+                                        <div class = "mb-0 ml-0 mr-0 p-0 text">
+                                            <h4 class = "m-0 p-0">
+                                                History of Roman Colosseum is very long and from this method could be revealed many important facts about amphitheater, underground, Ludus Magnus, etc.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class = "buttonArea mb-0 ml-0 mr-0 p-0">
+                                        <button class = "align-items-center buttonInside d-flex justify-content-center m-0 p-0" onclick = "window.location = 'HTML/blogOne.html';">
+                                            Read More
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Taste Our Cakes -->
+                            <div class = "block blockMargin col-12 col-xl-6 mb-0 ml-0 mr-0 p-0">
+                                <div class = "contentArea m-0 p-0 topRight">
+                                    <div class = "imgContainer m-0 p-0">
+                                        <img class = "img-fluid m-0 p-0" src = "Images/Blog/Cake.png" alt = "Cake">
+                                    </div>
+                                    <div class = "align-items-center commentsCalendarContainer d-flex mb-0 ml-0 mr-0 p-0">
+                                        <div class = "align-items-center comments d-flex m-0 p-0">
+                                            <div class = "align-items-center d-flex iconContainer m-0 p-0">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Blog/Comments.png" alt = "Img">
+                                            </div>
+                                            <div class = "mb-0 mr-0 mt-0 p-0 textContainer">
+                                                <h5 class = "m-0 p-0">
+                                                    Method (02)
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class = "d-inline-block line mb-0 mt-0 p-0">
+                                        </div>
+                                        <div class = "align-items-center calendar d-flex m-0 p-0">
+                                            <div class = "align-items-center d-flex iconContainer m-0 p-0">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Blog/Calendar.png" alt = "Calendar">
+                                            </div>
+                                            <div class = "mb-0 mr-0 mt-0 p-0 textContainer">
+                                                <h5 class = "m-0 p-0">
+                                                    July, 2023
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "info mb-0 ml-0 mr-0 p-0">
+                                        <div class = "m-0 p-0 smallHeading">
+                                            <h2 class = "m-0 p-0">
+                                                APPS AND TOOLS.
+                                            </h2>
+                                        </div>
+                                        <div class = "mb-0 ml-0 mr-0 p-0 text">
+                                            <h4 class = "m-0 p-0">
+                                                Testing of digital apps and tools could provide crucial information about features, possibilities, limits, pros and cons of these programs.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class = "buttonArea mb-0 ml-0 mr-0 p-0">
+                                        <button class = "align-items-center buttonInside d-flex justify-content-center m-0 p-0" onclick = "window.location = 'HTML/blogTwo.html';">
+                                            Read More
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Our Cupcakes Recipe -->
+                            <div class = "block blockMargin col-12 col-xl-6 mb-0 ml-0 mr-0 p-0">
+                                <div class = "bottomLeft contentArea m-0 p-0">
+                                    <div class = "imgContainer m-0 p-0">
+                                        <img class = "img-fluid m-0 p-0" src = "Images/Blog/Cupcake.png" alt = "Cupcake">
+                                    </div>
+                                    <div class = "align-items-center commentsCalendarContainer d-flex mb-0 ml-0 mr-0 p-0">
+                                        <div class = "align-items-center comments d-flex m-0 p-0">
+                                            <div class = "align-items-center d-flex iconContainer m-0 p-0">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Blog/Comments.png" alt = "Img">
+                                            </div>
+                                            <div class = "mb-0 mr-0 mt-0 p-0 textContainer">
+                                                <h5 class = "m-0 p-0">
+                                                    Method (03)
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class = "d-inline-block line mb-0 mt-0 p-0">
+                                        </div>
+                                        <div class = "align-items-center calendar d-flex m-0 p-0">
+                                            <div class = "align-items-center d-flex iconContainer m-0 p-0">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Blog/Calendar.png" alt = "Calendar">
+                                            </div>
+                                            <div class = "mb-0 mr-0 mt-0 p-0 textContainer">
+                                                <h5 class = "m-0 p-0">
+                                                    July, 2023
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "info mb-0 ml-0 mr-0 p-0">
+                                        <div class = "m-0 p-0 smallHeading">
+                                            <h2 class = "m-0 p-0">
+                                                LITERATURE AND INTERVIEWS.
+                                            </h2>
+                                        </div>
+                                        <div class = "mb-0 ml-0 mr-0 p-0 text">
+                                            <h4 class = "m-0 p-0">
+                                                This method is all about work with different literature (written and digital) - books, internet sources, and interviews with experts.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class = "buttonArea mb-0 ml-0 mr-0 p-0">
+                                        <button class = "align-items-center buttonInside d-flex justify-content-center m-0 p-0" onclick = "window.location = 'HTML/blogThree.html';">
+                                            Read More
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pancakes for Breakfast -->
+                            <div class = "block blockMargin col-12 col-xl-6 mb-0 ml-0 mr-0 p-0">
+                                <div class = "bottomRight contentArea m-0 p-0">
+                                    <div class = "imgContainer m-0 p-0">
+                                        <img class = "img-fluid m-0 p-0" src = "Images/Blog/Pancakes.png" alt = "Pancakes">
+                                    </div>
+                                    <div class = "align-items-center commentsCalendarContainer d-flex mb-0 ml-0 mr-0 p-0">
+                                        <div class = "align-items-center comments d-flex m-0 p-0">
+                                            <div class = "align-items-center d-flex iconContainer m-0 p-0">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Blog/Comments.png" alt = "Img">
+                                            </div>
+                                            <div class = "mb-0 mr-0 mt-0 p-0 textContainer">
+                                                <h5 class = "m-0 p-0">
+                                                    Method (04)
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class = "d-inline-block line mb-0 mt-0 p-0">
+                                        </div>
+                                        <div class = "align-items-center calendar d-flex m-0 p-0">
+                                            <div class = "align-items-center d-flex iconContainer m-0 p-0">
+                                                <img class = "img-fluid m-0 p-0" src = "Images/Blog/Calendar.png" alt = "Calendar">
+                                            </div>
+                                            <div class = "mb-0 mr-0 mt-0 p-0 textContainer">
+                                                <h5 class = "m-0 p-0">
+                                                    July, 2023
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "info mb-0 ml-0 mr-0 p-0">
+                                        <div class = "m-0 p-0 smallHeading">
+                                            <h2 class = "m-0 p-0">
+                                                COMPARATIVE APPROACH.
+                                            </h2>
+                                        </div>
+                                        <div class = "mb-0 ml-0 mr-0 p-0 text">
+                                            <h4 class = "m-0 p-0">
+                                                Comparative approach could provide excellent insight about development of digital reality worlds, which relates to Ancient Rome and Egypt.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class = "buttonArea mb-0 ml-0 mr-0 p-0">
+                                        <button class = "align-items-center buttonInside d-flex justify-content-center m-0 p-0" onclick = "window.location = 'HTML/blogFour.html';">
+                                            Read More
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Contact -->
+                <section class = "contact d-flex justify-content-center mb-0 ml-0 mr-0 pb-0 pl-0 pr-0" data-aos = "fade-up" data-aos-duration = "3500" id = "contactAnchor">
+                    <div class = "content m-0 p-0">
+                        <div class = "d-flex justify-content-center m-0 p-0 top">
+                            <!-- Heading -->
+                            <div class = "heading m-0 p-0">
+                                <h2 class = "m-0 p-0">
+                                    Contact
+                                </h2>
+                            </div>
+                        </div>
+                        <div class = "mb-0 middle ml-0 mr-0 p-0 row">
+                            <!-- Phone Area -->
+                            <div class = "block col-12 col-lg-4 left m-0 p-0">
+                                <div class = "blockContent m-0 p-0">
+                                    <div class = "blockContainer m-0 p-0">
+                                        <div class = "d-flex imgContainer justify-content-center m-0 p-0 w-100">
+                                            <div class = "imgArea m-0 p-0">
+                                                <img class = "img-fluid" src = "Images/Contact/Phone.png" alt = "Phone">
+                                            </div>
+                                        </div>
+                                        <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 topText w-100">
+                                            <h2 class = "firstText m-0 p-0">
+                                                PHONE
+                                            </h2>
+                                        </div>
+                                        <div class = "bottomText d-flex justify-content-center mb-0 ml-0 mr-0 p-0">
+                                            <h2 class = "bottomTextFirst m-0 p-0">
+                                                +387 65 520 406
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- YouTube Area -->
+                            <div class = "block center col-12 col-lg-4 mb-0 ml-0 mr-0 p-0">
+                                <div class = "blockContent d-flex justify-content-center m-0 p-0">
+                                    <div class = "blockContainer m-0 p-0">
+                                        <div class = "d-flex imgContainer justify-content-center m-0 p-0 w-100">
+                                            <div class = "imgArea m-0 p-0">
+                                                <img class = "img-fluid" src = "Images/Contact/YT.png" alt = "YT">
+                                            </div>
+                                        </div>
+                                        <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 topText w-100">
+                                            <h2 class = "m-0 p-0 secondText">
+                                                ADDRESS
+                                            </h2>
+                                        </div>
+                                        <div class = "bottomText d-flex justify-content-center mb-0 ml-0 mr-0 p-0">
+                                            <h2 class = "bottomTextSecond m-0 p-0">
+                                                Banja Luka, BiH
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mail Area -->
+                            <div class = "block blockMail col-12 col-lg-4 mb-0 ml-0 mr-0 p-0">
+                                <div class = "blockContent d-flex justify-content-end m-0 p-0">
+                                    <div class = "blockContainer m-0 p-0">
+                                        <div class = "d-flex imgContainer justify-content-center m-0 p-0 w-100">
+                                            <div class = "imgArea m-0 p-0">
+                                                <img class = "img-fluid" src = "Images/Contact/Mail.png" alt = "Mail">
+                                            </div>
+                                        </div>
+                                        <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 topText w-100">
+                                            <h2 class = "m-0 p-0 thirdText">
+                                                EMAIL
+                                            </h2>
+                                        </div>
+                                        <div class = "bottomText d-flex justify-content-center mb-0 ml-0 mr-0 p-0">
+                                            <h2 class = "bottomTextThird m-0 p-0">
+                                                jst2016@mail.com
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Footer -->
+                <footer class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0" data-aos = "fade-up" data-aos-duration = "3500">
+                    <div class = "content m-0 p-0">
+                        <!-- Logo -->
+                        <div class = "m-0 p-0 top">
+                            <div class = "d-flex imageContainer justify-content-center m-0 p-0">
+                                <img class = "img-fluid m-0 p-0" src = "Images/Footer/Logo.png" alt = "Logo" onclick = "window.location = '#header';">
+                            </div>
+                        </div>
+                        <!-- Text and Social Icons -->
+                        <div class = "mb-0 middle ml-0 mr-0 p-0">
+                            <div class = "d-flex justify-content-center m-0 p-0 textOne">
+                                <h3 class = "m-0 p-0">
+                                    Bring History to Life
+                                </h3>
+                            </div>
+                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 textTwo">
+                                <h4 class = "m-0 p-0">
+                                    “Discover how to visit the past and bring yesterday's stories into our lives today”. ― Gillian Hovell, 'Visiting the Past' 
+                                </h4>
+                            </div>
+                            <div class = "d-flex justify-content-center mb-0 ml-0 mr-0 p-0 socialContainer">
+                                <div class = "m-0 p-0 socialArea">
+                                    <div class = "d-inline icon iconOne p-0" onclick = "window.location = 'https://www.facebook.com/immersiveArchaeology/';">
+                                        <img class = "img-fluid m-0 p-0" src = "Images/Footer/Fb.png" alt = "Fb">
+                                    </div>
+                                    <div class = "d-inline icon iconTwo p-0" onclick = "window.location = 'https://www.behance.net/gallery/156460727/Decode-Colosseum-Edition-2022';">
+                                        <img class = "img-fluid m-0 p-0" src = "Images/Footer/Twitter.png" alt = "Twitter">
+                                    </div>
+                                    <div class = "d-inline icon iconThree p-0" onclick = "window.location = 'https://www.instagram.com/historydecoded/';">
+                                        <img class = "img-fluid m-0 p-0" src = "Images/Footer/Linkedin.png" alt = "Linkedin">
+                                    </div>
+                                    <div class = "d-inline icon iconFour p-0" onclick = "window.location = 'https://www.pinterest.com/historyDecoded/';">
+                                        <img class = "img-fluid m-0 p-0" src = "Images/Footer/YT.png" alt = "YouTube">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Oxygen Themes Text -->
+                        <div class = "bottom ml-0 mr-0 p-0">
+                            <div class = "d-flex justify-content-center m-0 p-0 textContainer">
+                                <h3 class = "m-0 p-0">
+                                    PhD Theme Proposal
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+
+            </div>
+
+
+            <!-- JavaScript Connections -->
+            <script src = 'JS/jQueryPopper/jquery-3.6.0.min.js'></script>
+            <script src = 'JS/jQueryPopper/popper.min.js'></script>
+
+            <script src = 'JS/Bootstrap/bootstrap.js'></script>
+            <script src = 'JS/Bootstrap/bootstrap.min.js'></script>
+            <script src = 'JS/Bootstrap/bootstrap.bundle.js'></script>
+            <script src = 'JS/Bootstrap/bootstrap.bundle.min.js'></script>
+
+            <script src = 'JS/gallery.js'></script>
+            <script src = 'JS/loader.js'></script>
+            <script src = 'JS/menus.js'></script>
+            <script src = 'JS/pageTop.js'></script>
+            <script src = 'JS/menu.js'></script>
+            <script src = 'JS/stickyMenu.js'></script>
+
+            <script src = 'JS/Zenscroll/zenscroll-min.js'></script>
+
+            <script src = 'JS/all.min.js'></script>
+
+            <script src = "https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src = 'JS/Aos/aos.js'></script>
+            <script>AOS.init();</script>
+
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
+        </body>
+
+
+    </html>

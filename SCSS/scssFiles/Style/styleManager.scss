@@ -1,0 +1,2450 @@
+/* 
+Table of Contents
+    Fonts
+    Variables
+    Body
+    Body Add
+    Body Blogs
+        Blog Area
+            Content
+                Left
+                    Author
+                        Img Text
+                            Img Container Author
+                            Text Container Author
+                                Mail Text
+                                    Mail
+                                        H3
+                                    Name
+                                        H2
+                    Comment
+                        H2
+                    Comment Author
+                        H4
+                    Comment Date 
+                        H5
+                    Comment Text
+                        H4
+                    Form
+                        Button Comment
+                            Submit Comment
+                        Email
+                            Email Field
+                            Input Placeholder
+                            Moz Placeholder
+                            Webkit Input Placeholder
+                        Message
+                            Message Field
+                            Moz Placeholder
+                            Textarea Placeholder
+                            Webkit Input Placeholder
+                        Name
+                            Input Placeholder
+                            Moz Placeholder
+                            Name Field
+                            Webkit Input Placeholder
+                    Heading Container
+                        H3
+                    Leave Comment
+                        H4
+                    Txt Container
+                        H3
+                    Txt Container Restaurant 
+                        H4
+                Right
+                    Right Content
+                        Categories
+                            Heading
+                                H3
+                            Text
+                                H3
+                                Text Four
+                                Text Three
+                                Text Two
+                        Follow
+                            Heading
+                                H3
+                            Icons Container
+                                Icons
+                                    Follow Img Container
+                                        A
+                                            Img
+                        Posts
+                            Block
+                                Img Container
+                                Text Container
+                                    Text Area
+                                        H3
+                                        H4
+                            Bottom
+                            Heading
+                                H3
+                            Middle
+                        Tags
+                            Heading
+                                H3
+                            Tags Text
+                                H3
+    Media Queries
+        Max Width - 576px
+        Min Width 577px and Max Width 768px
+        Other Sizes
+*/
+
+
+// Fonts
+    // Dancing Script
+    @font-face 
+    {
+        font-family:"dancingScriptRegular";
+        src:url("../../../Fonts/dancingScript/dancingScriptRegular.ttf");
+    }
+    // Maven Pro Bold
+    @font-face 
+    {
+        font-family:"mavenProBold";
+        src:url("../../../Fonts/mavenPro/mavenProBold.ttf");
+    }
+    // Maven Pro Regular
+    @font-face 
+    {
+        font-family:"mavenProRegular";
+        src:url("../../../Fonts/mavenPro/mavenProRegular.ttf");
+    }
+    // Oswald Semi Bold
+    @font-face 
+    {
+        font-family:"oswaldSemiBold";
+        src:url("../../../Fonts/Oswald/oswaldSemiBold.ttf");
+    }
+    // Oswald Regular
+    @font-face 
+    {
+        font-family:"oswaldRegular";
+        src:url("../../../Fonts/Oswald/oswaldRegular.ttf");
+    }
+    // Oxygen Bold
+    @font-face 
+    {
+        font-family:"oxygenBold";
+        src:url("../../../Fonts/Oxygen/oxygenBold.ttf");
+    }
+    // Oxygen Regular
+    @font-face 
+    {
+        font-family:"oxygenRegular";
+        src:url("../../../Fonts/Oxygen/oxygenRegular.ttf");
+    }
+    // Patua One
+    @font-face 
+    {
+        font-family:"patuaOneRegular";
+        src:url("../../../Fonts/patuaOne/patuaOneRegular.ttf");
+    }
+    // Playball
+    @font-face 
+    {
+        font-family:"playballRegular";
+        src:url("../../../Fonts/Playball/playballRegular.ttf");
+    }
+    // Work Sans
+    @font-face 
+    {
+        font-family:"workSansRegular";
+        src:url("../../../Fonts/workSans/workSansRegular.ttf");
+    }
+
+
+// Variables
+$authorBackground:rgba(100, 100, 100, 0.3);
+$black:#000000;
+$blackGrey:#242424;
+$chocolate:#35190f;
+$cream:#e1a050;
+$cupcake:#fde5de;
+$cupcakeDarker:#d3958b;
+$dark:#17161e;
+$darkBackground:#1d1d1d;
+$darkBackgroundOpacity:rgba(29, 29, 29, 0.75);
+$darkBackgroundSmall:#292828;
+$darkOpacity:rgba(23, 22, 30, 0.7);
+$darkOpacityInfo:rgba(54, 54, 54, 0.25);
+$darkOpacityInfoLight:rgba(58, 58, 58, 0.1);
+$darkOpacityMenus:rgba(82, 82, 82, 0.2);
+$darkOpacityMenusShader:rgba(94, 94, 94, 0.2);
+$darkOpacityMenusBlocks:rgba(0, 0, 0, 0.1);
+$galleryImagesHover:rgba(0, 0, 0, 0.75);
+$galleryMenuOpacity:rgba(0, 0, 0, 0.2);
+$lightGreen:#b1e0d7;
+$lightGreenShader:rgba(177, 224, 215, 0.12);
+$menus:#947570;
+$menusThree:#44403f;
+$menusTwo:#66040a;
+$orange:#fca201;
+$orangeOpacity:rgba(252, 162, 1, 0.5);
+$red:#ff3539;
+$redOpacity:rgba(255, 53, 57, 0.5);
+$sticky:rgba(49, 49, 49, 0.85);
+$submit:#000000;
+$subscribeButton:#e36363;
+$subscribeField:rgba(0, 0, 0, 0.4);
+$subscribePlaceholder:#ffffff;
+$white:#ffffff;
+$yellow:#eaed66;
+
+
+// Mixins
+
+
+
+// Body
+body 
+{
+    @import "../Sections/loader";
+    @import "../Content/mainContainer";
+}
+
+
+.bodyAdd 
+{
+    .bodyArea 
+    {
+        overflow-y:hidden;
+    }
+}
+
+
+// Blogs
+.bodyBlogs 
+{
+    overflow-x:hidden;
+    .blogArea 
+    {
+        background:url("../../../Images/mainContainer/backgroundStyler.png");
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        display:none;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        -webkit-background-size:cover;
+        width:100%;
+        .content 
+        {
+            margin:134px 0 134px 0;
+            width:83%;
+            // Left Side
+            .left 
+            {
+                width:50%;
+                // Author
+                .author 
+                {
+                    background:$authorBackground;
+                    margin:136px 0 0 0;
+                    .imgText 
+                    {
+                        width:100%;
+                        .imgContainerAuthor 
+                        {
+                            width:30%;
+                        }
+                        .textContainerAuthor
+                        {
+                            width:70%;
+                            .mailText 
+                            {
+                                .mail 
+                                {
+                                    margin:17px 0 0 0;
+                                    h3 
+                                    {
+                                        color:$white;
+                                        font-family:oswaldRegular;
+                                        font-size:24px;
+                                    }
+                                }
+                                .name 
+                                {
+                                    h2 
+                                    {
+                                        color:$white;
+                                        font-family:playballRegular;
+                                        font-size:29px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                // Comments Area
+                .comment 
+                {
+                    margin:104px 0 0 0;
+                    h2 
+                    {
+                        color:$white;
+                        font-family:oswaldRegular;
+                        font-size:36px;
+                    }
+                }
+                .commentAuthor 
+                {
+                    margin:61px 0 0 0;
+                    h4 
+                    {
+                        color:$white;
+                        font-family:oswaldSemiBold;
+                        font-size:27px;
+                    }
+                }
+                .commentDate 
+                {
+                    margin:7px 0 0 0;
+                    h5 
+                    {
+                        color:$white;
+                        font-family:oswaldRegular;
+                        font-size:21px;
+                    }
+                }
+                .commentText 
+                {
+                    margin:12px 0 0 0;
+                    h4 
+                    {
+                        color:$white;
+                        font-family:oswaldRegular;
+                        font-size:27px;
+                    }
+                }
+                // Contact Form
+                form 
+                {
+                    margin:48px 0 0 0;
+                    .buttonComment 
+                    {
+                        background:transparent;
+                        border:2px solid $menusThree;
+                        height:104px;
+                        margin:60px 0 0 0;
+                        width:25%;
+                        .submitComment 
+                        {
+                            background:$sticky;
+                            border:none;
+                            bottom:8px;
+                            color:$white;
+                            font-family:oswaldSemiBold;
+                            font-size:20px;
+                            height:104px;
+                            left:8px;
+                            position:relative;
+                            width:100%;
+                            &:hover 
+                            {
+                                background:$menusThree;
+                            }
+                        }
+                    }
+                    .email 
+                    {
+                        .emailField 
+                        {
+                            background:transparent;
+                            border:1px solid;
+                            border-left:none;
+                            border-right:none;
+                            border-top:none;
+                            color:$black;
+                            outline:none;
+                            width:89%;
+                        }
+                        input[placeholder]
+                        {
+                            color:$white;
+                            font-family:oswaldRegular;
+                            font-size:27px;
+                            padding:0 0 15px 0;
+                        }
+                        ::-moz-placeholder 
+                        {
+                            color:$white;
+                            opacity:1;
+                        }
+                        ::-webkit-input-placeholder 
+                        {
+                            color:$white;
+                            opacity:1;
+                        }
+                    }
+                    .message 
+                    {
+                        margin:60px 0 0 0;
+                        .messageField 
+                        {
+                            background:transparent;
+                            border:1px solid;
+                            border-left:none;
+                            border-right:none;
+                            border-top:none;
+                            color:$white;
+                            outline:none;
+                            width:100%;
+                        }
+                        ::-moz-placeholder 
+                        {
+                            color:$white;
+                            opacity:1;
+                        }
+                        textarea[placeholder]
+                        {
+                            color:$white;
+                            font-family:oswaldRegular;
+                            font-size:27px;
+                            padding:0 0 75px 0;
+                        }
+                        ::-webkit-input-placeholder 
+                        {
+                            color:$white;
+                            opacity:1;
+                        }
+                    }
+                    .name 
+                    {
+                        input[placeholder]
+                        {
+                            color:$white;
+                            font-family:oswaldRegular;
+                            font-size:27px;
+                            padding:0 0 15px 0;
+                        }
+                        ::-moz-placeholder 
+                        {
+                            color:$white;
+                            opacity:1;
+                        }
+                        .nameField 
+                        {
+                            background:transparent;
+                            border:1px solid;
+                            border-left:none;
+                            border-right:none;
+                            border-top:none;
+                            color:$white;
+                            outline:none;
+                            width:89%;
+                        }
+                        ::-webkit-input-placeholder 
+                        {
+                            color:$white;
+                            opacity:1;
+                        }
+                    }
+                }
+                .headingContainer 
+                {
+                    margin:64px 0 0 0;
+                    h3 
+                    {
+                        color:$white;
+                        font-family:oswaldSemiBold;
+                        font-size:30px;
+                    }
+                }
+                .leaveComment 
+                {
+                    margin:128px 0 0 0;
+                    h4 
+                    {
+                        color:$white;
+                        font-family:oswaldSemiBold;
+                        font-size:27px;
+                    }
+                }
+                .txtContainer 
+                {
+                    margin:33px 0 0 0;
+                    h3 
+                    {
+                        color:$white;
+                        font-family:playballRegular;
+                        font-size:30px;
+                    }
+                }
+                .txtContainerRestaurant 
+                {
+                    margin:17px 0 0 0;
+                    h4 
+                    {
+                        color:$white;
+                        font-family:patuaOneRegular;
+                        font-size:25px;
+                        text-align:justify;
+                    }
+                }
+            }
+            // Right Side
+            .right 
+            {
+                width:50%;
+                .rightContent 
+                {
+                    // Categories
+                    .categories 
+                    {
+                        .heading 
+                        {
+                            h3 
+                            {
+                                color:$white;
+                                font-family:oswaldSemiBold;
+                                font-size:30px;
+                            }
+                        }
+                        .text 
+                        {
+                            margin:25px 0 0 0;
+                            h3 
+                            {
+                                color:$white;
+                                font-family:oswaldRegular;
+                                font-size:30px;
+                            }
+                            .textFour 
+                            {
+                                margin:15px 0 0 0;
+                            }
+                            .textThree
+                            {
+                                margin:15px 0 0 0;
+                            }
+                            .textTwo 
+                            {
+                                margin:15px 0 0 0;
+                            }
+                        }
+                    }
+                    // Follow Us
+                    .follow 
+                    {
+                        margin:140px 0 0 0;
+                        .heading 
+                        {
+                            h3 
+                            {
+                                color:$white;
+                                font-family:oswaldSemiBold;
+                                font-size:30px;
+                            }
+                        }
+                        .iconsContainer 
+                        {
+                            margin:36px 0 0 0;
+                            .icons 
+                            {
+                                position:relative;
+                                right:25px;
+                                .followImgContainer 
+                                {
+                                    display:inline;
+                                    margin:25px;
+                                    width:81px;
+                                    a 
+                                    {
+                                        outline:none;
+                                        text-decoration:none;
+                                        img 
+                                        {
+                                            width:81px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // Other Posts
+                    .posts 
+                    {
+                        margin:140px 0 0 0;
+                        .block 
+                        {
+                            margin:36px 0 0 0;
+                            .imgContainer 
+                            {
+                                width:200px;
+                            }
+                            .textContainer 
+                            {
+                                .textArea 
+                                {
+                                    left:45px;
+                                    position:relative;
+                                    h3 
+                                    {
+                                        color:$white;
+                                        font-family:oswaldSemiBold;
+                                        font-size:30px;
+                                    }
+                                    h4 
+                                    {
+                                        color:$white;
+                                        font-family:oswaldRegular;
+                                        font-size:25px;
+                                        margin:6px 0 0 0;
+                                    }
+                                }
+                            }
+                        }
+                        .bottom 
+                        {
+                            margin:62px 0 0 0;
+                        }
+                        .heading 
+                        {
+                            h3 
+                            {
+                                color:$white;
+                                font-family:oswaldSemiBold;
+                                font-size:30px;
+                            }
+                        }
+                        .middle 
+                        {
+                            margin:62px 0 0 0;
+                        }
+                    }
+                    // Tags
+                    .tags 
+                    {
+                        margin:140px 0 0 0;
+                        .heading 
+                        {
+                            h3 
+                            {
+                                color:$white;
+                                font-family:oswaldSemiBold;
+                                font-size:30px;
+                            }
+                        }
+                        .tagsText 
+                        {
+                            margin:25px 0 0 0;
+                            h3 
+                            {
+                                color:$white;
+                                font-family:oswaldRegular;
+                                font-size:30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive Design
+@media (max-width:576px)
+{
+    .bodyBlogs 
+    {
+        .blogArea 
+        {
+            .content 
+            {
+                margin:25px 0 25px 0;
+                width:92%;
+                .left 
+                {
+                    width:100%;
+                    .author 
+                    {
+                        margin:90px;
+                        .imgText 
+                        {
+                            .imgContainerAuthor 
+                            {
+                                display:none;
+                                width:100%;
+                            }
+                            .textContainerAuthor 
+                            {
+                                display:block;
+                                height:150px;
+                                width:100%;
+                                .mailText 
+                                {
+                                    .mail 
+                                    {
+                                        h3 
+                                        {
+                                            font-size:19px;
+                                        }
+                                    }
+                                    .name 
+                                    {
+                                        h2 
+                                        {
+                                            font-size:22px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .comment 
+                    {
+                        h2 
+                        {
+                            font-size:25px;
+                        }
+                    }
+                    .commentAuthor 
+                    {
+                        h4 
+                        {
+                            font-size:21px;
+                        }
+                    }
+                    .commentText 
+                    {
+                        h4 
+                        {
+                            font-size:21px;
+                        }
+                    }
+                    form 
+                    {
+                        .buttonComment 
+                        {
+                            display:flex;
+                            height:75px;
+                            justify-content:center;
+                            width:100%;
+                            .submitComment 
+                            {
+                                height:75px;
+                                width:55%;
+                            }
+                        }
+                        .email 
+                        {
+                            input[placeholder]
+                            {
+                                font-size:22px;
+                            }
+                        }
+                        .message 
+                        {
+                            textarea[placeholder]
+                            {
+                                font-size:22px;
+                            }
+                        }
+                        .name 
+                        {
+                            input[placeholder]
+                            {
+                                font-size:22px;
+                            }
+                        }
+                    }
+                    .headingContainer 
+                    {
+                        margin:35px 0 0 0;
+                        h3 
+                        {
+                            font-size:25px;
+                            text-align:center;
+                        }
+                    }
+                    .leaveComment 
+                    {
+                        h4 
+                        {
+                            font-size:22px;
+                        }
+                    }
+                    .txtContainer 
+                    {
+                        h3 
+                        {
+                            font-size:20px;
+                            text-align:center;
+                        }
+                    }
+                    .txtContainerRestaurant 
+                    {
+                        h4 
+                        {
+                            font-size:20px;
+                            text-align:center;
+                        }
+                    }
+                }
+                .right 
+                {
+                    margin:125px 0 0 0;
+                    width:100%;
+                    .rightContent 
+                    {
+                        .categories 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:24px;
+                                    text-align:center;
+                                }
+                            }
+                            .text 
+                            {
+                                h3 
+                                {
+                                    font-size:24px;
+                                }
+                            }
+                        }
+                        .follow 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:24px;
+                                    text-align:center;
+                                }
+                            }
+                            .iconsContainer 
+                            {
+                                .icons 
+                                {
+                                    display:inline-block;
+                                    right:0;
+                                    .followImgContainer 
+                                    {
+                                        margin:9px;
+                                        width:32px;
+                                        a 
+                                        {
+                                            img 
+                                            {
+                                                width:32px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .posts 
+                        {
+                            .block 
+                            {
+                                .imgContainer 
+                                {
+                                    display:flex;
+                                    justify-content:center;
+                                    width:100%;
+                                }
+                                .textContainer 
+                                {
+                                    background:transparent;
+                                    display:flex;
+                                    justify-content:center;
+                                    margin:15px 0 0 0;
+                                    width:100%;
+                                    .textArea 
+                                    {
+                                        display:inline-block;
+                                        left:0;
+                                        h3 
+                                        {
+                                            display:inline-block;
+                                            font-size:24px;
+                                            text-align:center;
+                                        }
+                                        h4 
+                                        {
+                                            font-size:20px;
+                                            text-align:center;
+                                        }
+                                    }
+                                }
+                            }
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:24px;
+                                }
+                            }
+                        }
+                        .tags 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:24px;
+                                    text-align:center;
+                                }
+                            }
+                            .tagsText 
+                            {
+                                h3 
+                                {
+                                    font-size:24px;
+                                    text-align:center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:577px) and (max-width:768px)
+{
+    .bodyBlogs 
+    {
+        .blogArea 
+        {
+            .content 
+            {
+                margin:50px 0 50px 0;
+                width:90%;
+                .left 
+                {
+                    width:100%;
+                }
+                .right 
+                {
+                    margin:125px 0 0 0;
+                    width:100%;
+                    .rightContent 
+                    {
+                        .categories 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    text-align:center;
+                                }
+                            }
+                        }
+                        .follow 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    text-align:center;
+                                }
+                            }
+                            .iconsContainer 
+                            {
+                                .icons 
+                                {
+                                    display:inline-block;
+                                    right:0;
+                                    .followImgContainer 
+                                    {
+                                        margin:20px;
+                                    }
+                                }
+                            }
+                        }
+                        .posts 
+                        {
+                            .block 
+                            {
+                                .imgContainer 
+                                {
+                                    width:40%;
+                                }
+                                .textContainer 
+                                {
+                                    background:$dark;
+                                    justify-content:center;
+                                    width:60%;
+                                    .textArea 
+                                    {
+                                        display:inline-block;
+                                        left:0;
+                                        h3 
+                                        {
+                                            display:inline-block;
+                                            text-align:center;
+                                        }
+                                        h4 
+                                        {
+                                            text-align:center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .tags 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    text-align:center;
+                                }
+                            }
+                            .tagsText 
+                            {
+                                h3 
+                                {
+                                    text-align:center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:769px) and (max-width:1199px)
+{
+    .bodyBlogs 
+    {
+        .blogArea 
+        {
+            .content 
+            {
+                margin:50px 0 50px 0;
+                width:83%;
+                .left 
+                {
+                    width:100%;
+                }
+                .right 
+                {
+                    margin:125px 0 0 0;
+                    width:100%;
+                    .rightContent 
+                    {
+                        .categories 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    text-align:center;
+                                }
+                            }
+                        }
+                        .follow 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    text-align:center;
+                                }
+                            }
+                            .iconsContainer 
+                            {
+                                .icons 
+                                {
+                                    display:inline-block;
+                                    right:0;
+                                }
+                            }
+                        }
+                        .posts 
+                        {
+                            .block 
+                            {
+                                .imgContainer 
+                                {
+                                    width:40%;
+                                }
+                                .textContainer 
+                                {
+                                    background:$dark;
+                                    justify-content:center;
+                                    width:60%;
+                                    .textArea 
+                                    {
+                                        display:inline-block;
+                                        left:0;
+                                        h3 
+                                        {
+                                            display:inline-block;
+                                            text-align:center;
+                                        }
+                                        h4 
+                                        {
+                                            text-align:center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .tags 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    text-align:center;
+                                }
+                            }
+                            .tagsText 
+                            {
+                                h3 
+                                {
+                                    text-align:center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1399px)
+{
+    .bodyBlogs 
+    {
+        .blogArea 
+        {
+            .content 
+            {
+                margin:50px 0 50px 0;
+                width:75%;
+                .left 
+                {
+                    width:100%;
+                }
+                .right 
+                {
+                    margin:125px 0 0 0;
+                    width:100%;
+                    .rightContent 
+                    {
+                        .categories 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    text-align:center;
+                                }
+                            }
+                        }
+                        .follow 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    text-align:center;
+                                }
+                            }
+                            .iconsContainer 
+                            {
+                                .icons 
+                                {
+                                    display:inline-block;
+                                    right:0;
+                                }
+                            }
+                        }
+                        .posts 
+                        {
+                            .block 
+                            {
+                                .imgContainer 
+                                {
+                                    width:40%;
+                                }
+                                .textContainer 
+                                {
+                                    background:$dark;
+                                    justify-content:center;
+                                    width:60%;
+                                    .textArea 
+                                    {
+                                        display:inline-block;
+                                        left:0;
+                                        h3 
+                                        {
+                                            display:inline-block;
+                                            text-align:center;
+                                        }
+                                        h4 
+                                        {
+                                            text-align:center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .tags 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    text-align:center;
+                                }
+                            }
+                            .tagsText 
+                            {
+                                h3 
+                                {
+                                    text-align:center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1400px) and (max-width:1599px)
+{
+    .bodyBlogs 
+    {
+        .blogArea 
+        {
+            .content 
+            {
+                margin:100px 0 100px 0;
+                width:91%;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    .bodyBlogs 
+    {
+        .blogArea 
+        {
+            .content 
+            {
+                margin:168px 0 168px 0;
+                .left 
+                {
+                    .author 
+                    {
+                        margin:170px 0 0 0;
+                        .imgText 
+                        {
+                            .textContainerAuthor
+                            {
+                                .mailText 
+                                {
+                                    .mail 
+                                    {
+                                        margin:21px 0 0 0;
+                                        h3 
+                                        {
+                                            font-size:30px;
+                                        }
+                                    }
+                                    .name 
+                                    {
+                                        h2 
+                                        {
+                                            font-size:36px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .comment 
+                    {
+                        margin:130px 0 0 0;
+                        h2 
+                        {
+                            font-size:45px;
+                        }
+                    }
+                    .commentAuthor 
+                    {
+                        margin:61px 0 0 0;
+                        h4 
+                        {
+                            font-size:33px;
+                        }
+                    }
+                    .commentDate 
+                    {
+                        margin:8px 0 0 0;
+                        h5 
+                        {
+                            font-size:26px;
+                        }
+                    }
+                    .commentText 
+                    {
+                        margin:15px 0 0 0;
+                        h4 
+                        {
+                            font-size:33px;
+                        }
+                    }
+                    form 
+                    {
+                        margin:60px 0 0 0;
+                        .buttonComment 
+                        {
+                            border:2.5px solid $menusThree;
+                            height:130px;
+                            margin:75px 0 0 0;
+                            .submitComment 
+                            {
+                                bottom:10px;
+                                font-size:25px;
+                                height:130px;
+                                left:10px;
+                            }
+                        }
+                        .email 
+                        {
+                            .emailField 
+                            {
+                                border:1.25px solid;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                            }
+                            input[placeholder]
+                            {
+                                font-size:33px;
+                                padding:0 0 18px 0;
+                            }
+                        }
+                        .message 
+                        {
+                            margin:75px 0 0 0;
+                            .messageField 
+                            {
+                                border:1.25px solid;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                            }
+                            textarea[placeholder]
+                            {
+                                font-size:33px;
+                                padding:0 0 93px 0;
+                            }
+                        }
+                        .name 
+                        {
+                            input[placeholder]
+                            {
+                                font-size:33px;
+                                padding:0 0 18px 0;
+                            }
+                            .nameField 
+                            {
+                                border:1.25px solid;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                            }
+                        }
+                    }
+                    .headingContainer 
+                    {
+                        margin:80px 0 0 0;
+                        h3 
+                        {
+                            font-size:37px;
+                        }
+                    }
+                    .leaveComment 
+                    {
+                        margin:160px 0 0 0;
+                        h4 
+                        {
+                            font-size:33px;
+                        }
+                    }
+                    .txtContainer 
+                    {
+                        margin:41px 0 0 0;
+                        h3 
+                        {
+                            font-size:37px;
+                        }
+                    }
+                    .txtContainerRestaurant 
+                    {
+                        margin:21px 0 0 0;
+                        h4 
+                        {
+                            font-size:31px;
+                        }
+                    }
+                }
+                .right 
+                {
+                    .rightContent 
+                    {
+                        .categories 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:37px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:31px 0 0 0;
+                                h3 
+                                {
+                                    font-size:37px;
+                                }
+                                .textFour 
+                                {
+                                    margin:18px 0 0 0;
+                                }
+                                .textThree
+                                {
+                                    margin:18px 0 0 0;
+                                }
+                                .textTwo 
+                                {
+                                    margin:18px 0 0 0;
+                                }
+                            }
+                        }
+                        .follow 
+                        {
+                            margin:175px 0 0 0;
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:37px;
+                                }
+                            }
+                            .iconsContainer 
+                            {
+                                margin:45px 0 0 0;
+                                .icons 
+                                {
+                                    right:31px;
+                                    .followImgContainer 
+                                    {
+                                        margin:31px;
+                                        width:101px;
+                                        a 
+                                        {
+                                            text-decoration:none;
+                                            img 
+                                            {
+                                                width:101px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .posts 
+                        {
+                            margin:175px 0 0 0;
+                            .block 
+                            {
+                                margin:45px 0 0 0;
+                                .imgContainer 
+                                {
+                                    width:250px;
+                                }
+                                .textContainer 
+                                {
+                                    .textArea 
+                                    {
+                                        left:56px;
+                                        h3 
+                                        {
+                                            font-size:37px;
+                                        }
+                                        h4 
+                                        {
+                                            font-size:31px;
+                                            margin:7px 0 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .bottom 
+                            {
+                                margin:77px 0 0 0;
+                            }
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:37px;
+                                }
+                            }
+                            .middle 
+                            {
+                                margin:77px 0 0 0;
+                            }
+                        }
+                        .tags 
+                        {
+                            margin:175px 0 0 0;
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:37px;
+                                }
+                            }
+                            .tagsText 
+                            {
+                                margin:31px 0 0 0;
+                                h3 
+                                {
+                                    font-size:37px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    .bodyBlogs 
+    {
+        .blogArea 
+        {
+            .content 
+            {
+                margin:210px 0 210px 0;
+                .left 
+                {
+                    .author 
+                    {
+                        margin:213px 0 0 0;
+                        .imgText 
+                        {
+                            .textContainerAuthor
+                            {
+                                .mailText 
+                                {
+                                    .mail 
+                                    {
+                                        margin:26px 0 0 0;
+                                        h3 
+                                        {
+                                            font-size:37px;
+                                        }
+                                    }
+                                    .name 
+                                    {
+                                        h2 
+                                        {
+                                            font-size:45px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .comment 
+                    {
+                        margin:162px 0 0 0;
+                        h2 
+                        {
+                            font-size:56px;
+                        }
+                    }
+                    .commentAuthor 
+                    {
+                        margin:76px 0 0 0;
+                        h4 
+                        {
+                            font-size:41px;
+                        }
+                    }
+                    .commentDate 
+                    {
+                        margin:10px 0 0 0;
+                        h5 
+                        {
+                            font-size:32px;
+                        }
+                    }
+                    .commentText 
+                    {
+                        margin:18px 0 0 0;
+                        h4 
+                        {
+                            font-size:41px;
+                        }
+                    }
+                    form 
+                    {
+                        margin:75px 0 0 0;
+                        .buttonComment 
+                        {
+                            border:3.1px solid $menusThree;
+                            height:162px;
+                            margin:93px 0 0 0;
+                            .submitComment 
+                            {
+                                bottom:13px;
+                                font-size:31px;
+                                height:162px;
+                                left:13px;
+                            }
+                        }
+                        .email 
+                        {
+                            .emailField 
+                            {
+                                border:1.56px solid;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                            }
+                            input[placeholder]
+                            {
+                                font-size:41px;
+                                padding:0 0 22px 0;
+                            }
+                        }
+                        .message 
+                        {
+                            margin:93px 0 0 0;
+                            .messageField 
+                            {
+                                border:1.56px solid;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                            }
+                            textarea[placeholder]
+                            {
+                                font-size:41px;
+                                padding:0 0 116px 0;
+                            }
+                        }
+                        .name 
+                        {
+                            input[placeholder]
+                            {
+                                font-size:41px;
+                                padding:0 0 22px 0;
+                            }
+                            .nameField 
+                            {
+                                border:1.56px solid;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                            }
+                        }
+                    }
+                    .headingContainer 
+                    {
+                        margin:100px 0 0 0;
+                        h3 
+                        {
+                            font-size:46px;
+                        }
+                    }
+                    .leaveComment 
+                    {
+                        margin:200px 0 0 0;
+                        h4 
+                        {
+                            font-size:41px;
+                        }
+                    }
+                    .txtContainer 
+                    {
+                        margin:51px 0 0 0;
+                        h3 
+                        {
+                            font-size:46px;
+                        }
+                    }
+                    .txtContainerRestaurant 
+                    {
+                        margin:26px 0 0 0;
+                        h4 
+                        {
+                            font-size:38px;
+                        }
+                    }
+                }
+                .right 
+                {
+                    .rightContent 
+                    {
+                        .categories 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:46px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:38px 0 0 0;
+                                h3 
+                                {
+                                    font-size:46px;
+                                }
+                                .textFour 
+                                {
+                                    margin:22px 0 0 0;
+                                }
+                                .textThree
+                                {
+                                    margin:22px 0 0 0;
+                                }
+                                .textTwo 
+                                {
+                                    margin:22px 0 0 0;
+                                }
+                            }
+                        }
+                        .follow 
+                        {
+                            margin:219px 0 0 0;
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:46px;
+                                }
+                            }
+                            .iconsContainer 
+                            {
+                                margin:56px 0 0 0;
+                                .icons 
+                                {
+                                    right:38px;
+                                    .followImgContainer 
+                                    {
+                                        margin:38px;
+                                        width:126px;
+                                        a 
+                                        {
+                                            text-decoration:none;
+                                            img 
+                                            {
+                                                width:126px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .posts 
+                        {
+                            margin:219px 0 0 0;
+                            .block 
+                            {
+                                margin:56px 0 0 0;
+                                .imgContainer 
+                                {
+                                    width:312px;
+                                }
+                                .textContainer 
+                                {
+                                    .textArea 
+                                    {
+                                        left:70px;
+                                        h3 
+                                        {
+                                            font-size:46px;
+                                        }
+                                        h4 
+                                        {
+                                            font-size:38px;
+                                            margin:8px 0 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .bottom 
+                            {
+                                margin:96px 0 0 0;
+                            }
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:46px;
+                                }
+                            }
+                            .middle 
+                            {
+                                margin:96px 0 0 0;
+                            }
+                        }
+                        .tags 
+                        {
+                            margin:219px 0 0 0;
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:46px;
+                                }
+                            }
+                            .tagsText 
+                            {
+                                margin:38px 0 0 0;
+                                h3 
+                                {
+                                    font-size:46px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    .bodyBlogs 
+    {
+        .blogArea 
+        {
+            .content 
+            {
+                margin:263px 0 263px 0;
+                .left 
+                {
+                    .author 
+                    {
+                        margin:266px 0 0 0;
+                        .imgText 
+                        {
+                            .textContainerAuthor
+                            {
+                                .mailText 
+                                {
+                                    .mail 
+                                    {
+                                        margin:32px 0 0 0;
+                                        h3 
+                                        {
+                                            font-size:46px;
+                                        }
+                                    }
+                                    .name 
+                                    {
+                                        h2 
+                                        {
+                                            font-size:56px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .comment 
+                    {
+                        margin:202px 0 0 0;
+                        h2 
+                        {
+                            font-size:70px;
+                        }
+                    }
+                    .commentAuthor 
+                    {
+                        margin:95px 0 0 0;
+                        h4 
+                        {
+                            font-size:51px;
+                        }
+                    }
+                    .commentDate 
+                    {
+                        margin:12.5px 0 0 0;
+                        h5 
+                        {
+                            font-size:40px;
+                        }
+                    }
+                    .commentText 
+                    {
+                        margin:22px 0 0 0;
+                        h4 
+                        {
+                            font-size:51px;
+                        }
+                    }
+                    form 
+                    {
+                        margin:93px 0 0 0;
+                        .buttonComment 
+                        {
+                            border:3.8px solid $menusThree;
+                            height:202px;
+                            margin:116px 0 0 0;
+                            .submitComment 
+                            {
+                                bottom:16px;
+                                font-size:38px;
+                                height:202px;
+                                left:16px;
+                            }
+                        }
+                        .email 
+                        {
+                            .emailField 
+                            {
+                                border:1.95px solid;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                            }
+                            input[placeholder]
+                            {
+                                font-size:51px;
+                                padding:0 0 27px 0;
+                            }
+                        }
+                        .message 
+                        {
+                            margin:116px 0 0 0;
+                            .messageField 
+                            {
+                                border:1.95px solid;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                            }
+                            textarea[placeholder]
+                            {
+                                font-size:51px;
+                                padding:0 0 145px 0;
+                            }
+                        }
+                        .name 
+                        {
+                            input[placeholder]
+                            {
+                                font-size:51px;
+                                padding:0 0 27px 0;
+                            }
+                            .nameField 
+                            {
+                                border:1.95px solid;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                            }
+                        }
+                    }
+                    .headingContainer 
+                    {
+                        margin:125px 0 0 0;
+                        h3 
+                        {
+                            font-size:57px;
+                        }
+                    }
+                    .leaveComment 
+                    {
+                        margin:250px 0 0 0;
+                        h4 
+                        {
+                            font-size:51px;
+                        }
+                    }
+                    .txtContainer 
+                    {
+                        margin:63px 0 0 0;
+                        h3 
+                        {
+                            font-size:57px;
+                        }
+                    }
+                    .txtContainerRestaurant 
+                    {
+                        margin:32px 0 0 0;
+                        h4 
+                        {
+                            font-size:47px;
+                        }
+                    }
+                }
+                .right 
+                {
+                    .rightContent 
+                    {
+                        .categories 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:57px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:47px 0 0 0;
+                                h3 
+                                {
+                                    font-size:57px;
+                                }
+                                .textFour 
+                                {
+                                    margin:27px 0 0 0;
+                                }
+                                .textThree
+                                {
+                                    margin:27px 0 0 0;
+                                }
+                                .textTwo 
+                                {
+                                    margin:27px 0 0 0;
+                                }
+                            }
+                        }
+                        .follow 
+                        {
+                            margin:274px 0 0 0;
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:57px;
+                                }
+                            }
+                            .iconsContainer 
+                            {
+                                margin:70px 0 0 0;
+                                .icons 
+                                {
+                                    right:47px;
+                                    .followImgContainer 
+                                    {
+                                        margin:47px;
+                                        width:157px;
+                                        a 
+                                        {
+                                            text-decoration:none;
+                                            img 
+                                            {
+                                                width:157px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .posts 
+                        {
+                            margin:274px 0 0 0;
+                            .block 
+                            {
+                                margin:70px 0 0 0;
+                                .imgContainer 
+                                {
+                                    width:390px;
+                                }
+                                .textContainer 
+                                {
+                                    .textArea 
+                                    {
+                                        left:87px;
+                                        h3 
+                                        {
+                                            font-size:57px;
+                                        }
+                                        h4 
+                                        {
+                                            font-size:47px;
+                                            margin:10px 0 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .bottom 
+                            {
+                                margin:120px 0 0 0;
+                            }
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:57px;
+                                }
+                            }
+                            .middle 
+                            {
+                                margin:120px 0 0 0;
+                            }
+                        }
+                        .tags 
+                        {
+                            margin:274px 0 0 0;
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:57px;
+                                }
+                            }
+                            .tagsText 
+                            {
+                                margin:47px 0 0 0;
+                                h3 
+                                {
+                                    font-size:57px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px)
+{
+    .bodyBlogs 
+    {
+        .blogArea 
+        {
+            .content 
+            {
+                margin:329px 0 329px 0;
+                .left 
+                {
+                    .author 
+                    {
+                        margin:333px 0 0 0;
+                        .imgText 
+                        {
+                            .textContainerAuthor
+                            {
+                                .mailText 
+                                {
+                                    .mail 
+                                    {
+                                        margin:40px 0 0 0;
+                                        h3 
+                                        {
+                                            font-size:57px;
+                                        }
+                                    }
+                                    .name 
+                                    {
+                                        h2 
+                                        {
+                                            font-size:70px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .comment 
+                    {
+                        margin:252px 0 0 0;
+                        h2 
+                        {
+                            font-size:87px;
+                        }
+                    }
+                    .commentAuthor 
+                    {
+                        margin:118px 0 0 0;
+                        h4 
+                        {
+                            font-size:63px;
+                        }
+                    }
+                    .commentDate 
+                    {
+                        margin:15.6px 0 0 0;
+                        h5 
+                        {
+                            font-size:50px;
+                        }
+                    }
+                    .commentText 
+                    {
+                        margin:27px 0 0 0;
+                        h4 
+                        {
+                            font-size:63px;
+                        }
+                    }
+                    form 
+                    {
+                        margin:116px 0 0 0;
+                        .buttonComment 
+                        {
+                            border:4.7px solid $menusThree;
+                            height:252px;
+                            margin:145px 0 0 0;
+                            .submitComment 
+                            {
+                                bottom:20px;
+                                font-size:47px;
+                                height:252px;
+                                left:20px;
+                            }
+                        }
+                        .email 
+                        {
+                            .emailField 
+                            {
+                                border:2.43px solid;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                            }
+                            input[placeholder]
+                            {
+                                font-size:63px;
+                                padding:0 0 33px 0;
+                            }
+                        }
+                        .message 
+                        {
+                            margin:145px 0 0 0;
+                            .messageField 
+                            {
+                                border:2.43px solid;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                            }
+                            textarea[placeholder]
+                            {
+                                font-size:63px;
+                                padding:0 0 181px 0;
+                            }
+                        }
+                        .name 
+                        {
+                            input[placeholder]
+                            {
+                                font-size:63px;
+                                padding:0 0 33px 0;
+                            }
+                            .nameField 
+                            {
+                                border:2.43px solid;
+                                border-left:none;
+                                border-right:none;
+                                border-top:none;
+                            }
+                        }
+                    }
+                    .headingContainer 
+                    {
+                        margin:156px 0 0 0;
+                        h3 
+                        {
+                            font-size:71px;
+                        }
+                    }
+                    .leaveComment 
+                    {
+                        margin:312px 0 0 0;
+                        h4 
+                        {
+                            font-size:63px;
+                        }
+                    }
+                    .txtContainer 
+                    {
+                        margin:78px 0 0 0;
+                        h3 
+                        {
+                            font-size:71px;
+                        }
+                    }
+                    .txtContainerRestaurant 
+                    {
+                        margin:40px 0 0 0;
+                        h4 
+                        {
+                            font-size:58px;
+                        }
+                    }
+                }
+                .right 
+                {
+                    .rightContent 
+                    {
+                        .categories 
+                        {
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:71px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:58px 0 0 0;
+                                h3 
+                                {
+                                    font-size:71px;
+                                }
+                                .textFour 
+                                {
+                                    margin:33px 0 0 0;
+                                }
+                                .textThree
+                                {
+                                    margin:33px 0 0 0;
+                                }
+                                .textTwo 
+                                {
+                                    margin:33px 0 0 0;
+                                }
+                            }
+                        }
+                        .follow 
+                        {
+                            margin:343px 0 0 0;
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:71px;
+                                }
+                            }
+                            .iconsContainer 
+                            {
+                                margin:87px 0 0 0;
+                                .icons 
+                                {
+                                    right:58px;
+                                    .followImgContainer 
+                                    {
+                                        margin:58px;
+                                        width:196px;
+                                        a 
+                                        {
+                                            text-decoration:none;
+                                            img 
+                                            {
+                                                width:196px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .posts 
+                        {
+                            margin:343px 0 0 0;
+                            .block 
+                            {
+                                margin:87px 0 0 0;
+                                .imgContainer 
+                                {
+                                    width:488px;
+                                }
+                                .textContainer 
+                                {
+                                    .textArea 
+                                    {
+                                        left:108px;
+                                        h3 
+                                        {
+                                            font-size:71px;
+                                        }
+                                        h4 
+                                        {
+                                            font-size:58px;
+                                            margin:12.5px 0 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .bottom 
+                            {
+                                margin:150px 0 0 0;
+                            }
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:71px;
+                                }
+                            }
+                            .middle 
+                            {
+                                margin:150px 0 0 0;
+                            }
+                        }
+                        .tags 
+                        {
+                            margin:343px 0 0 0;
+                            .heading 
+                            {
+                                h3 
+                                {
+                                    font-size:71px;
+                                }
+                            }
+                            .tagsText 
+                            {
+                                margin:58px 0 0 0;
+                                h3 
+                                {
+                                    font-size:71px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

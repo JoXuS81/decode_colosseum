@@ -1,0 +1,1263 @@
+/*
+Table of contents
+    Contact
+        Content
+            Bottom
+                Button Container
+                    Button Area
+                        Submit Button
+                Contact Form
+                    Block
+                        Field
+                            Hover
+                        Input, Placeholder
+                        Moz Placeholder
+                        Textarea
+                    Bottom Form
+                    Middle Left
+                    Middle Right
+                    Top Left
+                    Top Right
+            Middle
+                Block
+                    Block Content
+                        Block Container
+                            Bottom Text
+                                H2
+                            Img Container
+                                Img Area
+                                    Img
+                            Top Text
+                                H2
+            Top
+                Heading
+                    H2
+    Media Queries
+        Max Width - 300px
+        Min Width 301px and Max Width 400px
+        Other Sizes
+*/
+
+
+.contact 
+{
+    margin:300px 0 0 0;
+    width:100%;
+    .content 
+    {
+        height:100%;
+        width:81%;
+        // Contact Form
+        .bottom 
+        {
+            margin:157px;
+            position:relative;
+            right:25px;
+            width:calc(100% + 50px);
+            .contactForm 
+            {
+                width:100%;
+                .block 
+                {
+                    border:25px solid transparent;
+                    .field 
+                    {
+                        background:$darkOpacityInfo;
+                        border:1px solid transparent;
+                        border-radius:20px;
+                        height:100%;
+                        outline:none;
+                        width:100%;
+                        &:hover 
+                        {
+                            border-color:$menusThree;
+                        }
+                    }
+                    input[placeholder]
+                    {
+                        color:$white;
+                        font-family:patuaOneRegular;
+                        font-size:22px;
+                        padding:0 0 0 25px;
+                    }
+                    ::-moz-placeholder 
+                    {
+                        color:$white;
+                        opacity:1;
+                    }
+                    textarea[placeholder]
+                    {
+                        color:$white;
+                        font-family:patuaOneRegular;
+                        font-size:22px;
+                        padding:20px 0 0 25px;
+                    }
+                    ::-webkit-input-placeholder 
+                    {
+                        color:$white;
+                        opacity:1;
+                    }
+                }
+                .bottomForm 
+                {
+                    height:544px;
+                }
+                .buttonContainer 
+                {
+                    height:150px;
+                    width:100%;
+                    .buttonArea 
+                    {
+                        background:transparent;
+                        border:2px solid $menusThree;
+                        height:100%;
+                        width:21%;
+                        .submitButton 
+                        {
+                            background:$sticky;
+                            border:none;
+                            bottom:8px;
+                            color:$white;
+                            font-family:patuaOneRegular;
+                            font-size:30px;
+                            height:100%;
+                            left:8px;
+                            position:relative;
+                            width:100%;
+                            &:hover 
+                            {
+                                background:$menusThree;
+                            }
+                        }
+                    }
+                }
+                .middleLeft 
+                {
+                    height:125px;
+                }
+                .middleRight
+                {
+                    height:125px;
+                }
+                .topLeft 
+                {
+                    height:125px;
+                }
+                .topRight 
+                {
+                    height:125px;
+                }
+            }
+        }
+        // Social Icons, Info
+        .middle 
+        {
+            margin:65px;
+            width:100%;
+            .block 
+            {
+                .blockContent 
+                {
+                    width:100%;
+                    .blockContainer 
+                    {
+                        width:57%;
+                        .bottomText 
+                        {
+                            margin:13px 0 0 0;
+                            width:100%;
+                            h2 
+                            {
+                                color:$white;
+                                font-family:oswaldRegular;
+                                font-size:29px;
+                            }
+                        }
+                        .imgContainer 
+                        {
+                            .imgArea 
+                            {
+                                img 
+                                {
+                                    height:auto;
+                                    width:135px;
+                                }
+                            }
+                        }
+                        .topText 
+                        {
+                            margin:13px 0 0 0;
+                            h2 
+                            {
+                                color:$white;
+                                font-family:oswaldRegular;
+                                font-size:45px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Heading
+        .top 
+        {
+            width:100%;
+            .heading 
+            {
+                h2 
+                {
+                    color:$white;
+                    font-family:playballRegular;
+                    font-size:50px;
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive Design
+@media (max-width:300px)
+{
+    .contact 
+    {
+        margin:96px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:100px 0 0 0;
+                .contactForm 
+                {
+                    .block 
+                    {
+                        width:100%;
+                        .field 
+                        {
+                            border-radius:14px;
+                        }
+                        input[placeholder]
+                        {
+                            font-size:15px;
+                            padding:0 0 0 9px;
+                        }
+                        textarea[placeholder]
+                        {
+                            font-size:15px;
+                            padding:7px 0 0 9px;
+                        }
+                    }
+                    .bottomForm 
+                    {
+                        height:173px;
+                    }
+                    .buttonContainer 
+                    {
+                        height:48px;
+                        .buttonArea 
+                        {
+                            width:62%;
+                            .submitButton 
+                            {
+                                font-size:15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .middle 
+            {
+                .block 
+                {
+                    width:100%;
+                    .blockContent 
+                    {
+                        .blockContainer
+                        {
+                            width:100%;
+                            .bottomText 
+                            {
+                                h2 
+                                {
+                                    font-size:17px;
+                                }
+                            }
+                            .imgContainer 
+                            {
+                                .imgArea
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:79px;
+                                    }
+                                }
+                            }
+                            .topText
+                            {
+                                h2 
+                                {
+                                    font-size:26px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blockMail 
+                {
+                    margin:58px 0 0 0;
+                }
+                .center 
+                {
+                    margin:58px 0 0 0;
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:301px) and (max-width:400px)
+{
+    .contact 
+    {
+        margin:127px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:100px 0 0 0;
+                .contactForm 
+                {
+                    .block 
+                    {
+                        width:100%;
+                        .field 
+                        {
+                            border-radius:16px;
+                        }
+                        input[placeholder]
+                        {
+                            font-size:15px;
+                            padding:0 0 0 12px;
+                        }
+                        textarea[placeholder]
+                        {
+                            font-size:15px;
+                            padding:9px 0 0 12px;
+                        }
+                    }
+                    .bottomForm 
+                    {
+                        height:230px;
+                    }
+                    .buttonContainer 
+                    {
+                        height:64px;
+                        .buttonArea 
+                        {
+                            width:56%;
+                            .submitButton 
+                            {
+                                font-size:15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .middle 
+            {
+                .block 
+                {
+                    width:100%;
+                    .blockContent 
+                    {
+                        .blockContainer
+                        {
+                            width:100%;
+                            .bottomText 
+                            {
+                                h2 
+                                {
+                                    font-size:19px;
+                                }
+                            }
+                            .imgContainer 
+                            {
+                                .imgArea
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:88px;
+                                    }
+                                }
+                            }
+                            .topText
+                            {
+                                h2 
+                                {
+                                    font-size:29px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blockMail 
+                {
+                    margin:58px 0 0 0;
+                }
+                .center 
+                {
+                    margin:58px 0 0 0;
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:29px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:401px) and (max-width:525px)
+{
+    .contact 
+    {
+        margin:169px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:100px 0 0 0;
+                .contactForm 
+                {
+                    .block 
+                    {
+                        width:100%;
+                        .field 
+                        {
+                            border-radius:18px;
+                        }
+                        input[placeholder]
+                        {
+                            font-size:15px;
+                            padding:0 0 0 15px;
+                        }
+                        textarea[placeholder]
+                        {
+                            font-size:15px;
+                            padding:12px 0 0 15px;
+                        }
+                    }
+                    .bottomForm 
+                    {
+                        height:306px;
+                    }
+                    .buttonContainer 
+                    {
+                        height:85px;
+                        .buttonArea 
+                        {
+                            width:51%;
+                            .submitButton 
+                            {
+                                font-size:18px;
+                            }
+                        }
+                    }
+                }
+            }
+            .middle 
+            {
+                .block 
+                {
+                    width:100%;
+                    .blockContent 
+                    {
+                        .blockContainer
+                        {
+                            width:100%;
+                            .bottomText 
+                            {
+                                h2 
+                                {
+                                    font-size:21px;
+                                }
+                            }
+                            .imgContainer 
+                            {
+                                .imgArea
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:98px;
+                                    }
+                                }
+                            }
+                            .topText
+                            {
+                                h2 
+                                {
+                                    font-size:32px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blockMail 
+                {
+                    margin:58px 0 0 0;
+                }
+                .center 
+                {
+                    margin:58px 0 0 0;
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:38px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:526px) and (max-width:650px)
+{
+    .contact 
+    {
+        margin:225px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:100px 0 0 0;
+                .contactForm 
+                {
+                    .block 
+                    {
+                        width:100%;
+                        input[placeholder]
+                        {
+                            font-size:17px;
+                            padding:0 0 0 19px;
+                        }
+                        textarea[placeholder]
+                        {
+                            font-size:17px;
+                            padding:15px 0 0 19px;
+                        }
+                    }
+                    .bottomForm 
+                    {
+                        height:408px;
+                    }
+                    .buttonContainer 
+                    {
+                        height:113px;
+                        .buttonArea 
+                        {
+                            width:46%;
+                            .submitButton 
+                            {
+                                font-size:23px;
+                            }
+                        }
+                    }
+                }
+            }
+            .middle 
+            {
+                .block 
+                {
+                    width:100%;
+                    .blockContent 
+                    {
+                        .blockContainer
+                        {
+                            width:100%;
+                            .bottomText 
+                            {
+                                h2 
+                                {
+                                    font-size:23px;
+                                }
+                            }
+                            .imgContainer 
+                            {
+                                .imgArea
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:109px;
+                                    }
+                                }
+                            }
+                            .topText
+                            {
+                                h2 
+                                {
+                                    font-size:36px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blockMail 
+                {
+                    margin:58px 0 0 0;
+                }
+                .center 
+                {
+                    margin:58px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:650px) and (max-width:1199px)
+{
+    .contact 
+    {
+        .content 
+        {
+            .bottom 
+            {
+                margin:100px 0 0 0;
+                .contactForm 
+                {
+                    .block 
+                    {
+                        width:100%;
+                    }
+                    .buttonContainer 
+                    {
+                        .buttonArea 
+                        {
+                            width:42%;
+                        }
+                    }
+                }
+            }
+            .middle 
+            {
+                .block 
+                {
+                    width:100%;
+                    .blockContent 
+                    {
+                        .blockContainer
+                        {
+                            width:100%;
+                            .bottomText 
+                            {
+                                h2 
+                                {
+                                    font-size:23px;
+                                }
+                            }
+                            .imgContainer 
+                            {
+                                .imgArea
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:109px;
+                                    }
+                                }
+                            }
+                            .topText
+                            {
+                                h2 
+                                {
+                                    font-size:36px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blockMail 
+                {
+                    margin:58px 0 0 0;
+                }
+                .center 
+                {
+                    margin:58px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1399px)
+{
+    .contact 
+    {
+        .content 
+        {
+            .middle 
+            {
+                .block 
+                {
+                    .blockContent 
+                    {
+                        .blockContainer
+                        {
+                            .bottomText 
+                            {
+                                h2 
+                                {
+                                    font-size:23px;
+                                }
+                            }
+                            .imgContainer 
+                            {
+                                .imgArea
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:109px;
+                                    }
+                                }
+                            }
+                            .topText
+                            {
+                                h2 
+                                {
+                                    font-size:36px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    .contact 
+    {
+        margin:375px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:196px;
+                right:31px;
+                width:calc(100% + 62px);
+                .contactForm 
+                {
+                    .block 
+                    {
+                        border:31px solid transparent;
+                        .field 
+                        {
+                            border:1.25px solid transparent;
+                            border-radius:25px;
+                        }
+                        input[placeholder]
+                        {
+                            font-size:27px;
+                            padding:0 0 0 31px;
+                        }
+                        textarea[placeholder]
+                        {
+                            font-size:27px;
+                            padding:25px 0 0 31px;
+                        }
+                    }
+                    .bottomForm 
+                    {
+                        height:680px;
+                    }
+                    .buttonContainer 
+                    {
+                        height:187px;
+                        .buttonArea 
+                        {
+                            border:2.5px solid $menusThree;
+                            .submitButton 
+                            {
+                                bottom:10px;
+                                font-size:37px;
+                                left:10px;
+                            }
+                        }
+                    }
+                    .middleLeft 
+                    {
+                        height:156px;
+                    }
+                    .middleRight
+                    {
+                        height:156px;
+                    }
+                    .topLeft 
+                    {
+                        height:156px;
+                    }
+                    .topRight 
+                    {
+                        height:156px;
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:81px;
+                .block 
+                {
+                    .blockContent 
+                    {
+                        .blockContainer 
+                        {
+                            .bottomText 
+                            {
+                                margin:16px 0 0 0;
+                                h2 
+                                {
+                                    font-size:36px;
+                                }
+                            }
+                            .imgContainer 
+                            {
+                                .imgArea 
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:168px;
+                                    }
+                                }
+                            }
+                            .topText 
+                            {
+                                margin:16px 0 0 0;
+                                h2 
+                                {
+                                    font-size:56px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:62px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    .contact 
+    {
+        margin:469px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:245px;
+                right:38px;
+                width:calc(100% + 77px);
+                .contactForm 
+                {
+                    .block 
+                    {
+                        border:38px solid transparent;
+                        .field 
+                        {
+                            border:1.56px solid transparent;
+                            border-radius:31px;
+                        }
+                        input[placeholder]
+                        {
+                            font-size:33px;
+                            padding:0 0 0 38px;
+                        }
+                        textarea[placeholder]
+                        {
+                            font-size:33px;
+                            padding:31px 0 0 38px;
+                        }
+                    }
+                    .bottomForm 
+                    {
+                        height:850px;
+                    }
+                    .buttonContainer 
+                    {
+                        height:234px;
+                        .buttonArea 
+                        {
+                            border:3.1px solid $menusThree;
+                            .submitButton 
+                            {
+                                bottom:13px;
+                                font-size:46px;
+                                left:13px;
+                            }
+                        }
+                    }
+                    .middleLeft 
+                    {
+                        height:195px;
+                    }
+                    .middleRight
+                    {
+                        height:195px;
+                    }
+                    .topLeft 
+                    {
+                        height:195px;
+                    }
+                    .topRight 
+                    {
+                        height:195px;
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:101px;
+                .block 
+                {
+                    .blockContent 
+                    {
+                        .blockContainer 
+                        {
+                            .bottomText 
+                            {
+                                margin:20px 0 0 0;
+                                h2 
+                                {
+                                    font-size:45px;
+                                }
+                            }
+                            .imgContainer 
+                            {
+                                .imgArea 
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:210px;
+                                    }
+                                }
+                            }
+                            .topText 
+                            {
+                                margin:20px 0 0 0;
+                                h2 
+                                {
+                                    font-size:70px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:77px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    .contact 
+    {
+        margin:586px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:306px;
+                right:47px;
+                width:calc(100% + 96px);
+                .contactForm 
+                {
+                    .block 
+                    {
+                        border:47px solid transparent;
+                        .field 
+                        {
+                            border:1.95px solid transparent;
+                            border-radius:31px;
+                        }
+                        input[placeholder]
+                        {
+                            font-size:41px;
+                            padding:0 0 0 47px;
+                        }
+                        textarea[placeholder]
+                        {
+                            font-size:41px;
+                            padding:38px 0 0 47px;
+                        }
+                    }
+                    .bottomForm 
+                    {
+                        height:1063px;
+                    }
+                    .buttonContainer 
+                    {
+                        height:293px;
+                        .buttonArea 
+                        {
+                            border:3.8px solid $menusThree;
+                            .submitButton 
+                            {
+                                bottom:16px;
+                                font-size:57px;
+                                left:16px;
+                            }
+                        }
+                    }
+                    .middleLeft 
+                    {
+                        height:244px;
+                    }
+                    .middleRight
+                    {
+                        height:244px;
+                    }
+                    .topLeft 
+                    {
+                        height:244px;
+                    }
+                    .topRight 
+                    {
+                        height:244px;
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:126px;
+                .block 
+                {
+                    .blockContent 
+                    {
+                        .blockContainer 
+                        {
+                            .bottomText 
+                            {
+                                margin:25px 0 0 0;
+                                h2 
+                                {
+                                    font-size:56px;
+                                }
+                            }
+                            .imgContainer 
+                            {
+                                .imgArea 
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:262px;
+                                    }
+                                }
+                            }
+                            .topText 
+                            {
+                                margin:25px 0 0 0;
+                                h2 
+                                {
+                                    font-size:87px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:96px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px) 
+{
+    .contact 
+    {
+        margin:733px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:383px;
+                right:58px;
+                width:calc(100% + 120px);
+                .contactForm 
+                {
+                    .block 
+                    {
+                        border:58px solid transparent;
+                        .field 
+                        {
+                            border:2.44px solid transparent;
+                            border-radius:38px;
+                        }
+                        input[placeholder]
+                        {
+                            font-size:51px;
+                            padding:0 0 0 58px;
+                        }
+                        textarea[placeholder]
+                        {
+                            font-size:51px;
+                            padding:47px 0 0 58px;
+                        }
+                    }
+                    .bottomForm 
+                    {
+                        height:1329px;
+                    }
+                    .buttonContainer 
+                    {
+                        height:366px;
+                        .buttonArea 
+                        {
+                            border:4.7px solid $menusThree;
+                            .submitButton 
+                            {
+                                bottom:20px;
+                                font-size:71px;
+                                left:20px;
+                            }
+                        }
+                    }
+                    .middleLeft 
+                    {
+                        height:305px;
+                    }
+                    .middleRight
+                    {
+                        height:305px;
+                    }
+                    .topLeft 
+                    {
+                        height:305px;
+                    }
+                    .topRight 
+                    {
+                        height:305px;
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:158px;
+                .block 
+                {
+                    .blockContent 
+                    {
+                        .blockContainer 
+                        {
+                            .bottomText 
+                            {
+                                margin:31px 0 0 0;
+                                h2 
+                                {
+                                    font-size:70px;
+                                }
+                            }
+                            .imgContainer 
+                            {
+                                .imgArea 
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:328px;
+                                    }
+                                }
+                            }
+                            .topText 
+                            {
+                                margin:31px 0 0 0;
+                                h2 
+                                {
+                                    font-size:108px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:120px;
+                    }
+                }
+            }
+        }
+    }
+}

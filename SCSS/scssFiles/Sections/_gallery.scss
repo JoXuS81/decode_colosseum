@@ -1,0 +1,1067 @@
+/*
+Table of contents
+    Gallery
+        Content 
+            Bottom
+                Bottom Content
+                    Products
+                        All
+                            Content Area
+                                Img Place
+                                    Gallery Hover
+                                    Gallery No Hover
+                                    Hover Area
+                                        Borders
+                                            Inner Content
+                                                Button Area
+                                                    Button
+                                                        Plus Area
+                                                            Horizontal
+                                                            Vertical
+                                                Heading
+                                                    H2
+                                                Text
+                                                    H5
+                                    Img
+            Top
+                Heading
+                    Text
+    Media Queries
+        Max Width - 300px
+        Min Width 301px and Max Width 400px
+        Other Sizes
+*/
+
+
+.gallery 
+{
+    margin:300px 0 0 0;
+    width:100%;
+    .content 
+    {
+        // Images Area
+        .bottom 
+        {
+            margin:59px 0 0 0;
+            width:100%;
+            .bottomContent 
+            {
+                width:100%;
+                .products 
+                {
+                    width:88.2%;
+                    .all 
+                    {
+                        .contentArea
+                        {
+                            border:30.5px solid transparent;
+                            height:100%;
+                            width:100%;
+                            .imgPlace 
+                            {
+                                border-radius:15px;
+                                height:100%;
+                                position:relative;
+                                width:100%;
+                                .galleryHover 
+                                {
+                                    display:block;
+                                }
+                                .galleryNoHover
+                                {
+                                    display:none !important;
+                                }
+                                .hoverArea 
+                                {
+                                    background:$galleryImagesHover;
+                                    border-radius:15px;
+                                    height:100%;
+                                    left:0;
+                                    position:absolute;
+                                    top:0;
+                                    width:100%;
+                                    .borders 
+                                    {
+                                        border: 1px solid $white;
+                                        height:90%;
+                                        width:90%;
+                                        .innerContent 
+                                        {
+                                            height:261px;
+                                            position:relative;
+                                            width:89%;
+                                            .buttonArea 
+                                            {
+                                                bottom:0;
+                                                height:80px;
+                                                left:0;
+                                                position:absolute;
+                                                width:100%;
+                                                .button 
+                                                {
+                                                    border:1px solid $white;
+                                                    border-radius:50%;
+                                                    cursor:pointer;
+                                                    height:80px;
+                                                    width:80px;
+                                                    .plusArea
+                                                    {
+                                                        height:50px;
+                                                        position:relative;
+                                                        width:50px;
+                                                        .horizontal 
+                                                        {
+                                                            background:$white;
+                                                            height:1px;
+                                                            width:100%;
+                                                        }
+                                                        .vertical 
+                                                        {
+                                                            background:$white;
+                                                            height:100%;
+                                                            left:50%;
+                                                            position:absolute;
+                                                            transform:translate(-50%);
+                                                            width:1px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .heading 
+                                            {
+                                                width:100%;
+                                                h2 
+                                                {
+                                                    color:$white;
+                                                    font-family:oswaldSemiBold;
+                                                    font-size:33px;
+                                                }
+                                            }
+                                            .text 
+                                            {
+                                                margin:15px 0 0 0;
+                                                width:100%;
+                                                h5 
+                                                {
+                                                    color:$white;
+                                                    font-family:oswaldRegular;
+                                                    width:89%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                img 
+                                {
+                                    border-radius:15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Heading
+        .top 
+        {
+            .heading 
+            {
+                width:100%;
+                .text 
+                {
+                    color:$white;
+                    display:inline-block;
+                    font-family:playballRegular;
+                    font-size:50px;
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive Design
+@media (max-width:300px)
+{
+    .gallery 
+    {
+        margin:96px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:20px 0 0 0;
+                .bottomContent 
+                {
+                    .products 
+                    {
+                        .all 
+                        {
+                            .contentArea 
+                            {
+                                .imgPlace 
+                                {
+                                    .hoverArea 
+                                    {
+                                        .borders 
+                                        {
+                                            border:0.75px solid $white;
+                                            .innerContent 
+                                            {
+                                                height:221px;
+                                                .buttonArea 
+                                                {
+                                                    height:100%;
+                                                    .button 
+                                                    {
+                                                        border:0.75px solid $white;
+                                                        height:60px;
+                                                        width:60px;
+                                                        .plusArea
+                                                        {
+                                                            height:38px;
+                                                            position:relative;
+                                                            width:38px;
+                                                            .horizontal 
+                                                            {
+                                                                height:0.75px;
+                                                                width:100%;
+                                                            }
+                                                            .vertical 
+                                                            {
+                                                                height:100%;
+                                                                width:0.75px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .heading 
+                                                {
+                                                    display:none !important;
+                                                }
+                                                .text 
+                                                {
+                                                    display:none !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    .text 
+                    {
+                        font-size:22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:301px) and (max-width:400px)
+{
+    .gallery 
+    {
+        margin:127px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:26px 0 0 0;
+                .bottomContent 
+                {
+                    .products 
+                    {
+                        .all 
+                        {
+                            .contentArea 
+                            {
+                                .imgPlace 
+                                {
+                                    .hoverArea 
+                                    {
+                                        .borders 
+                                        {
+                                            border:0.75px solid $white;
+                                            .innerContent 
+                                            {
+                                                height:221px;
+                                                .buttonArea 
+                                                {
+                                                    height:100%;
+                                                    .button 
+                                                    {
+                                                        border:0.75px solid $white;
+                                                        height:60px;
+                                                        width:60px;
+                                                        .plusArea
+                                                        {
+                                                            height:38px;
+                                                            position:relative;
+                                                            width:38px;
+                                                            .horizontal 
+                                                            {
+                                                                height:0.75px;
+                                                                width:100%;
+                                                            }
+                                                            .vertical 
+                                                            {
+                                                                height:100%;
+                                                                width:0.75px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .heading 
+                                                {
+                                                    display:none !important;
+                                                }
+                                                .text 
+                                                {
+                                                    display:none !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    .text 
+                    {
+                        font-size:29px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:401px) and (max-width:525px)
+{
+    .gallery 
+    {
+        margin:169px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:34px 0 0 0;
+                .bottomContent 
+                {
+                    .products 
+                    {
+                        .all 
+                        {
+                            .contentArea 
+                            {
+                                .imgPlace 
+                                {
+                                    .hoverArea 
+                                    {
+                                        .borders 
+                                        {
+                                            border:0.75px solid $white;
+                                            .innerContent 
+                                            {
+                                                height:221px;
+                                                .buttonArea 
+                                                {
+                                                    height:100%;
+                                                    .button 
+                                                    {
+                                                        border:0.75px solid $white;
+                                                        height:60px;
+                                                        width:60px;
+                                                        .plusArea
+                                                        {
+                                                            height:38px;
+                                                            position:relative;
+                                                            width:38px;
+                                                            .horizontal 
+                                                            {
+                                                                height:0.75px;
+                                                                width:100%;
+                                                            }
+                                                            .vertical 
+                                                            {
+                                                                height:100%;
+                                                                width:0.75px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .heading 
+                                                {
+                                                    display:none !important;
+                                                }
+                                                .text 
+                                                {
+                                                    display:none !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    .text 
+                    {
+                        font-size:38px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:526px) and (max-width:575px)
+{
+    .gallery 
+    {
+        margin:225px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:45px 0 0 0;
+                .bottomContent 
+                {
+                    .products 
+                    {
+                        .all 
+                        {
+                            .contentArea 
+                            {
+                                .imgPlace 
+                                {
+                                    .hoverArea 
+                                    {
+                                        .borders 
+                                        {
+                                            border:0.75px solid $white;
+                                            .innerContent 
+                                            {
+                                                height:221px;
+                                                .buttonArea 
+                                                {
+                                                    height:100%;
+                                                    .button 
+                                                    {
+                                                        border:0.75px solid $white;
+                                                        height:60px;
+                                                        width:60px;
+                                                        .plusArea
+                                                        {
+                                                            height:38px;
+                                                            position:relative;
+                                                            width:38px;
+                                                            .horizontal 
+                                                            {
+                                                                height:0.75px;
+                                                                width:100%;
+                                                            }
+                                                            .vertical 
+                                                            {
+                                                                height:100%;
+                                                                width:0.75px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .heading 
+                                                {
+                                                    display:none !important;
+                                                }
+                                                .text 
+                                                {
+                                                    display:none !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:576px) and (max-width:650px)
+{
+    .gallery 
+    {
+        margin:225px 0 0 0;
+        .bottom 
+        {
+            margin:45px 0 0 0;
+        }
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1125px)
+{
+    .gallery 
+    {
+        .content 
+        {
+            .bottom 
+            {
+                .bottomContent 
+                {
+                    .products 
+                    {
+                        .all 
+                        {
+                            .contentArea 
+                            {
+                                .imgPlace 
+                                {
+                                    .hoverArea 
+                                    {
+                                        .borders 
+                                        {
+                                            border:0.75px solid $white;
+                                            .innerContent 
+                                            {
+                                                height:221px;
+                                                .buttonArea 
+                                                {
+                                                    height:100%;
+                                                    .button 
+                                                    {
+                                                        border:0.75px solid $white;
+                                                        height:60px;
+                                                        width:60px;
+                                                        .plusArea
+                                                        {
+                                                            height:38px;
+                                                            position:relative;
+                                                            width:38px;
+                                                            .horizontal 
+                                                            {
+                                                                height:0.75px;
+                                                                width:100%;
+                                                            }
+                                                            .vertical 
+                                                            {
+                                                                height:100%;
+                                                                width:0.75px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .heading 
+                                                {
+                                                    display:none !important;
+                                                }
+                                                .text 
+                                                {
+                                                    display:none !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1401px) and (max-width:1700px)
+{
+    .gallery 
+    {
+        .content 
+        {
+            .bottom 
+            {
+                .bottomContent 
+                {
+                    .products 
+                    {
+                        .all 
+                        {
+                            .contentArea 
+                            {
+                                .imgPlace 
+                                {
+                                    .hoverArea 
+                                    {
+                                        .borders 
+                                        {
+                                            border:0.75px solid $white;
+                                            .innerContent 
+                                            {
+                                                height:221px;
+                                                .buttonArea 
+                                                {
+                                                    height:60px;
+                                                    .button 
+                                                    {
+                                                        border:0.75px solid $white;
+                                                        height:60px;
+                                                        width:60px;
+                                                        .plusArea
+                                                        {
+                                                            height:38px;
+                                                            position:relative;
+                                                            width:38px;
+                                                            .horizontal 
+                                                            {
+                                                                height:0.75px;
+                                                                width:100%;
+                                                            }
+                                                            .vertical 
+                                                            {
+                                                                height:100%;
+                                                                width:0.75px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .heading 
+                                                {
+                                                    h2 
+                                                    {
+                                                        font-size:25px;
+                                                    }
+                                                }
+                                                .text 
+                                                {
+                                                    margin:12px 0 0 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    .gallery 
+    {
+        margin:375px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:73px 0 0 0;
+                .bottomContent 
+                {
+                    .products 
+                    {
+                        .all 
+                        {
+                            .contentArea
+                            {
+                                border:38px solid transparent;
+                                .imgPlace 
+                                {
+                                    border-radius:18px;
+                                    .hoverArea 
+                                    {
+                                        border-radius:18px;
+                                        .borders 
+                                        {
+                                            border: 1.25px solid $white;
+                                            .innerContent 
+                                            {
+                                                height:244px;
+                                                .buttonArea 
+                                                {
+                                                    height:75px;
+                                                    .button 
+                                                    {
+                                                        border:0.94px solid $white;
+                                                        height:75px;
+                                                        width:75px;
+                                                        .plusArea
+                                                        {
+                                                            height:47px;
+                                                            width:47px;
+                                                            .horizontal 
+                                                            {
+                                                                height:0.94px;
+                                                            }
+                                                            .vertical 
+                                                            {
+                                                                width:0.94px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .heading 
+                                                {
+                                                    h2 
+                                                    {
+                                                        font-size:41px;
+                                                    }
+                                                }
+                                                .text 
+                                                {
+                                                    margin:18px 0 0 0;
+                                                    h5 
+                                                    {
+                                                        font-size:22px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    img 
+                                    {
+                                        border-radius:18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    .text 
+                    {
+                        font-size:62px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    .gallery 
+    {
+        margin:469px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:91px 0 0 0;
+                .bottomContent 
+                {
+                    .products 
+                    {
+                        .all 
+                        {
+                            .contentArea
+                            {
+                                border:47px solid transparent;
+                                .imgPlace 
+                                {
+                                    border-radius:22px;
+                                    .hoverArea 
+                                    {
+                                        border-radius:22px;
+                                        .borders 
+                                        {
+                                            border: 1.56px solid $white;
+                                            .innerContent 
+                                            {
+                                                height:305px;
+                                                .buttonArea 
+                                                {
+                                                    height:93px;
+                                                    .button 
+                                                    {
+                                                        border:1.17px solid $white;
+                                                        height:93px;
+                                                        width:93px;
+                                                        .plusArea
+                                                        {
+                                                            height:58px;
+                                                            width:58px;
+                                                            .horizontal 
+                                                            {
+                                                                height:1.17px;
+                                                            }
+                                                            .vertical 
+                                                            {
+                                                                width:1.17px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .heading 
+                                                {
+                                                    h2 
+                                                    {
+                                                        font-size:51px;
+                                                    }
+                                                }
+                                                .text 
+                                                {
+                                                    margin:22px 0 0 0;
+                                                    h5 
+                                                    {
+                                                        font-size:27px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    img 
+                                    {
+                                        border-radius:22px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    .text 
+                    {
+                        font-size:77px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    .gallery 
+    {
+        margin:586px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:113px 0 0 0;
+                .bottomContent 
+                {
+                    .products 
+                    {
+                        .all 
+                        {
+                            .contentArea
+                            {
+                                border:58px solid transparent;
+                                .imgPlace 
+                                {
+                                    border-radius:27px;
+                                    .hoverArea 
+                                    {
+                                        border-radius:27px;
+                                        .borders 
+                                        {
+                                            border: 1.95px solid $white;
+                                            .innerContent 
+                                            {
+                                                height:381px;
+                                                .buttonArea 
+                                                {
+                                                    height:116px;
+                                                    .button 
+                                                    {
+                                                        border:1.45px solid $white;
+                                                        height:116px;
+                                                        width:116px;
+                                                        .plusArea
+                                                        {
+                                                            height:72px;
+                                                            width:72px;
+                                                            .horizontal 
+                                                            {
+                                                                height:1.45px;
+                                                            }
+                                                            .vertical 
+                                                            {
+                                                                width:1.45px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .heading 
+                                                {
+                                                    h2 
+                                                    {
+                                                        font-size:63px;
+                                                    }
+                                                }
+                                                .text 
+                                                {
+                                                    margin:27px 0 0 0;
+                                                    h5 
+                                                    {
+                                                        font-size:33px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    img 
+                                    {
+                                        border-radius:27px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    .text 
+                    {
+                        font-size:96px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px)
+{
+    .gallery 
+    {
+        margin:733px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:141px 0 0 0;
+                .bottomContent 
+                {
+                    .products 
+                    {
+                        .all 
+                        {
+                            .contentArea
+                            {
+                                border:72px solid transparent;
+                                .imgPlace 
+                                {
+                                    border-radius:33px;
+                                    .hoverArea 
+                                    {
+                                        border-radius:33px;
+                                        .borders 
+                                        {
+                                            border: 2.43px solid $white;
+                                            .innerContent 
+                                            {
+                                                height:476px;
+                                                .buttonArea 
+                                                {
+                                                    height:145px;
+                                                    .button 
+                                                    {
+                                                        border:1.81px solid $white;
+                                                        height:145px;
+                                                        width:145px;
+                                                        .plusArea
+                                                        {
+                                                            height:90px;
+                                                            width:90px;
+                                                            .horizontal 
+                                                            {
+                                                                height:1.81px;
+                                                            }
+                                                            .vertical 
+                                                            {
+                                                                width:1.81px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .heading 
+                                                {
+                                                    h2 
+                                                    {
+                                                        font-size:78px;
+                                                    }
+                                                }
+                                                .text 
+                                                {
+                                                    margin:33px 0 0 0;
+                                                    h5 
+                                                    {
+                                                        font-size:41px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    img 
+                                    {
+                                        border-radius:33px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    .text 
+                    {
+                        font-size:120px;
+                    }
+                }
+            }
+        }
+    }
+}

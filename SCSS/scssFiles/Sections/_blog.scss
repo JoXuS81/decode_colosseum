@@ -1,0 +1,1362 @@
+/*
+Table of contents
+    Blog
+        Content
+            Bottom
+                Block
+                    Bottom Left
+                    Bottom Right
+                    Content Area
+                        Button Area
+                            Button Inside
+                                H6
+                        Comments and Calendar - Container
+                            Calendar
+                                Icon Container
+                                    Img
+                                Text Container
+                                    H5
+                            Comments 
+                                Icon Container
+                                    Img
+                                Text Container
+                                    H5
+                            Line
+                        Img Container
+                            Img
+                        Info
+                            Small Heading
+                                H2
+                            Text
+                                H4
+                    Top Left
+                    Top Right
+            Top
+                Heading
+                    H2
+    Media Queries
+        Max Width - 300px
+        Min Width 301px and Max Width 400px
+        Other Sizes
+*/
+
+
+.blog 
+{
+    margin:300px 0 0 0;
+    width:100%;
+    .content 
+    {
+        width:81%;
+        // Blogs
+        .bottom 
+        {
+            margin:90px 0 0 0;
+            width:100%;
+            .block 
+            {
+                .bottomLeft 
+                {
+                    border-right:107px solid transparent;
+                    border-top:74px solid transparent;
+                    width:100%;
+                }
+                .bottomRight
+                {
+                    border-left:107px solid transparent;
+                    border-top:74px solid transparent;
+                    width:100%;
+                }
+                .contentArea 
+                {
+                    .buttonArea 
+                    {
+                        background:transparent;
+                        border:2px solid $menusThree;
+                        color:$white;
+                        cursor:pointer;
+                        font-family:patuaOneRegular;
+                        font-size:20px;
+                        height:66px;
+                        margin:38px 0 0 0;
+                        width:31%;
+                        .buttonInside 
+                        {
+                            background:$sticky;
+                            border:none;
+                            bottom:8px;
+                            color:$white;
+                            font-family:patuaOneRegular;
+                            font-size:20px;
+                            height:100%;
+                            left:8px;
+                            position:relative;
+                            width:100%;
+                            &:hover 
+                            {
+                                background:$menusThree;
+                            }
+                        }
+                    }
+                    .commentsCalendarContainer 
+                    {
+                        margin:25px 0 0 0;
+                        .calendar 
+                        {
+                            margin:0 0 0 7.3%;
+                            .iconContainer 
+                            {
+                                display:inline-block;
+                                img 
+                                {
+                                    height:auto;
+                                    width:38px;
+                                }
+                            }
+                            .textContainer 
+                            {
+                                display:inline-block;
+                                margin:0 0 0 12px;
+                                h5 
+                                {
+                                    color:$white;
+                                    font-family:patuaOneRegular;
+                                }
+                            }
+                        }
+                        .comments 
+                        {
+                            width:193px;
+                            .iconContainer 
+                            {
+                                display:inline-block;
+                                img 
+                                {
+                                    height:auto;
+                                    width:40px;
+                                }
+                            }
+                            .textContainer 
+                            {
+                                margin:0 0 0 12px;
+                                h5 
+                                {
+                                    color:$white;
+                                    font-family:patuaOneRegular;
+                                }
+                            }
+                        }
+                        .line
+                        {
+                            background:$white;
+                            height:50px;
+                            margin:0 29px 0 25px;
+                            width:0.75%;
+                        }
+                    }
+                    .imgContainer 
+                    {
+                        width:100%;
+                        img 
+                        {
+                            border-radius:20px;
+                        }
+                    }
+                    .info 
+                    {
+                        margin:25px 0 0 0;
+                        width:100%;
+                        .smallHeading 
+                        {
+                            width:100%;
+                            h2 
+                            {
+                                color:$white;
+                                font-family:patuaOneRegular;
+                                font-size:35px;
+                            }
+                        }
+                        .text 
+                        {
+                            margin:13px 0 0 0;
+                            h4 
+                            {
+                                color:$white;
+                                font-family:patuaOneRegular;
+                                font-size:25px;
+                            }
+                        }
+                    }
+                }
+                .topLeft 
+                {
+                    border-bottom:74px solid transparent;
+                    border-right:107px solid transparent;
+                    width:100%;
+                }
+                .topRight 
+                {
+                    border-bottom:74px solid transparent;
+                    border-left:107px solid transparent;
+                    width:100%;
+                }
+            }
+        }
+        // Heading
+        .top 
+        {
+            width:100%;
+            .heading 
+            {
+                h2 
+                {
+                    color:$white;
+                    font-family:playballRegular;
+                    font-size:50px;
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive Design
+@media (max-width:300px)
+{
+    .blog 
+    {
+        margin:96px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:30px 0 0 0;
+                .block 
+                {
+                    .contentArea 
+                    {
+                        border:none;
+                        width:100%;
+                        .buttonArea
+                        {
+                            height:50px;
+                            margin:22px 0 0 0;
+                            width:58%;
+                            .buttonInside 
+                            {
+                                font-size:16px;
+                            }
+                        }
+                        .commentsCalendarContainer 
+                        {
+                            margin:9px 0 0 0;
+                            .calendar 
+                            {
+                                margin:0 0 0 7.3%;
+                                .iconContainer 
+                                {
+                                    display:inline-block;
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:13px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    display:inline-block;
+                                    margin:0 0 0 5px;
+                                    h5 
+                                    {
+                                        color:$white;
+                                        font-family:oxygenBold;
+                                        font-size:15px;
+                                    }
+                                }
+                            }
+                            .comments 
+                            {
+                                display:none !important;
+                                width:145px;
+                                .iconContainer 
+                                {
+                                    display:inline-block;
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:14px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:0 0 0 5px;
+                                    h5 
+                                    {
+                                        color:$white;
+                                        font-family:oxygenBold;
+                                        font-size:15px;
+                                    }
+                                }
+                            }
+                            .line
+                            {
+                                display:none !important;
+                            }
+                        }
+                        .imgContainer 
+                        {
+                            img 
+                            {
+                                border-radius:7px;
+                            }
+                        }
+                        .info 
+                        {
+                            margin:19px 0 0 0;
+                            .smallHeading 
+                            {
+                                h2 
+                                {
+                                    font-size:16px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:5px 0 0 0;
+                                h4 
+                                {
+                                    font-size:15px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blockMargin 
+                {
+                    margin:57px 0 0 0;
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:301px) and (max-width:400px)
+{
+    .blog 
+    {
+        margin:127px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:39px 0 0 0;
+                .block 
+                {
+                    .contentArea 
+                    {
+                        border:none;
+                        width:100%;
+                        .buttonArea
+                        {
+                            height:50px;
+                            margin:22px 0 0 0;
+                            width:47%;
+                            .buttonInside 
+                            {
+                                font-size:16px;
+                            }
+                        }
+                        .commentsCalendarContainer 
+                        {
+                            margin:12px 0 0 0;
+                            .calendar 
+                            {
+                                margin:0 0 0 7.3%;
+                                .iconContainer 
+                                {
+                                    display:inline-block;
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:17px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    display:inline-block;
+                                    margin:0 0 0 6px;
+                                    h5 
+                                    {
+                                        color:$white;
+                                        font-family:oxygenBold;
+                                        font-size:14px;
+                                    }
+                                }
+                            }
+                            .comments 
+                            {
+                                width:145px;
+                                .iconContainer 
+                                {
+                                    display:inline-block;
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:18px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:0 0 0 6px;
+                                    h5 
+                                    {
+                                        color:$white;
+                                        font-family:oxygenBold;
+                                        font-size:14px;
+                                    }
+                                }
+                            }
+                            .line
+                            {
+                                background:$white;
+                                height:22px;
+                                margin:0 13px 0 -11px;
+                                width:0.75%;
+                            }
+                        }
+                        .imgContainer 
+                        {
+                            img 
+                            {
+                                border-radius:9px;
+                            }
+                        }
+                        .info 
+                        {
+                            margin:19px 0 0 0;
+                            .smallHeading 
+                            {
+                                h2 
+                                {
+                                    font-size:16px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:6px 0 0 0;
+                                h4 
+                                {
+                                    font-size:15px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blockMargin 
+                {
+                    margin:57px 0 0 0;
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:29px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:401px) and (max-width:525px)
+{
+    .blog 
+    {
+        margin:169px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:51px 0 0 0;
+                .block 
+                {
+                    .contentArea 
+                    {
+                        border:none;
+                        width:100%;
+                        .buttonArea
+                        {
+                            height:50px;
+                            margin:22px 0 0 0;
+                            width:38%;
+                            .buttonInside 
+                            {
+                                font-size:16px;
+                            }
+                        }
+                        .commentsCalendarContainer 
+                        {
+                            margin:15px 0 0 0;
+                            .calendar 
+                            {
+                                margin:0 0 0 7.3%;
+                                .iconContainer 
+                                {
+                                    display:inline-block;
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:22px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    display:inline-block;
+                                    margin:0 0 0 7px;
+                                    h5 
+                                    {
+                                        color:$white;
+                                        font-family:oxygenBold;
+                                        font-size:15px;
+                                    }
+                                }
+                            }
+                            .comments 
+                            {
+                                width:145px;
+                                .iconContainer 
+                                {
+                                    display:inline-block;
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:23px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:0 0 0 7px;
+                                    h5 
+                                    {
+                                        color:$white;
+                                        font-family:oxygenBold;
+                                        font-size:15px;
+                                    }
+                                }
+                            }
+                            .line
+                            {
+                                background:$white;
+                                height:29px;
+                                margin:0 17px 0 7px;
+                                width:0.75%;
+                            }
+                        }
+                        .imgContainer 
+                        {
+                            img 
+                            {
+                                border-radius:12px;
+                            }
+                        }
+                        .info 
+                        {
+                            margin:19px 0 0 0;
+                            .smallHeading 
+                            {
+                                h2 
+                                {
+                                    font-size:21px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:8px 0 0 0;
+                                h4 
+                                {
+                                    font-size:16px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blockMargin 
+                {
+                    margin:57px 0 0 0;
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:38px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:526px) and (max-width:650px)
+{
+    .blog 
+    {
+        margin:225px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:68px 0 0 0;
+                .block 
+                {
+                    .contentArea 
+                    {
+                        border:none;
+                        width:100%;
+                        .buttonArea 
+                        {
+                            height:50px;
+                            margin:29px 0 0 0;
+                            .buttonInside 
+                            {
+                                font-size:16px;
+                            }
+                        }
+                        .commentsCalendarContainer 
+                        {
+                            margin:19px 0 0 0;
+                            .calendar 
+                            {
+                                margin:0 0 0 7.3%;
+                                .iconContainer 
+                                {
+                                    display:inline-block;
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:29px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    display:inline-block;
+                                    margin:0 0 0 9px;
+                                    h5 
+                                    {
+                                        color:$white;
+                                        font-family:oxygenBold;
+                                        font-size:15px;
+                                    }
+                                }
+                            }
+                            .comments 
+                            {
+                                width:145px;
+                                .iconContainer 
+                                {
+                                    display:inline-block;
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:30px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:0 0 0 9px;
+                                    h5 
+                                    {
+                                        color:$white;
+                                        font-family:oxygenBold;
+                                        font-size:15px;
+                                    }
+                                }
+                            }
+                            .line
+                            {
+                                background:$white;
+                                height:38px;
+                                margin:0 22px 0 19px;
+                                width:0.75%;
+                            }
+                        }
+                        .imgContainer 
+                        {
+                            img 
+                            {
+                                border-radius:15px;
+                            }
+                        }
+                        .info 
+                        {
+                            margin:19px 0 0 0;
+                            .smallHeading 
+                            {
+                                h2 
+                                {
+                                    font-size:27px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:10px 0 0 0;
+                                h4 
+                                {
+                                    font-size:19px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blockMargin 
+                {
+                    margin:75px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:650px) and (max-width:1199px)
+{
+    .blog 
+    {
+        .content 
+        {
+            .bottom 
+            {
+                .block 
+                {
+                    .bottomLeft 
+                    {
+                        border:none;
+                        width:100%;
+                    }
+                    .bottomRight 
+                    {
+                        border:none;
+                        width:100%;
+                    }
+                    .topLeft 
+                    {
+                        border:none;
+                        width:100%;
+                    }
+                    .topRight 
+                    {
+                        border:none;
+                        width:100%;
+                    }
+                }
+                .blockMargin 
+                {
+                    margin:75px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1399px)
+{
+    .blog 
+    {
+        .content 
+        {
+            .bottom 
+            {
+                .block 
+                {
+                    .topLeft 
+                    {
+                        border-bottom:56px solid transparent;
+                        border-right:81px solid transparent;
+                        width:100%;
+                    }
+                    .topRight 
+                    {
+                        border-bottom:56px solid transparent;
+                        border-left:81px solid transparent;
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    .blog 
+    {
+        margin:375px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:112px 0 0 0;
+                .block 
+                {
+                    .bottomLeft 
+                    {
+                        border-right:133px solid transparent;
+                        border-top:92px solid transparent;
+                    }
+                    .bottomRight
+                    {
+                        border-left:133px solid transparent;
+                        border-top:92px solid transparent;
+                    }
+                    .contentArea 
+                    {
+                        .buttonArea 
+                        {
+                            border:2.5px solid $menusThree;
+                            font-size:25px;
+                            height:82px;
+                            margin:47px 0 0 0;
+                            .buttonInside 
+                            {
+                                bottom:10px;
+                                font-size:25px;
+                                left:10px;
+                            }
+                        }
+                        .commentsCalendarContainer 
+                        {
+                            margin:31px 0 0 0;
+                            .calendar 
+                            {
+                                .iconContainer 
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:47px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:0 0 0 15px;
+                                    h5 
+                                    {
+                                        font-size:25px;
+                                    }
+                                }
+                            }
+                            .comments 
+                            {
+                                width:241px;
+                                .iconContainer 
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:50px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:0 0 0 15px;
+                                    h5 
+                                    {
+                                        font-size:25px;
+                                    }
+                                }
+                            }
+                            .line
+                            {
+                                height:62px;
+                                margin:0 36px 0 31px;
+                            }
+                        }
+                        .imgContainer 
+                        {
+                            img 
+                            {
+                                border-radius:25px;
+                            }
+                        }
+                        .info 
+                        {
+                            margin:31px 0 0 0;
+                            .smallHeading 
+                            {
+                                h2 
+                                {
+                                    font-size:43px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:16px 0 0 0;
+                                h4 
+                                {
+                                    font-size:31px;
+                                }
+                            }
+                        }
+                    }
+                    .topLeft 
+                    {
+                        border-bottom:92px solid transparent;
+                        border-right:133px solid transparent;
+                    }
+                    .topRight 
+                    {
+                        border-bottom:92px solid transparent;
+                        border-left:133px solid transparent;
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:62px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    .blog 
+    {
+        margin:469px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:140px 0 0 0;
+                .block 
+                {
+                    .bottomLeft 
+                    {
+                        border-right:166px solid transparent;
+                        border-top:115px solid transparent;
+                    }
+                    .bottomRight
+                    {
+                        border-left:166px solid transparent;
+                        border-top:115px solid transparent;
+                    }
+                    .contentArea 
+                    {
+                        .buttonArea 
+                        {
+                            border:3.1px solid $menusThree;
+                            font-size:31px;
+                            height:102px;
+                            margin:58px 0 0 0;
+                            .buttonInside 
+                            {
+                                bottom:13px;
+                                font-size:31px;
+                                left:13px;
+                            }
+                        }
+                        .commentsCalendarContainer 
+                        {
+                            margin:38px 0 0 0;
+                            .calendar 
+                            {
+                                .iconContainer 
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:58px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:0 0 0 18px;
+                                    h5 
+                                    {
+                                        font-size:31px;
+                                    }
+                                }
+                            }
+                            .comments 
+                            {
+                                width:301px;
+                                .iconContainer 
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:62px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:0 0 0 18px;
+                                    h5 
+                                    {
+                                        font-size:31px;
+                                    }
+                                }
+                            }
+                            .line
+                            {
+                                height:77px;
+                                margin:0 45px 0 38px;
+                            }
+                        }
+                        .imgContainer 
+                        {
+                            img 
+                            {
+                                border-radius:31px;
+                            }
+                        }
+                        .info 
+                        {
+                            margin:38px 0 0 0;
+                            .smallHeading 
+                            {
+                                h2 
+                                {
+                                    font-size:53px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:20px 0 0 0;
+                                h4 
+                                {
+                                    font-size:38px;
+                                }
+                            }
+                        }
+                    }
+                    .topLeft 
+                    {
+                        border-bottom:115px solid transparent;
+                        border-right:166px solid transparent;
+                    }
+                    .topRight 
+                    {
+                        border-bottom:115px solid transparent;
+                        border-left:166px solid transparent;
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:77px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    .blog 
+    {
+        margin:586px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:175px 0 0 0;
+                .block 
+                {
+                    .bottomLeft 
+                    {
+                        border-right:207px solid transparent;
+                        border-top:143px solid transparent;
+                    }
+                    .bottomRight
+                    {
+                        border-left:207px solid transparent;
+                        border-top:143px solid transparent;
+                    }
+                    .contentArea 
+                    {
+                        .buttonArea 
+                        {
+                            border:3.8px solid $menusThree;
+                            font-size:38px;
+                            height:127px;
+                            margin:72px 0 0 0;
+                            .buttonInside 
+                            {
+                                bottom:16px;
+                                font-size:38px;
+                                left:16px;
+                            }
+                        }
+                        .commentsCalendarContainer 
+                        {
+                            margin:47px 0 0 0;
+                            .calendar 
+                            {
+                                .iconContainer 
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:72px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:0 0 0 22px;
+                                    h5 
+                                    {
+                                        font-size:38px;
+                                    }
+                                }
+                            }
+                            .comments 
+                            {
+                                width:376px;
+                                .iconContainer 
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:77px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:0 0 0 22px;
+                                    h5 
+                                    {
+                                        font-size:38px;
+                                    }
+                                }
+                            }
+                            .line
+                            {
+                                height:96px;
+                                margin:0 56px 0 47px;
+                            }
+                        }
+                        .imgContainer 
+                        {
+                            img 
+                            {
+                                border-radius:38px;
+                            }
+                        }
+                        .info 
+                        {
+                            margin:47px 0 0 0;
+                            .smallHeading 
+                            {
+                                h2 
+                                {
+                                    font-size:66px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:25px 0 0 0;
+                                h4 
+                                {
+                                    font-size:47px;
+                                }
+                            }
+                        }
+                    }
+                    .topLeft 
+                    {
+                        border-bottom:143px solid transparent;
+                        border-right:207px solid transparent;
+                    }
+                    .topRight 
+                    {
+                        border-bottom:143px solid transparent;
+                        border-left:207px solid transparent;
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:96px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px) 
+{
+    .blog 
+    {
+        margin:733px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:219px 0 0 0;
+                .block 
+                {
+                    .bottomLeft 
+                    {
+                        border-right:258px solid transparent;
+                        border-top:178px solid transparent;
+                    }
+                    .bottomRight
+                    {
+                        border-left:259px solid transparent;
+                        border-top:178px solid transparent;
+                    }
+                    .contentArea 
+                    {
+                        .buttonArea 
+                        {
+                            border:4.7px solid $menusThree;
+                            font-size:47px;
+                            height:158px;
+                            margin:90px 0 0 0;
+                            .buttonInside 
+                            {
+                                bottom:20px;
+                                font-size:47px;
+                                left:20px;
+                            }
+                        }
+                        .commentsCalendarContainer 
+                        {
+                            margin:58px 0 0 0;
+                            .calendar 
+                            {
+                                .iconContainer 
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:90px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:0 0 0 27px;
+                                    h5 
+                                    {
+                                        font-size:47px;
+                                    }
+                                }
+                            }
+                            .comments 
+                            {
+                                width:470px;
+                                .iconContainer 
+                                {
+                                    img 
+                                    {
+                                        height:auto;
+                                        width:96px;
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:0 0 0 27px;
+                                    h5 
+                                    {
+                                        font-size:47px;
+                                    }
+                                }
+                            }
+                            .line
+                            {
+                                height:120px;
+                                margin:0 70px 0 58px;
+                            }
+                        }
+                        .imgContainer 
+                        {
+                            img 
+                            {
+                                border-radius:47px;
+                            }
+                        }
+                        .info 
+                        {
+                            margin:58px 0 0 0;
+                            .smallHeading 
+                            {
+                                h2 
+                                {
+                                    font-size:82px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:31px 0 0 0;
+                                h4 
+                                {
+                                    font-size:58px;
+                                }
+                            }
+                        }
+                    }
+                    .topLeft 
+                    {
+                        border-bottom:178px solid transparent;
+                        border-right:258px solid transparent;
+                    }
+                    .topRight 
+                    {
+                        border-bottom:178px solid transparent;
+                        border-left:258px solid transparent;
+                    }
+                }
+            }
+            .top 
+            {
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:120px;
+                    }
+                }
+            }
+        }
+    }
+}

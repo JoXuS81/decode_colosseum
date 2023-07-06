@@ -1,0 +1,751 @@
+/*
+Table of contents
+    Subscribe
+        Content
+            Bottom
+                Form
+                    Field
+                    Submit Button
+                        Submit Subscribe
+            Top
+                Top Content
+                    Heading
+                        H2
+                    Img Container
+                        Img Area
+                            Img
+                    Text Container
+                        H4
+    Media Queries
+        Max Width - 300px
+        Min Width 301px and Max Width 400px
+        Other Sizes
+*/
+
+
+.subscribe
+{
+    margin:300px 0 0 0;
+    width:100%;
+    .content 
+    {
+        width:58%;
+        // Subscribe Form
+        .bottom 
+        {
+            margin:91px 0 0 0;
+            width:100%;
+            form 
+            {
+                height:100%;
+                width:100%;
+                .field 
+                {
+                    background:$darkOpacityInfo;
+                    border:1px solid transparent;
+                    border-bottom-left-radius:25px;
+                    border-right:none;
+                    border-top-left-radius:25px;
+                    color:$subscribePlaceholder;
+                    font-family:patuaOneRegular;
+                    font-size:27px;
+                    height:136px;
+                    outline:none;
+                    padding:0 0 0 3%;
+                    width:68%;
+                    &:hover 
+                    {
+                        border-color:$menusThree;
+                    }
+                }
+                .submitButton 
+                {
+                    height:136px;
+                    margin:0;
+                    padding:0;
+                    width:31%;
+                    .submitSubscribe 
+                    {
+                        background:$menusThree;
+                        border:none;
+                        border-bottom-right-radius:25px;
+                        border-top-right-radius:25px;
+                        color:$white;
+                        font-family:patuaOneRegular;
+                        font-size:27px;
+                        height:100%;
+                        width:100%;
+                    }
+                }
+            }
+        }
+        // Img and Text
+        .top 
+        {
+            width:100%;
+            .topContent  
+            {
+                .heading 
+                {
+                    margin:23px 0 0 0;
+                    width:100%;
+                    h2 
+                    {
+                        color:$white;
+                        font-family:patuaOneRegular;
+                        font-size:36px;
+                    }
+                }
+                .imgContainer 
+                {
+                    width:100%;
+                    .imgArea 
+                    {
+                        img 
+                        {
+                            height:auto;
+                            width:150px;
+                        }
+                    }
+                }
+                .textContainer 
+                {
+                    margin:23px 0 0 0;
+                    width:100%;
+                    h4 
+                    {
+                        color:$white;
+                        font-family:patuaOneRegular;
+                        font-size:27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive Design
+@media(max-width:300px)
+{
+    .subscribe
+    {
+        margin:96px 0 0 0;
+        .content 
+        {
+            width:80%;
+            .bottom 
+            {
+                margin:30px 0 0 0;
+                form 
+                {
+                    .field 
+                    {
+                        border-radius:9px;
+                        font-size:15px;
+                        height:44px;
+                        width:100%;
+                    }
+                    .submitButton 
+                    {
+                        display:flex;
+                        height:44px;
+                        justify-content:center;
+                        margin:36px 0 0 0;
+                        width:100%;
+                        .submitSubscribe 
+                        {
+                            border-radius:9px;
+                            font-size:15px;
+                            width:65%;
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .topContent  
+                {
+                    .heading 
+                    {
+                        margin:9px 0 0 0;
+                        h2 
+                        {
+                            font-size:15px;
+                        }
+                    }
+                    .imgContainer 
+                    {
+                        .imgArea 
+                        {
+                            img 
+                            {
+                                height:auto;
+                                width:48px;
+                            }
+                        }
+                    }
+                    .textContainer 
+                    {
+                        margin:9px 0 0 0;
+                        h4 
+                        {
+                            font-size:15px;
+                            text-align:center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:301px) and (max-width:400px)
+{
+    .subscribe
+    {
+        margin:127px 0 0 0;
+        .content 
+        {
+            width:80%;
+            .bottom 
+            {
+                margin:39px 0 0 0;
+                form 
+                {
+                    .field 
+                    {
+                        border-radius:12px;
+                        font-size:15px;
+                        height:58px;
+                        width:100%;
+                    }
+                    .submitButton 
+                    {
+                        display:flex;
+                        height:58px;
+                        justify-content:center;
+                        margin:48px 0 0 0;
+                        width:100%;
+                        .submitSubscribe 
+                        {
+                            border-radius:12px;
+                            font-size:15px;
+                            width:50%;
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .topContent  
+                {
+                    .heading 
+                    {
+                        margin:11px 0 0 0;
+                        h2 
+                        {
+                            font-size:16px;
+                        }
+                    }
+                    .imgContainer 
+                    {
+                        .imgArea 
+                        {
+                            img 
+                            {
+                                height:auto;
+                                width:64px;
+                            }
+                        }
+                    }
+                    .textContainer 
+                    {
+                        margin:11px 0 0 0;
+                        h4 
+                        {
+                            font-size:15px;
+                            text-align:center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:401px) and (max-width:525px)
+{
+    .subscribe
+    {
+        margin:169px 0 0 0;
+        .content 
+        {
+            width:80%;
+            .bottom 
+            {
+                margin:52px 0 0 0;
+                form 
+                {
+                    .field 
+                    {
+                        border-radius:15px;
+                        font-size:16px;
+                        height:77px;
+                        width:100%;
+                    }
+                    .submitButton 
+                    {
+                        display:flex;
+                        height:77px;
+                        justify-content:center;
+                        margin:63px 0 0 0;
+                        width:100%;
+                        .submitSubscribe 
+                        {
+                            border-radius:15px;
+                            font-size:16px;
+                            width:50%;
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .topContent  
+                {
+                    .heading 
+                    {
+                        margin:14px 0 0 0;
+                        h2 
+                        {
+                            font-size:21px;
+                        }
+                    }
+                    .imgContainer 
+                    {
+                        .imgArea 
+                        {
+                            img 
+                            {
+                                height:auto;
+                                width:85px;
+                            }
+                        }
+                    }
+                    .textContainer 
+                    {
+                        margin:14px 0 0 0;
+                        h4 
+                        {
+                            font-size:16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:526px) and (max-width:650px)
+{
+    .subscribe
+    {
+        margin:225px 0 0 0;
+        .content 
+        {
+            width:80%;
+            .bottom 
+            {
+                margin:69px 0 0 0;
+                form 
+                {
+                    .field 
+                    {
+                        border-radius:19px;
+                        font-size:21px;
+                        height:102px;
+                        width:100%;
+                    }
+                    .submitButton 
+                    {
+                        display:flex;
+                        height:102px;
+                        justify-content:center;
+                        margin:83px 0 0 0;
+                        width:100%;
+                        .submitSubscribe 
+                        {
+                            border-radius:19px;
+                            font-size:21px;
+                            width:50%;
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .topContent  
+                {
+                    .heading 
+                    {
+                        margin:18px 0 0 0;
+                        h2 
+                        {
+                            font-size:27px;
+                        }
+                    }
+                    .imgContainer 
+                    {
+                        .imgArea 
+                        {
+                            img 
+                            {
+                                height:auto;
+                                width:113px;
+                            }
+                        }
+                    }
+                    .textContainer 
+                    {
+                        margin:18px 0 0 0;
+                        h4 
+                        {
+                            font-size:21px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:651px) and (max-width:767px)
+{
+    .subscribe
+    {
+        .content 
+        {
+            width:80%;
+            .bottom 
+            {
+                form 
+                {
+                    .field 
+                    {
+                        border-radius:25px;
+                        width:100%;
+                    }
+                    .submitButton 
+                    {
+                        display:flex;
+                        justify-content:center;
+                        margin:110px 0 0 0;
+                        width:100%;
+                        .submitSubscribe 
+                        {
+                            border-radius:25px;
+                            width:50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:768px) and (max-width:1199px)
+{
+    .subscribe
+    {
+        .content 
+        {
+            width:90%;
+        }
+    }
+}
+
+
+@media(min-width:1921px) and (max-width:2400px)
+{
+    .subscribe
+    {
+        margin:375px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:113px 0 0 0;
+                form 
+                {
+                    .field 
+                    {
+                        border:1.25px solid transparent;
+                        border-bottom-left-radius:31px;
+                        border-top-left-radius:31px;
+                        font-size:33px;
+                        height:170px;
+                    }
+                    .submitButton 
+                    {
+                        height:170px;
+                        .submitSubscribe 
+                        {
+                            border-bottom-right-radius:31px;
+                            border-top-right-radius:31px;
+                            font-size:33px;
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .topContent  
+                {
+                    .heading 
+                    {
+                        margin:28px 0 0 0;
+                        h2 
+                        {
+                            font-size:45px;
+                        }
+                    }
+                    .imgContainer 
+                    {
+                        .imgArea 
+                        {
+                            img 
+                            {
+                                height:auto;
+                                width:187px;
+                            }
+                        }
+                    }
+                    .textContainer 
+                    {
+                        margin:28px 0 0 0;
+                        h4 
+                        {
+                            font-size:33px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:2401px) and (max-width:3000px)
+{
+    .subscribe
+    {
+        margin:469px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:141px 0 0 0;
+                form 
+                {
+                    .field 
+                    {
+                        border:1.56px solid transparent;
+                        border-bottom-left-radius:38px;
+                        border-top-left-radius:38px;
+                        font-size:41px;
+                        height:212px;
+                    }
+                    .submitButton 
+                    {
+                        height:212px;
+                        .submitSubscribe 
+                        {
+                            border-bottom-right-radius:38px;
+                            border-top-right-radius:38px;
+                            font-size:41px;
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .topContent  
+                {
+                    .heading 
+                    {
+                        margin:35px 0 0 0;
+                        h2 
+                        {
+                            font-size:56px;
+                        }
+                    }
+                    .imgContainer 
+                    {
+                        .imgArea 
+                        {
+                            img 
+                            {
+                                height:auto;
+                                width:234px;
+                            }
+                        }
+                    }
+                    .textContainer 
+                    {
+                        margin:35px 0 0 0;
+                        h4 
+                        {
+                            font-size:41px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:3001px) and (max-width:3750px)
+{
+    .subscribe
+    {
+        margin:586px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:176px 0 0 0;
+                form 
+                {
+                    .field 
+                    {
+                        border:1.95px solid transparent;
+                        border-bottom-left-radius:47px;
+                        border-top-left-radius:47px;
+                        font-size:51px;
+                        height:265px;
+                    }
+                    .submitButton 
+                    {
+                        height:265px;
+                        .submitSubscribe 
+                        {
+                            border-bottom-right-radius:47px;
+                            border-top-right-radius:47px;
+                            font-size:51px;
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .topContent  
+                {
+                    .heading 
+                    {
+                        margin:43px 0 0 0;
+                        h2 
+                        {
+                            font-size:70px;
+                        }
+                    }
+                    .imgContainer 
+                    {
+                        .imgArea 
+                        {
+                            img 
+                            {
+                                height:auto;
+                                width:293px;
+                            }
+                        }
+                    }
+                    .textContainer 
+                    {
+                        margin:43px 0 0 0;
+                        h4 
+                        {
+                            font-size:51px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:3751px)
+{
+    .subscribe
+    {
+        margin:733px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:220px 0 0 0;
+                form 
+                {
+                    .field 
+                    {
+                        border:2.43px solid transparent;
+                        border-bottom-left-radius:58px;
+                        border-top-left-radius:58px;
+                        font-size:63px;
+                        height:331px;
+                    }
+                    .submitButton 
+                    {
+                        height:331px;
+                        .submitSubscribe 
+                        {
+                            border-bottom-right-radius:58px;
+                            border-top-right-radius:58px;
+                            font-size:63px;
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .topContent  
+                {
+                    .heading 
+                    {
+                        margin:53px 0 0 0;
+                        h2 
+                        {
+                            font-size:87px;
+                        }
+                    }
+                    .imgContainer 
+                    {
+                        .imgArea 
+                        {
+                            img 
+                            {
+                                height:auto;
+                                width:366px;
+                            }
+                        }
+                    }
+                    .textContainer 
+                    {
+                        margin:53px 0 0 0;
+                        h4 
+                        {
+                            font-size:63px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

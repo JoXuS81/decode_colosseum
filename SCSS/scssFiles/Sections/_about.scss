@@ -1,0 +1,1884 @@
+/*
+Table of contents
+    About
+        Content
+            Bottom
+                Info
+                    Block
+                        Icon Text Container
+                            Icon Text
+                                Icon Area
+                                    Icon Container
+                                        Icon
+                                Text Container
+                                    H2
+                                Text Container Bottom
+                                    H2
+                                    Second Text
+                        Left Icon Text Container
+                        Middle Icon Text Container
+                        Right Icon Text Container
+            Middle
+                Heading
+                    H2
+                Line Area
+                    Line
+                Products
+                    Product
+                        Image Container
+                            Drinks
+                            Fries
+                            Hot Dog
+                        Text Container
+                            H2
+                        Text Container - Bottom
+                            H3
+            Top
+                Sub Container
+                    About Us
+                        Shape
+                            Info
+                                Line Area
+                                    Line
+                                Text
+                                    H4
+                                Text About
+                                    H1
+                                Text Success
+                                    H1
+                    Food Images
+    Media Queries
+        Max Width - 300px
+        Min Width 301 px and Max Width 400px
+        Other Sizes
+*/
+
+
+// About 
+.about 
+{
+    padding:300px 0 0 0;
+    .content 
+    {
+        // Info Track
+        .bottom 
+        {
+            background:$darkOpacityInfoLight;
+            margin:138px 0 0 0;
+            .info 
+            {
+                height:330px;
+                .block 
+                {
+                    height:100%;
+                    .iconTextContainer 
+                    {
+                        background:$darkOpacityInfoLight;
+                        height:100%;
+                        width:77%;
+                        .iconText 
+                        {
+                            .iconArea 
+                            {
+                                .iconContainer 
+                                {
+                                    .icon
+                                    {
+                                        color:$menusThree;
+                                        font-size:60px;
+                                    }
+                                }
+                            }
+                            .textContainer 
+                            {
+                                margin:46px 0 0 0;
+                                h2 
+                                {
+                                    color:$white;
+                                    display:inline-block;
+                                    font-family:oswaldSemiBold;
+                                    font-size:40px;
+                                }
+                            }
+                            .textContainerBottom 
+                            {
+                                margin:4px 0 0 0;
+                                h2 
+                                {
+                                    color:$white;
+                                    display:inline-block;
+                                    font-family:oswaldRegular;
+                                    font-size:40px;
+                                }
+                                .secondText 
+                                {
+                                    display:none;
+                                }
+                            }
+                        }
+                    }
+                    .leftIconTextContainer 
+                    {
+                        border-bottom-right-radius:25px;
+                        border-top-right-radius:25px;
+                    }
+                    .middleIconTextContainer 
+                    {
+                        border-radius:25px;
+                    }
+                    .rightIconTextContainer 
+                    {
+                        border-bottom-left-radius:25px;
+                        border-top-left-radius:25px;
+                    }
+                }
+            }
+        }
+        // Why to Choose Us
+        .middle 
+        {
+            margin:195px 0 0 0;
+            .heading 
+            {
+                h2 
+                {
+                    color:$white;
+                    font-family:playballRegular;
+                    font-size:64px;
+                }
+            }
+            .lineArea 
+            {
+                margin:28px 0 0 0;
+                .line 
+                {
+                    background:$menusThree;
+                    height:3px;
+                    width:100px;
+                }
+            }
+            .products 
+            {
+                margin:87px 0 0 0;
+                .product
+                {
+                    .imgContainer 
+                    {
+                        .drinks
+                        {
+                            height:auto;
+                            width:95.5px;
+                        }
+                        .fries
+                        {
+                            height:auto;
+                            width:107px;
+                        }
+                        .hotDog
+                        {
+                            height:auto;
+                            width:246px;
+                        }
+                    }
+                    .textContainer 
+                    {
+                        margin:23px 0 0 0;
+                        h2 
+                        {
+                            color:$white;
+                            font-family:oswaldRegular;
+                            font-size:36px;
+                        }
+                    }
+                    .textContainerBottom
+                    {
+                        margin:18px 0 0 0;
+                        h3
+                        {
+                            color:$white;
+                            font-family:oswaldRegular;
+                            font-size:30px;
+                            width:71%;
+                        }
+                    }
+                }
+            }
+        }
+        // Top Images and Shape
+        .top 
+        {
+            .subContainer 
+            {
+                width:1400px;
+                .aboutUs 
+                {
+                    .shape 
+                    {
+                        backdrop-filter:blur(10px);
+                        background:$darkBackgroundOpacity;
+                        border-radius:15px;
+                        bottom:168px;
+                        box-shadow:1.6px 1.6px 5px 3px $lightGreenShader;
+                        height:100%;
+                        position:relative;
+                        right:50px;
+                        -webkit-backdrop-filter:blur(10px);
+                        width:600px;
+                        .info 
+                        {
+                            .lineArea 
+                            {
+                                margin:28px 0 0 0;
+                                .line 
+                                {
+                                    background:$menusThree;
+                                    height:3px;
+                                    width:100px;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:28px 0 0 0;
+                                padding:0;
+                                h4 
+                                {
+                                    color:$white;
+                                    font-family:patuaOneRegular;
+                                    margin:0;
+                                    padding:0;
+                                    text-align:center;
+                                    width:500px;
+                                }
+                            }
+                            .textAbout 
+                            {
+                                h2
+                                {
+                                    color:$white;
+                                    display:inline-block;
+                                    font-family:playballRegular;
+                                    font-size:50px;
+                                }
+                            }
+                            .textSuccess
+                            {
+                                h2
+                                {
+                                    color:$white;
+                                    display:inline-block;
+                                    font-family:workSansRegular;
+                                    font-size:60px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .foodImages 
+                {
+                    img 
+                    {
+                        height:auto;
+                        left:50px;
+                        position:relative;
+                        width:400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive Design
+@media (max-width:300px)
+{
+    .about 
+    {
+        padding:96px;
+        .content 
+        {
+            .bottom 
+            {
+                margin:59px 0 0 0;
+                .info 
+                {
+                    height:initial;
+                    .block 
+                    {
+                        .iconTextContainer 
+                        {
+                            border-radius:12px;
+                            height:139px;
+                            width:211px;
+                            .iconText 
+                            {
+                                .iconArea 
+                                {
+                                    .iconContainer 
+                                    {
+                                        .icon 
+                                        {
+                                            font-size:26px;
+                                        }
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:21px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:18px;
+                                    }
+                                }
+                                .textContainerBottom 
+                                {
+                                    margin:1.8px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .middleBlock
+                    {
+                        margin:25px 0 25px 0;
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:83px 0 0 0;
+                .heading 
+                {
+                    h2
+                    {
+                        font-size:27px;
+                    }
+                }
+                .lineArea 
+                {
+                    margin:12px 0 0 0;
+                    .line 
+                    {
+                        height:1.4px;
+                    }
+                }
+                .products 
+                {
+                    margin:38px;
+                    .product 
+                    {
+                        margin:43px 0 0 0;
+                        .imgContainer 
+                        {
+                            .drinks 
+                            {
+                                width:41px;
+                            }
+                            .fries 
+                            {
+                                width:46px;
+                            }
+                            .hotDog 
+                            {
+                                width:105px;
+                            }
+                        }
+                        .textContainer 
+                        {
+                            margin:11px 0 0 0;
+                            h2 
+                            {
+                                font-size:16px;
+                            }
+                        }
+                        .textContainerBottom 
+                        {
+                            margin:9px;
+                            h3 
+                            {
+                                font-size:14px;
+                                width:59%;
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .subContainer 
+                {
+                    width:100%;
+                    .aboutUs 
+                    {
+                        .shape 
+                        {
+                            background:$darkBackgroundSmall;
+                            bottom:0;
+                            height:190px;
+                            right:0;
+                            width:205px;
+                            .info 
+                            {
+                                .lineArea 
+                                {
+                                    margin:9px 0 0 0;
+                                    .line 
+                                    {
+                                        height:1.1px;
+                                        width:33px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    margin:9px 0 0 0;
+                                    h4 
+                                    {
+                                        font-size:14px;
+                                        width:159px;
+                                    }
+                                }
+                                .textAbout 
+                                {
+                                    h2
+                                    {
+                                        font-size:22px;
+                                    }
+                                }
+                                .textSuccess
+                                {
+                                    h2
+                                    {
+                                        font-size:20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .foodImages 
+                    {
+                        margin:30px 0 0 0;
+                        img 
+                        {
+                            height:auto;
+                            left:0;
+                            width:96px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:301px) and (max-width:400px)
+{
+    .about 
+    {
+        padding:127px;
+        .content 
+        {
+            .bottom 
+            {
+                margin:78px 0 0 0;
+                .info 
+                {
+                    height:initial;
+                    .block 
+                    {
+                        .iconTextContainer 
+                        {
+                            border-radius:15px;
+                            height:185px;
+                            width:281px;
+                            .iconText 
+                            {
+                                .iconArea 
+                                {
+                                    .iconContainer 
+                                    {
+                                        .icon 
+                                        {
+                                            font-size:34px;
+                                        }
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:27px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:23px;
+                                    }
+                                }
+                                .textContainerBottom 
+                                {
+                                    margin:2.3px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:23px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .middleBlock
+                    {
+                        margin:33px 0 33px 0;
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:110px 0 0 0;
+                .heading 
+                {
+                    h2
+                    {
+                        font-size:36px;
+                    }
+                }
+                .lineArea 
+                {
+                    margin:16px 0 0 0;
+                    .line 
+                    {
+                        height:1.8px;
+                    }
+                }
+                .products 
+                {
+                    margin:50px;
+                    .product 
+                    {
+                        margin:57px 0 0 0;
+                        .imgContainer 
+                        {
+                            .drinks 
+                            {
+                                width:54px;
+                            }
+                            .fries 
+                            {
+                                width:61px;
+                            }
+                            .hotDog 
+                            {
+                                width:139px;
+                            }
+                        }
+                        .textContainer 
+                        {
+                            margin:14px 0 0 0;
+                            h2 
+                            {
+                                font-size:21px;
+                            }
+                        }
+                        .textContainerBottom 
+                        {
+                            margin:11px;
+                            h3 
+                            {
+                                font-size:18px;
+                                width:59%;
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .subContainer 
+                {
+                    width:100%;
+                    .aboutUs 
+                    {
+                        .shape 
+                        {
+                            background:$darkBackgroundSmall;
+                            bottom:0;
+                            height:253px;
+                            right:0;
+                            width:273px;
+                            .info 
+                            {
+                                .lineArea 
+                                {
+                                    margin:12px 0 0 0;
+                                    .line 
+                                    {
+                                        height:1.4px;
+                                        width:43px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    margin:12px 0 0 0;
+                                    h4 
+                                    {
+                                        font-size:16px;
+                                        width:211px;
+                                    }
+                                }
+                                .textAbout 
+                                {
+                                    h2
+                                    {
+                                        font-size:29px;
+                                    }
+                                }
+                                .textSuccess
+                                {
+                                    h2
+                                    {
+                                        font-size:26px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .foodImages 
+                    {
+                        margin:39px 0 0 0;
+                        img 
+                        {
+                            height:auto;
+                            left:0;
+                            width:127px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:401px) and (max-width:525px)
+{
+    .about 
+    {
+        padding:169px;
+        .content 
+        {
+            .bottom 
+            {
+                margin:104px 0 0 0;
+                .info 
+                {
+                    height:initial;
+                    .block 
+                    {
+                        .iconTextContainer 
+                        {
+                            border-radius:19px;
+                            height:247px;
+                            width:375px;
+                            .iconText 
+                            {
+                                .iconArea 
+                                {
+                                    .iconContainer 
+                                    {
+                                        .icon 
+                                        {
+                                            font-size:45px;
+                                        }
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:35px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:30px;
+                                    }
+                                }
+                                .textContainerBottom 
+                                {
+                                    margin:3px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .middleBlock
+                    {
+                        margin:43px 0 43px 0;
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:146px 0 0 0;
+                .heading 
+                {
+                    h2
+                    {
+                        font-size:48px;
+                    }
+                }
+                .lineArea 
+                {
+                    margin:21px 0 0 0;
+                    .line 
+                    {
+                        height:2.3px;
+                    }
+                }
+                .products 
+                {
+                    margin:66px;
+                    .product 
+                    {
+                        margin:75px 0 0 0;
+                        .imgContainer 
+                        {
+                            .drinks 
+                            {
+                                width:72px;
+                            }
+                            .fries 
+                            {
+                                width:81px;
+                            }
+                            .hotDog 
+                            {
+                                width:185px;
+                            }
+                        }
+                        .textContainer 
+                        {
+                            margin:18px 0 0 0;
+                            h2 
+                            {
+                                font-size:27px;
+                            }
+                        }
+                        .textContainerBottom 
+                        {
+                            margin:14px;
+                            h3 
+                            {
+                                font-size:23px;
+                                width:59%;
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .subContainer 
+                {
+                    width:100%;
+                    .aboutUs 
+                    {
+                        .shape 
+                        {
+                            background:$darkBackgroundSmall;
+                            bottom:0;
+                            height:337px;
+                            right:0;
+                            width:364px;
+                            .info 
+                            {
+                                .lineArea 
+                                {
+                                    margin:16px 0 0 0;
+                                    .line 
+                                    {
+                                        height:1.8px;
+                                        width:57px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    margin:16px 0 0 0;
+                                    h4 
+                                    {
+                                        font-size:16px;
+                                        width:281px;
+                                    }
+                                }
+                                .textAbout 
+                                {
+                                    h2
+                                    {
+                                        font-size:38px;
+                                    }
+                                }
+                                .textSuccess
+                                {
+                                    h2
+                                    {
+                                        font-size:34px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .foodImages 
+                    {
+                        margin:51px 0 0 0;
+                        img 
+                        {
+                            height:auto;
+                            left:0;
+                            width:169px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:526px) and (max-width:650px)
+{
+    .about 
+    {
+        padding:225px;
+        .content 
+        {
+            .bottom 
+            {
+                .info 
+                {
+                    height:initial;
+                    .block 
+                    {
+                        .iconTextContainer 
+                        {
+                            border-radius:25px;
+                            height:330px;
+                            width:500px;
+                        }
+                    }
+                    .middleBlock
+                    {
+                        margin:57px 0 57px 0;
+                    }
+                }
+            }
+            .middle 
+            {
+                .products 
+                {
+                    .product 
+                    {
+                        margin:100px 0 0 0;
+                        .textContainerBottom 
+                        {
+                            h3 
+                            {
+                                width:59%;
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .subContainer 
+                {
+                    width:100%;
+                    .aboutUs 
+                    {
+                        .shape 
+                        {
+                            background:$darkBackgroundSmall;
+                            bottom:0;
+                            height:450px;
+                            right:0;
+                            width:486px;
+                            .info 
+                            {
+                                .lineArea 
+                                {
+                                    margin:21px 0 0 0;
+                                    .line 
+                                    {
+                                        height:2.3px;
+                                        width:75px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    margin:21px 0 0 0;
+                                    h4 
+                                    {
+                                        font-size:16px;
+                                        width:375px;
+                                    }
+                                }
+                                .textSuccess
+                                {
+                                    h2
+                                    {
+                                        font-size:45px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .foodImages 
+                    {
+                        margin:68px 0 0 0;
+                        img 
+                        {
+                            height:auto;
+                            left:0;
+                            width:225px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:651px) and (max-width:900px)
+{
+    .about 
+    {
+        .content 
+        {
+            .bottom 
+            {
+                .info 
+                {
+                    height:initial;
+                    .block 
+                    {
+                        .iconTextContainer 
+                        {
+                            border-radius:25px;
+                            height:330px;
+                            width:500px;
+                        }
+                    }
+                    .middleBlock
+                    {
+                        margin:57px 0 57px 0;
+                    }
+                }
+            }
+            .middle 
+            {
+                .products 
+                {
+                    .product 
+                    {
+                        margin:100px 0 0 0;
+                        .textContainerBottom 
+                        {
+                            h3 
+                            {
+                                width:59%;
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .subContainer 
+                {
+                    width:100%;
+                    .aboutUs 
+                    {
+                        .shape 
+                        {
+                            background:$darkBackgroundSmall;
+                            bottom:0;
+                            height:600px;
+                            right:0;
+                        }
+                    }
+                    .foodImages 
+                    {
+                        margin:90px 0 0 0;
+                        img 
+                        {
+                            height:auto;
+                            left:0;
+                            width:300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:901px) and (max-width:1399px)
+{
+    .about 
+    {
+        .content 
+        {
+            .bottom 
+            {
+                .info 
+                {
+                    height:initial;
+                    .block 
+                    {
+                        .iconTextContainer 
+                        {
+                            border-radius:25px;
+                            height:330px;
+                            width:500px;
+                        }
+                    }
+                    .middleBlock
+                    {
+                        margin:57px 0 57px 0;
+                    }
+                }
+            }
+            .middle 
+            {
+                .products 
+                {
+                    .product 
+                    {
+                        margin:100px 0 0 0;
+                        .textContainerBottom 
+                        {
+                            h3 
+                            {
+                                width:59%;
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .subContainer 
+                {
+                    width:100%;
+                    .aboutUs 
+                    {
+                        .shape 
+                        {
+                            background:$darkBackgroundSmall;
+                            bottom:0;
+                            height:600px;
+                            right:0;
+                        }
+                    }
+                    .foodImages 
+                    {
+                        margin:90px 0 0 0;
+                        img 
+                        {
+                            left:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1400px) and (max-width:1700px)
+{
+    .about 
+    {
+        .content 
+        {
+            .bottom 
+            {
+                .info 
+                {
+                    .block 
+                    {
+                        .iconTextContainer 
+                        {
+                            .iconText 
+                            {
+                                .textContainerBottom 
+                                {
+                                    .firstText 
+                                    {
+                                        display:none;
+                                    }
+                                    .secondText 
+                                    {
+                                        display:block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    .about 
+    {
+        padding:375px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:172px 0 0 0;
+                .info 
+                {
+                    height:412px;
+                    .block 
+                    {
+                        .iconTextContainer 
+                        {
+                            .iconText 
+                            {
+                                .iconArea 
+                                {
+                                    .iconContainer 
+                                    {
+                                        .icon
+                                        {
+                                            font-size:75px;
+                                        }
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:57px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:47px;
+                                    }
+                                }
+                                .textContainerBottom 
+                                {
+                                    margin:5px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:47px;
+                                    }
+                                }
+                            }
+                        }
+                        .leftIconTextContainer 
+                        {
+                            border-bottom-right-radius:31px;
+                            border-top-right-radius:31px;
+                        }
+                        .middleIconTextContainer 
+                        {
+                            border-radius:31px;
+                        }
+                        .rightIconTextContainer 
+                        {
+                            border-bottom-left-radius:31px;
+                            border-top-left-radius:31px;
+                        }
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:243px 0 0 0;
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:80px;
+                    }
+                }
+                .lineArea 
+                {
+                    margin:35px 0 0 0;
+                    .line 
+                    {
+                        height:3.7px;
+                        width:125px;
+                    }
+                }
+                .products 
+                {
+                    margin:108px 0 0 0;
+                    .product
+                    {
+                        .imgContainer 
+                        {
+                            .drinks
+                            {
+                                width:118px;
+                            }
+                            .fries
+                            {
+                                width:133px;
+                            }
+                            .hotDog
+                            {
+                                width:307px;
+                            }
+                        }
+                        .textContainer 
+                        {
+                            margin:28px 0 0 0;
+                            h2 
+                            {
+                                font-size:45px;
+                            }
+                        }
+                        .textContainerBottom
+                        {
+                            margin:22px 0 0 0;
+                            h3
+                            {
+                                font-size:37px;
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .subContainer 
+                {
+                    width:1750px;
+                    .aboutUs 
+                    {
+                        .shape 
+                        {
+                            border-radius:18px;
+                            bottom:210px;
+                            box-shadow:2px 2px 6px 3.7px $lightGreenShader;
+                            right:62px;
+                            width:750px;
+                            .info 
+                            {
+                                .lineArea 
+                                {
+                                    margin:35px 0 0 0;
+                                    .line 
+                                    {
+                                        height:3.7px;
+                                        width:125px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    margin:35px 0 0 0;
+                                    h4 
+                                    {
+                                        font-size:30px;
+                                        width:625px;
+                                    }
+                                }
+                                .textAbout 
+                                {
+                                    h2
+                                    {
+                                        font-size:62px;
+                                    }
+                                }
+                                .textSuccess
+                                {
+                                    h2
+                                    {
+                                        font-size:75px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .foodImages 
+                    {
+                        img 
+                        {
+                            left:62px;
+                            width:500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    .about 
+    {
+        padding:469px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:258px 0 0 0;
+                .info 
+                {
+                    height:515px;
+                    .block 
+                    {
+                        .iconTextContainer 
+                        {
+                            .iconText 
+                            {
+                                .iconArea 
+                                {
+                                    .iconContainer 
+                                    {
+                                        .icon
+                                        {
+                                            font-size:93px;
+                                        }
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:71px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:58px;
+                                    }
+                                }
+                                .textContainerBottom 
+                                {
+                                    margin:6.2px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:58px;
+                                    }
+                                }
+                            }
+                        }
+                        .leftIconTextContainer 
+                        {
+                            border-bottom-right-radius:38px;
+                            border-top-right-radius:38px;
+                        }
+                        .middleIconTextContainer 
+                        {
+                            border-radius:38px;
+                        }
+                        .rightIconTextContainer 
+                        {
+                            border-bottom-left-radius:38px;
+                            border-top-left-radius:38px;
+                        }
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:303px 0 0 0;
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:100px;
+                    }
+                }
+                .lineArea 
+                {
+                    margin:43px 0 0 0;
+                    .line 
+                    {
+                        height:4.6px;
+                        width:156px;
+                    }
+                }
+                .products 
+                {
+                    margin:135px 0 0 0;
+                    .product
+                    {
+                        .imgContainer 
+                        {
+                            .drinks
+                            {
+                                width:147px;
+                            }
+                            .fries
+                            {
+                                width:166px;
+                            }
+                            .hotDog
+                            {
+                                width:383px;
+                            }
+                        }
+                        .textContainer 
+                        {
+                            margin:35px 0 0 0;
+                            h2 
+                            {
+                                font-size:56px;
+                            }
+                        }
+                        .textContainerBottom
+                        {
+                            margin:27px 0 0 0;
+                            h3
+                            {
+                                font-size:46px;
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .subContainer 
+                {
+                    width:2188px;
+                    .aboutUs 
+                    {
+                        .shape 
+                        {
+                            border-radius:22px;
+                            bottom:263px;
+                            box-shadow:2.5px 2.5px 7px 4.6px $lightGreenShader;
+                            right:77px;
+                            width:938px;
+                            .info 
+                            {
+                                .lineArea 
+                                {
+                                    margin:43px 0 0 0;
+                                    .line 
+                                    {
+                                        height:4.6px;
+                                        width:156px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    margin:43px 0 0 0;
+                                    h4 
+                                    {
+                                        font-size:37px;
+                                        width:781px;
+                                    }
+                                }
+                                .textAbout 
+                                {
+                                    h2
+                                    {
+                                        font-size:77px;
+                                    }
+                                }
+                                .textSuccess
+                                {
+                                    h2
+                                    {
+                                        font-size:93px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .foodImages 
+                    {
+                        img 
+                        {
+                            left:77px;
+                            width:625px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    .about 
+    {
+        padding:586px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:323px 0 0 0;
+                .info 
+                {
+                    height:644px;
+                    .block 
+                    {
+                        .iconTextContainer 
+                        {
+                            .iconText 
+                            {
+                                .iconArea 
+                                {
+                                    .iconContainer 
+                                    {
+                                        .icon
+                                        {
+                                            font-size:116px;
+                                        }
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:88px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:72px;
+                                    }
+                                }
+                                .textContainerBottom 
+                                {
+                                    margin:7.7px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:72px;
+                                    }
+                                }
+                            }
+                        }
+                        .leftIconTextContainer 
+                        {
+                            border-bottom-right-radius:47px;
+                            border-top-right-radius:47px;
+                        }
+                        .middleIconTextContainer 
+                        {
+                            border-radius:47px;
+                        }
+                        .rightIconTextContainer 
+                        {
+                            border-bottom-left-radius:47px;
+                            border-top-left-radius:47px;
+                        }
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:378px 0 0 0;
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:125px;
+                    }
+                }
+                .lineArea 
+                {
+                    margin:53px 0 0 0;
+                    .line 
+                    {
+                        height:5.7px;
+                        width:195px;
+                    }
+                }
+                .products 
+                {
+                    margin:169px 0 0 0;
+                    .product
+                    {
+                        .imgContainer 
+                        {
+                            .drinks
+                            {
+                                width:183px;
+                            }
+                            .fries
+                            {
+                                width:207px;
+                            }
+                            .hotDog
+                            {
+                                width:479px;
+                            }
+                        }
+                        .textContainer 
+                        {
+                            margin:43px 0 0 0;
+                            h2 
+                            {
+                                font-size:70px;
+                            }
+                        }
+                        .textContainerBottom
+                        {
+                            margin:33px 0 0 0;
+                            h3
+                            {
+                                font-size:57px;
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .subContainer 
+                {
+                    width:2735px;
+                    .aboutUs 
+                    {
+                        .shape 
+                        {
+                            border-radius:27px;
+                            bottom:329px;
+                            box-shadow:3.1px 3.1px 8px 6px $lightGreenShader;
+                            right:96px;
+                            width:1173px;
+                            .info 
+                            {
+                                .lineArea 
+                                {
+                                    margin:53px 0 0 0;
+                                    .line 
+                                    {
+                                        height:5.7px;
+                                        width:195px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    margin:53px 0 0 0;
+                                    h4 
+                                    {
+                                        font-size:46px;
+                                        width:976px;
+                                    }
+                                }
+                                .textAbout 
+                                {
+                                    h2
+                                    {
+                                        font-size:96px;
+                                    }
+                                }
+                                .textSuccess
+                                {
+                                    h2
+                                    {
+                                        font-size:116px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .foodImages 
+                    {
+                        img 
+                        {
+                            left:96px;
+                            width:781px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px)
+{
+    .about 
+    {
+        padding:733px 0 0 0;
+        .content 
+        {
+            .bottom 
+            {
+                margin:404px 0 0 0;
+                .info 
+                {
+                    height:805px;
+                    .block 
+                    {
+                        .iconTextContainer 
+                        {
+                            .iconText 
+                            {
+                                .iconArea 
+                                {
+                                    .iconContainer 
+                                    {
+                                        .icon
+                                        {
+                                            font-size:145px;
+                                        }
+                                    }
+                                }
+                                .textContainer 
+                                {
+                                    margin:110px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:90px;
+                                    }
+                                }
+                                .textContainerBottom 
+                                {
+                                    margin:9.6px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:90px;
+                                    }
+                                }
+                            }
+                        }
+                        .leftIconTextContainer 
+                        {
+                            border-bottom-right-radius:58px;
+                            border-top-right-radius:58px;
+                        }
+                        .middleIconTextContainer 
+                        {
+                            border-radius:58px;
+                        }
+                        .rightIconTextContainer 
+                        {
+                            border-bottom-left-radius:58px;
+                            border-top-left-radius:58px;
+                        }
+                    }
+                }
+            }
+            .middle 
+            {
+                margin:473px 0 0 0;
+                .heading 
+                {
+                    h2 
+                    {
+                        font-size:156px;
+                    }
+                }
+                .lineArea 
+                {
+                    margin:66px 0 0 0;
+                    .line 
+                    {
+                        height:7.1px;
+                        width:243px;
+                    }
+                }
+                .products 
+                {
+                    margin:211px 0 0 0;
+                    .product
+                    {
+                        .imgContainer 
+                        {
+                            .drinks
+                            {
+                                width:229px;
+                            }
+                            .fries
+                            {
+                                width:259px;
+                            }
+                            .hotDog
+                            {
+                                width:599px;
+                            }
+                        }
+                        .textContainer 
+                        {
+                            margin:53px 0 0 0;
+                            h2 
+                            {
+                                font-size:87px;
+                            }
+                        }
+                        .textContainerBottom
+                        {
+                            margin:41px 0 0 0;
+                            h3
+                            {
+                                font-size:71px;
+                            }
+                        }
+                    }
+                }
+            }
+            .top 
+            {
+                .subContainer 
+                {
+                    width:3419px;
+                    .aboutUs 
+                    {
+                        .shape 
+                        {
+                            border-radius:33px;
+                            bottom:411px;
+                            box-shadow:3.8px 3.8px 10px 7px $lightGreenShader;
+                            right:120px;
+                            width:1466px;
+                            .info 
+                            {
+                                .lineArea 
+                                {
+                                    margin:66px 0 0 0;
+                                    .line 
+                                    {
+                                        height:7.1px;
+                                        width:243px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    margin:66px 0 0 0;
+                                    h4 
+                                    {
+                                        font-size:57px;
+                                        width:1220px;
+                                    }
+                                }
+                                .textAbout 
+                                {
+                                    h2
+                                    {
+                                        font-size:120px;
+                                    }
+                                }
+                                .textSuccess
+                                {
+                                    h2
+                                    {
+                                        font-size:145px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .foodImages 
+                    {
+                        img 
+                        {
+                            left:120px;
+                            width:976px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
